@@ -1,0 +1,55 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "product_type": "addon"
+    },
+    "header": {
+        "description": "Wasteland-flavoured ambient and reactive chatter for vanilla Minecraft mobs. Settlers, Sentries, Legion raiders, wasteland snipers, Centurions, Incinerators, caravan hands and rad-chemists. Original writing. Part of the MURMUR Ecosystem.",
+        "name": "MURMUR Mojave Pack",
+        "uuid": "f85f9de6-c759-49ec-bb90-0fb97058839e",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            21,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "Mojave Content Registration Module",
+            "type": "script",
+            "language": "javascript",
+            "uuid": "3a65fbc9-ed18-4172-8e5e-879c029c1be8",
+            "version": [
+                1,
+                0,
+                0
+            ],
+            "entry": "scripts/register.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.11.0"
+        },
+        {
+            "uuid": "7f9a1b2c-3d4e-4f5a-6b7c-8d9e0f1a2b3c",
+            "version": [
+                1,
+                0,
+                49
+            ]
+        }
+    ],
+    "events": [
+        "murmur:data",
+        "murmur:tree",
+        "murmur:diag",
+        "murmur:resend"
+    ]
+}

@@ -1,0 +1,1964 @@
+C:\USERS\DILLO\ONEDRIVE\DESKTOP\MINECRAFTMODS\MURMUR - CORES AND PACKS
+│   ANALYSIS.md
+│   better ai player 1.12 bp + rp.mcaddon
+│   brainstorm_roadmap.md
+│   compile(2).bat
+│   compile(2).py
+│   compile.bat
+│   compile.py
+│   CONSOLELOGERRORS.txt
+│   DIRECT DEPLOYER.bat
+│   DIRECT DEPLOYER.py
+│   Distant Horizons Bedrock 0.0.2.mcpack
+│   MURMUR_GUIDE.md
+│   MURMUR_OVERVIEW.md
+│   pack_icon.png
+│   PATCH_NOTES.md
+│   TreeOfmods.txt
+│   UNIVERSALDirectDeployV2.bat
+│   UNIVERSALDirectDeployV2.py
+│   UPDATE_PLANNED_AND_ACHIEVED.md
+│
+├───Documents
+│       bug-cruel-pack-import-error.txt
+│       bug-ranked-fix-list.txt
+│       bug-seen-animal-selfassign-namemap.txt
+│       bug-wrong-faction-mourning.txt
+│       concept-dialogue-hooks-from-top-games.md
+│       concept-gen-z-ranking-must-make.md
+│       concept-modular-engine-and-talking-animals.md
+│       concept-pack-lineup-opinions.md
+│       concept-spinoff-factory-strategy.txt
+│       content-wolf-spider-dialogue-en-es.md
+│       empty-blank-file.txt
+│       engine-biome-armor-context-lines.txt
+│       engine-biome-placeholders-stalker-richtext.txt
+│       engine-code-review-opinion.txt
+│       engine-dynamic-neighbor-names.txt
+│       engine-economy-insomnia-caves.txt
+│       engine-grudge-roasts-panic-chains.txt
+│       engine-hybrid-states-night-wounded.txt
+│       engine-item-placeholder-health-detect.txt
+│       engine-light-dimension-block-awareness.txt
+│       engine-luminescence-traveler-shock-DUP.txt
+│       engine-memory-deluge-facing-legendary.txt
+│       engine-mob-conflict-huddles-items-crit.txt
+│       engine-modifiers-displaced-sneak-armor.txt
+│       engine-roadmap-weather-biome-faction-boss.txt
+│       engine-seen-animal-fauna-reactions.txt
+│       engine-sound-particle-flair.txt
+│       engine-structural-review-and-horizon.txt
+│       engine-translation-architecture.md
+│       engine-triggers-time-health-movement.txt
+│       engine-villagefolk-originality-review.md
+│       engine-villagerenjoyers-teardown.md
+│       feedback-structure-callout-request.txt
+│       feedback-talk-back-and-chatter-rate.txt
+│       guide-custom-voice-lines-howto.txt
+│       guide-llm-translation-workflow.txt
+│       guide-vanilla-sounds-howto.txt
+│       idea-villagers-name-nearby-animals.txt
+│       idea-villagers-whisper-unvisited-outposts.txt
+│       ignore-tyrone-golem-name-staging.txt
+│       pack-direction-medieval-dark-fantasy.txt
+│       pack-idea-peaceful-protester-pillagers.txt
+│       pack-idea-undead-ironclad-stub.txt
+│       pack-ideas-coward-corporate-noir-protester.md
+│       pack-ideas-industrial-paranoia-ecohorror-corporate.txt
+│       pack-ideas-master-list.txt
+│       release-changelog-night-wounded-names.txt
+│       storepage-animal-core.md
+│       storepage-animal-pack.md
+│       storepage-core.md
+│       storepage-cruel-pack.md
+│       storepage-medieval-pack.md
+│       storepage-uncanny-pack.md
+│
+├───MODTOANALYZEANDEXTRACTFROM
+│   │   README.md
+│   │
+│   ├───Action__Modal_FormData_Template - Copy
+│   ├───bp
+│   │   │   manifest.json
+│   │   │   pack_icon.png
+│   │   │
+│   │   ├───animation_controllers
+│   │   │       bot.json
+│   │   │
+│   │   ├───entities
+│   │   │       ai.json
+│   │   │       build_target.json
+│   │   │       melee_attack_throw.json
+│   │   │       wolf.json
+│   │   │
+│   │   ├───features
+│   │   │       random1.json
+│   │   │       random_aggregate.json
+│   │   │       tree.json
+│   │   │       tree_aggregate.json
+│   │   │
+│   │   ├───feature_rules
+│   │   │       random_rules.json
+│   │   │       tree_rules.json
+│   │   │
+│   │   ├───functions
+│   │   │       block.mcfunction
+│   │   │       blocking.mcfunction
+│   │   │       bot_shield.mcfunction
+│   │   │       cancel_bow.mcfunction
+│   │   │       food_cancel_bow.mcfunction
+│   │   │       knock_shield.mcfunction
+│   │   │       main.mcfunction
+│   │   │       player_shield.mcfunction
+│   │   │       rdmitem.mcfunction
+│   │   │       response.mcfunction
+│   │   │       shield.mcfunction
+│   │   │       spawn.mcfunction
+│   │   │       tick.json
+│   │   │       world.mcfunction
+│   │   │
+│   │   ├───items
+│   │   │       rg_friend_list_opener.json
+│   │   │       rg_friend_offer.json
+│   │   │
+│   │   ├───loot_tables
+│   │   │       ai.json
+│   │   │       ai_equip.json
+│   │   │       copper_equip.json
+│   │   │       copper_loot.json
+│   │   │       diamond_equip.json
+│   │   │       diamond_loot.json
+│   │   │       diamond_pro_equip.json
+│   │   │       iron_equip.json
+│   │   │       iron_loot.json
+│   │   │       netherite_equip.json
+│   │   │       stone_equip.json
+│   │   │       stone_loot.json
+│   │   │
+│   │   ├───scripts
+│   │   │   │   ai_advanced_combat.js
+│   │   │   │   ai_attack_permission.js
+│   │   │   │   ai_builder.js
+│   │   │   │   ai_combat_combos.js
+│   │   │   │   ai_combat_tactics.js
+│   │   │   │   ai_conversations.js
+│   │   │   │   ai_enhanced_combat.js
+│   │   │   │   ai_environment.js
+│   │   │   │   ai_faction_system.js
+│   │   │   │   ai_fall_detector.js
+│   │   │   │   ai_goals.js
+│   │   │   │   ai_interaction_ui.js
+│   │   │   │   ai_item_pickup.js
+│   │   │   │   ai_mediator.js
+│   │   │   │   ai_mood.js
+│   │   │   │   ai_mount_system.js
+│   │   │   │   ai_obstacle_breaker.js
+│   │   │   │   ai_pathfinding_tweaks.js
+│   │   │   │   ai_reactions.js
+│   │   │   │   ai_shelter_builder.js
+│   │   │   │   ai_social_memory.js
+│   │   │   │   ai_spawn.js
+│   │   │   │   ai_sprint_jump_builder.js
+│   │   │   │   ai_stroll_switcher.js
+│   │   │   │   ai_sympathy_listener.js
+│   │   │   │   ai_torch.js
+│   │   │   │   ai_trap_proof.js
+│   │   │   │   chat.js
+│   │   │   │   eat_food.js
+│   │   │   │   greeting.js
+│   │   │   │   level_up.js
+│   │   │   │   rgstart.js
+│   │   │   │   shield_block.js
+│   │   │   │   strafing.js
+│   │   │   │
+│   │   │   └───database
+│   │   │           chat_config.js
+│   │   │           died_message_database.js
+│   │   │           dogs_rank.js
+│   │   │           join_message_database.js
+│   │   │           message_language.js
+│   │   │           name_database.js
+│   │   │
+│   │   └───structures
+│   │           random1.mcstructure
+│   │           tree.mcstructure
+│   │
+│   ├───dialogue template
+│   │   ├───dialogueBPtemp
+│   │   │   │   manifest.json
+│   │   │   │   pack_icon.png
+│   │   │   │
+│   │   │   └───dialogue
+│   │   │           test.json
+│   │   │
+│   │   └───dialogueRPtemp
+│   │       │   manifest.json
+│   │       │   pack_icon.png
+│   │       │
+│   │       ├───textures
+│   │       │   └───ui
+│   │       │           dialog_bubble.png
+│   │       │           test.png
+│   │       │
+│   │       └───ui
+│   │               npc_interact_screen.json
+│   │
+│   ├───EMA - Enhanced Mob Ai BP
+│   │   │   manifest.json
+│   │   │   pack_icon.png
+│   │   │
+│   │   ├───entities
+│   │   │       chicken.json
+│   │   │       cow.json
+│   │   │       creeper.json
+│   │   │       pig.json
+│   │   │       sample.json
+│   │   │       sheep.json
+│   │   │       skeleton.json
+│   │   │       spider.json
+│   │   │       zombie.json
+│   │   │
+│   │   ├───scripts
+│   │   │       creeper.js
+│   │   │       main.js
+│   │   │       sheep-cow-chicken-pig.js
+│   │   │       skeleton.js
+│   │   │       spider.js
+│   │   │
+│   │   └───texts
+│   │           en_US.lang
+│   │           languages.json
+│   │
+│   ├───Flatworld_Villages_Standart_Edition_Addon_1.1.0_By_Obsitus
+│   │   │   manifest.json
+│   │   │   pack_icon.png
+│   │   │
+│   │   ├───scripts
+│   │   │       main.js
+│   │   │
+│   │   ├───structures
+│   │   │       blacksmith.mcstructure
+│   │   │       Farm1.mcstructure
+│   │   │       fonar.mcstructure
+│   │   │       HramBigT.mcstructure
+│   │   │       s7ht2L.mcstructure
+│   │   │       small1old.mcstructure
+│   │   │       small2new.mcstructure
+│   │   │       tree1.mcstructure
+│   │   │       well1.mcstructure
+│   │   │
+│   │   └───subpacks
+│   │       ├───default
+│   │       │   └───scripts
+│   │       │           config.js
+│   │       │
+│   │       ├───extreme
+│   │       │   └───scripts
+│   │       │           config.js
+│   │       │
+│   │       ├───frequent
+│   │       │   └───scripts
+│   │       │           config.js
+│   │       │
+│   │       ├───infinite
+│   │       │   └───scripts
+│   │       │           config.js
+│   │       │
+│   │       └───rare
+│   │           └───scripts
+│   │                   config.js
+│   │
+│   ├───FOR 1.21.12x [English Version][Beta0.2.9]Echoes of Multiplayer(AI Players)
+│   │   ├───Echoes of Multiplayer_bp
+│   │   │   │   manifest.json
+│   │   │   │   pack_icon.png
+│   │   │   │
+│   │   │   ├───animation_controllers
+│   │   │   │       data0.json
+│   │   │   │
+│   │   │   ├───entities
+│   │   │   │       build_target.json
+│   │   │   │       melee_strike_projectile.json
+│   │   │   │       newb.json
+│   │   │   │       testdummy.json
+│   │   │   │       wolf.json
+│   │   │   │
+│   │   │   ├───features
+│   │   │   │       di1.json
+│   │   │   │       di10.json
+│   │   │   │       di11.json
+│   │   │   │       di12.json
+│   │   │   │       di13.json
+│   │   │   │       di2.json
+│   │   │   │       di3.json
+│   │   │   │       di4.json
+│   │   │   │       di5.json
+│   │   │   │       di6.json
+│   │   │   │       di7.json
+│   │   │   │       di8.json
+│   │   │   │       di9.json
+│   │   │   │       di_aggregate.json
+│   │   │   │       fangzi1.json
+│   │   │   │       fangzi2.json
+│   │   │   │       fangzi_aggregate.json
+│   │   │   │       hezi1.json
+│   │   │   │       hezi2.json
+│   │   │   │       hezi3.json
+│   │   │   │       hezi4.json
+│   │   │   │       hezi5.json
+│   │   │   │       hezi_aggregate.json
+│   │   │   │       shuye1.json
+│   │   │   │       shuye_aggregate.json
+│   │   │   │       zhuzi1.json
+│   │   │   │       zhuzi2.json
+│   │   │   │       zhuzi3.json
+│   │   │   │       zhuzi4.json
+│   │   │   │       zhuzi5.json
+│   │   │   │       zhuzi6.json
+│   │   │   │       zhuzi7.json
+│   │   │   │       zhuzi_aggregate.json
+│   │   │   │       zimu1.json
+│   │   │   │       zimu2.json
+│   │   │   │       zimu3.json
+│   │   │   │       zimu4.json
+│   │   │   │       zimu_aggregate.json
+│   │   │   │
+│   │   │   ├───feature_rules
+│   │   │   │       di_rules.json
+│   │   │   │       fangzi_rules.json
+│   │   │   │       hezi_rules.json
+│   │   │   │       shuye_rules.json
+│   │   │   │       zhuzi_rules.json
+│   │   │   │       zimu_rules.json
+│   │   │   │
+│   │   │   ├───functions
+│   │   │   │       a.mcfunction
+│   │   │   │       block.mcfunction
+│   │   │   │       blocking.mcfunction
+│   │   │   │       cancel_bow.mcfunction
+│   │   │   │       main.mcfunction
+│   │   │   │       newb_shield.mcfunction
+│   │   │   │       player_shield.mcfunction
+│   │   │   │       proj_shield.mcfunction
+│   │   │   │       rdmitem.mcfunction
+│   │   │   │       reaction.mcfunction
+│   │   │   │       shield.mcfunction
+│   │   │   │       spawn.mcfunction
+│   │   │   │       tick.json
+│   │   │   │       world.mcfunction
+│   │   │   │
+│   │   │   ├───items
+│   │   │   │       zps_friend_list_opener.json
+│   │   │   │       zps_friend_offer.json
+│   │   │   │
+│   │   │   ├───loot_tables
+│   │   │   │       copper_equip.json
+│   │   │   │       copper_loot.json
+│   │   │   │       diamond_equip.json
+│   │   │   │       diamond_loot.json
+│   │   │   │       diamond_pro_equip.json
+│   │   │   │       iron_equip.json
+│   │   │   │       iron_loot.json
+│   │   │   │       newb.json
+│   │   │   │       newb_equip.json
+│   │   │   │       stone_equip.json
+│   │   │   │       stone_loot.json
+│   │   │   │
+│   │   │   ├───scripts
+│   │   │   │   │   ai_affinity_listener.js
+│   │   │   │   │   ai_anti_trap.js
+│   │   │   │   │   ai_attack_permission.js
+│   │   │   │   │   ai_builder.js
+│   │   │   │   │   ai_fall_detector.js
+│   │   │   │   │   ai_interaction_ui.js
+│   │   │   │   │   ai_peacemaker.js
+│   │   │   │   │   ai_spawn.js
+│   │   │   │   │   ai_stroll_switcher.js
+│   │   │   │   │   chat.js
+│   │   │   │   │   eat_food.js
+│   │   │   │   │   greeting.js
+│   │   │   │   │   newb_namer.js
+│   │   │   │   │   shiled_block.js
+│   │   │   │   │   upgrade.js
+│   │   │   │   │   zouwei.js
+│   │   │   │   │
+│   │   │   │   └───config
+│   │   │   │           ai_wolf_num.js
+│   │   │   │           chat_config.js
+│   │   │   │           died_message_language.js
+│   │   │   │           join_message_language.js
+│   │   │   │           message_language.js
+│   │   │   │           name_language.js
+│   │   │   │           server_message_language.js
+│   │   │   │
+│   │   │   └───structures
+│   │   │           di1.mcstructure
+│   │   │           di10.mcstructure
+│   │   │           di11.mcstructure
+│   │   │           di12.mcstructure
+│   │   │           di13.mcstructure
+│   │   │           di2.mcstructure
+│   │   │           di3.mcstructure
+│   │   │           di4.mcstructure
+│   │   │           di5.mcstructure
+│   │   │           di6.mcstructure
+│   │   │           di7.mcstructure
+│   │   │           di8.mcstructure
+│   │   │           di9.mcstructure
+│   │   │           fangzi1.mcstructure
+│   │   │           fangzi2.mcstructure
+│   │   │           hezi1.mcstructure
+│   │   │           hezi2.mcstructure
+│   │   │           hezi3.mcstructure
+│   │   │           hezi4.mcstructure
+│   │   │           hezi5.mcstructure
+│   │   │           shuye1.mcstructure
+│   │   │           zhuzi1.mcstructure
+│   │   │           zhuzi2.mcstructure
+│   │   │           zhuzi3.mcstructure
+│   │   │           zhuzi4.mcstructure
+│   │   │           zhuzi5.mcstructure
+│   │   │           zhuzi6.mcstructure
+│   │   │           zhuzi7.mcstructure
+│   │   │           zimu1.mcstructure
+│   │   │           zimu2.mcstructure
+│   │   │           zimu3.mcstructure
+│   │   │           zimu4.mcstructure
+│   │   │
+│   │   └───Echoes of Multiplayer_rp
+│   │       │   manifest.json
+│   │       │   pack_icon.png
+│   │       │
+│   │       ├───animations
+│   │       │       humanoid.animation.json
+│   │       │
+│   │       ├───animation_controllers
+│   │       │       humanoid.animation_controllers.json
+│   │       │
+│   │       ├───entity
+│   │       │       newb.json
+│   │       │
+│   │       ├───models
+│   │       │   └───entity
+│   │       │           humanoidaaa.json
+│   │       │           humanoidfemale.json
+│   │       │
+│   │       ├───render_controllers
+│   │       │       aiplayer.render_controllers.json
+│   │       │
+│   │       ├───texts
+│   │       │       en_ES.lang
+│   │       │       en_US.lang
+│   │       │       es_ES.lang
+│   │       │       es_MX.lang
+│   │       │       id_ID.lang
+│   │       │       pt_BR.lang
+│   │       │       pt_PT.lang
+│   │       │       ru_RU.lang
+│   │       │       zh_CN.lang
+│   │       │
+│   │       └───textures
+│   │           │   item_texture.json
+│   │           │   terrain_texture.json
+│   │           │
+│   │           ├───entity
+│   │           │   └───AIplayers
+│   │           │           steve.png
+│   │           │           tx02.png
+│   │           │           tx03.png
+│   │           │           tx04.png
+│   │           │           tx05.png
+│   │           │           tx06.png
+│   │           │           tx07.png
+│   │           │           tx08.png
+│   │           │           tx09.png
+│   │           │           tx10.png
+│   │           │           tx11.png
+│   │           │           tx12.png
+│   │           │           tx13.png
+│   │           │           tx14.png
+│   │           │           tx15.png
+│   │           │           tx16.png
+│   │           │           tx17.png
+│   │           │           tx18.png
+│   │           │           tx19.png
+│   │           │           tx20.png
+│   │           │           tx21.png
+│   │           │           tx22.png
+│   │           │           tx23.png
+│   │           │           tx24.png
+│   │           │           tx25.png
+│   │           │           tx26.png
+│   │           │           tx27.png
+│   │           │           tx28.png
+│   │           │           tx29.png
+│   │           │           tx30.png
+│   │           │           tx31.png
+│   │           │           tx32.png
+│   │           │           tx33.png
+│   │           │           tx34.png
+│   │           │           tx35.png
+│   │           │           tx36.png
+│   │           │           tx37.png
+│   │           │           tx38.png
+│   │           │
+│   │           └───items
+│   │               │   friends.png
+│   │               │   friend_offer.png
+│   │               │
+│   │               └───egg
+│   │                       zps_newb.png
+│   │
+│   ├───GuardVillager5
+│   │   ├───Guard villager _behavior_pack
+│   │   │   │   manifest.json
+│   │   │   │   pack_icon.png
+│   │   │   │
+│   │   │   ├───animations
+│   │   │   │       shield.json
+│   │   │   │
+│   │   │   ├───entities
+│   │   │   │       arrow.json
+│   │   │   │       iron_golem.json
+│   │   │   │       shield.json
+│   │   │   │       shield_crossbow2.json
+│   │   │   │       villager.json
+│   │   │   │       villager_crossbow.json
+│   │   │   │       villager_medical.json
+│   │   │   │       villager_soldier.json
+│   │   │   │
+│   │   │   ├───Items
+│   │   │   │       scimitar.json
+│   │   │   │
+│   │   │   └───loot_tables
+│   │   │       │   crossbow.json
+│   │   │       │   crossbow2.json
+│   │   │       │   villager_guard.json
+│   │   │       │   villager_sword.json
+│   │   │       │
+│   │   │       └───Trade
+│   │   │               Villager.json
+│   │   │
+│   │   └───GuardVillager _resource_pack
+│   │       │   manifest.json
+│   │       │   pack_icon.png
+│   │       │   sounds.json
+│   │       │
+│   │       ├───animations
+│   │       │   │   armor_setup.json
+│   │       │   │   guard.animation.json
+│   │       │   │   Guard_Villager_attack.animation.json
+│   │       │   │   item_pose.animation.json
+│   │       │   │   shield_guard_villager_and_sneaking.animation.json
+│   │       │   │
+│   │       │   └───attachables
+│   │       │           bow.animation.json
+│   │       │
+│   │       ├───animation_controllers
+│   │       │   │   armor_setup.animation_controllers.json
+│   │       │   │   guard_villager.animation_controllers.json
+│   │       │   │   guard_villager_crossbow.animation_controllers.json
+│   │       │   │   item_pose.animation_controllers.json
+│   │       │   │
+│   │       │   └───attachables
+│   │       │           bow.animation_controllers.json
+│   │       │
+│   │       ├───attachables
+│   │       │       bow.skeleton.json
+│   │       │       bow.skeleton2.json
+│   │       │       bow.skeleton3.json
+│   │       │       bow.skeleton4.json
+│   │       │       bow.skeleton5.json
+│   │       │
+│   │       ├───entity
+│   │       │       villager_crossbow.json
+│   │       │       villager_potion.json
+│   │       │       villager_soldier.json
+│   │       │
+│   │       ├───models
+│   │       │   └───entity
+│   │       │           guard_crossbow.geo.json
+│   │       │           guard_sword.geo.json
+│   │       │           healer_villager.geo.json
+│   │       │
+│   │       ├───render_controllers
+│   │       │   │   defender.json
+│   │       │   │   villager.json
+│   │       │   │
+│   │       │   └───attachables
+│   │       │           bow.render_controllers.json
+│   │       │
+│   │       ├───texts
+│   │       │       en_US.lang
+│   │       │       languages.json
+│   │       │
+│   │       └───textures
+│   │           ├───entity
+│   │           │   ├───villager_medical
+│   │           │   │       desert.png
+│   │           │   │       jungle.png
+│   │           │   │       plains.png
+│   │           │   │       savanna.png
+│   │           │   │       snow.png
+│   │           │   │       swamp.png
+│   │           │   │       taiga.png
+│   │           │   │
+│   │           │   └───villager_soldier123
+│   │           │           desert.png
+│   │           │           jungle.png
+│   │           │           plains.png
+│   │           │           savanna.png
+│   │           │           snow.png
+│   │           │           swamp.png
+│   │           │           taiga.png
+│   │           │
+│   │           └───items
+│   │                   bow_pulling_0.png
+│   │                   bow_pulling_1.png
+│   │                   bow_pulling_2.png
+│   │                   bow_standby.png
+│   │
+│   ├───LivingVillagers_NoBeta
+│   │   ├───behavior_pack
+│   │   │   │   manifest.json
+│   │   │   │   pack_icon.png
+│   │   │   │
+│   │   │   └───scripts
+│   │   │           main.js
+│   │   │
+│   │   └───resource_pack
+│   │       │   manifest.json
+│   │       │   pack_icon.png
+│   │       │
+│   │       └───ui
+│   │               hud_screen.json
+│   │
+│   ├───Minecraft AI Players
+│   │   │   Echoes of Multiplayer_bp.mcpack
+│   │   │
+│   │   ├───Echoes of Multiplayer_bp
+│   │   │   │   AI_Behavior_Checklist.txt
+│   │   │   │   Dev note by human.txt
+│   │   │   │   manifest.json
+│   │   │   │   misc
+│   │   │   │   Opinion on progress.txt
+│   │   │   │   pack_icon.png
+│   │   │   │   Performance suggestions.txt
+│   │   │   │   Roadmap.txt
+│   │   │   │   suggestions.txt
+│   │   │   │
+│   │   │   ├───animation_controllers
+│   │   │   │       data0.json
+│   │   │   │
+│   │   │   ├───entities
+│   │   │   │       build_target.json
+│   │   │   │       melee_strike_projectile.json
+│   │   │   │       newb.json
+│   │   │   │       testdummy.json
+│   │   │   │       wolf.json
+│   │   │   │
+│   │   │   ├───features
+│   │   │   │       di1.json
+│   │   │   │       di10.json
+│   │   │   │       di11.json
+│   │   │   │       di12.json
+│   │   │   │       di13.json
+│   │   │   │       di2.json
+│   │   │   │       di3.json
+│   │   │   │       di4.json
+│   │   │   │       di5.json
+│   │   │   │       di6.json
+│   │   │   │       di7.json
+│   │   │   │       di8.json
+│   │   │   │       di9.json
+│   │   │   │       di_aggregate.json
+│   │   │   │       fangzi1.json
+│   │   │   │       fangzi2.json
+│   │   │   │       fangzi_aggregate.json
+│   │   │   │       hezi1.json
+│   │   │   │       hezi2.json
+│   │   │   │       hezi3.json
+│   │   │   │       hezi4.json
+│   │   │   │       hezi5.json
+│   │   │   │       hezi_aggregate.json
+│   │   │   │       shuye1.json
+│   │   │   │       shuye_aggregate.json
+│   │   │   │       zhuzi1.json
+│   │   │   │       zhuzi2.json
+│   │   │   │       zhuzi3.json
+│   │   │   │       zhuzi4.json
+│   │   │   │       zhuzi5.json
+│   │   │   │       zhuzi6.json
+│   │   │   │       zhuzi7.json
+│   │   │   │       zhuzi_aggregate.json
+│   │   │   │       zimu1.json
+│   │   │   │       zimu2.json
+│   │   │   │       zimu3.json
+│   │   │   │       zimu4.json
+│   │   │   │       zimu_aggregate.json
+│   │   │   │
+│   │   │   ├───feature_rules
+│   │   │   │       di_rules.json
+│   │   │   │       fangzi_rules.json
+│   │   │   │       hezi_rules.json
+│   │   │   │       shuye_rules.json
+│   │   │   │       zhuzi_rules.json
+│   │   │   │       zimu_rules.json
+│   │   │   │
+│   │   │   ├───functions
+│   │   │   │       a.mcfunction
+│   │   │   │       block.mcfunction
+│   │   │   │       blocking.mcfunction
+│   │   │   │       cancel_bow.mcfunction
+│   │   │   │       main.mcfunction
+│   │   │   │       newb_shield.mcfunction
+│   │   │   │       player_shield.mcfunction
+│   │   │   │       proj_shield.mcfunction
+│   │   │   │       rdmitem.mcfunction
+│   │   │   │       reaction.mcfunction
+│   │   │   │       shield.mcfunction
+│   │   │   │       spawn.mcfunction
+│   │   │   │       tick.json
+│   │   │   │       world.mcfunction
+│   │   │   │
+│   │   │   ├───items
+│   │   │   │       zps_friend_list_opener.json
+│   │   │   │       zps_friend_offer.json
+│   │   │   │
+│   │   │   ├───loot_tables
+│   │   │   │       copper_equip.json
+│   │   │   │       copper_loot.json
+│   │   │   │       diamond_equip.json
+│   │   │   │       diamond_loot.json
+│   │   │   │       diamond_pro_equip.json
+│   │   │   │       iron_equip.json
+│   │   │   │       iron_loot.json
+│   │   │   │       newb.json
+│   │   │   │       newb_equip.json
+│   │   │   │       stone_equip.json
+│   │   │   │       stone_loot.json
+│   │   │   │
+│   │   │   ├───scripts
+│   │   │   │   │   ai_affinity_listener.js
+│   │   │   │   │   ai_anti_trap.js
+│   │   │   │   │   ai_attack_permission.js
+│   │   │   │   │   ai_builder.js
+│   │   │   │   │   ai_fall_detector.js
+│   │   │   │   │   ai_harvester.js
+│   │   │   │   │   ai_interaction_ui.js
+│   │   │   │   │   ai_inventory_manager.js
+│   │   │   │   │   ai_peacemaker.js
+│   │   │   │   │   ai_spawn.js
+│   │   │   │   │   ai_stroll_switcher.js
+│   │   │   │   │   chat.js
+│   │   │   │   │   eat_food.js
+│   │   │   │   │   greeting.js
+│   │   │   │   │   newb_namer.js
+│   │   │   │   │   shiled_block.js
+│   │   │   │   │   upgrade.js
+│   │   │   │   │   zouwei.js
+│   │   │   │   │
+│   │   │   │   └───config
+│   │   │   │           ai_wolf_num.js
+│   │   │   │           chat_config.js
+│   │   │   │           died_message_language.js
+│   │   │   │           join_message_language.js
+│   │   │   │           message_language.js
+│   │   │   │           name_language.js
+│   │   │   │           server_message_language.js
+│   │   │   │
+│   │   │   └───structures
+│   │   │           di1.mcstructure
+│   │   │           di10.mcstructure
+│   │   │           di11.mcstructure
+│   │   │           di12.mcstructure
+│   │   │           di13.mcstructure
+│   │   │           di2.mcstructure
+│   │   │           di3.mcstructure
+│   │   │           di4.mcstructure
+│   │   │           di5.mcstructure
+│   │   │           di6.mcstructure
+│   │   │           di7.mcstructure
+│   │   │           di8.mcstructure
+│   │   │           di9.mcstructure
+│   │   │           fangzi1.mcstructure
+│   │   │           fangzi2.mcstructure
+│   │   │           hezi1.mcstructure
+│   │   │           hezi2.mcstructure
+│   │   │           hezi3.mcstructure
+│   │   │           hezi4.mcstructure
+│   │   │           hezi5.mcstructure
+│   │   │           shuye1.mcstructure
+│   │   │           zhuzi1.mcstructure
+│   │   │           zhuzi2.mcstructure
+│   │   │           zhuzi3.mcstructure
+│   │   │           zhuzi4.mcstructure
+│   │   │           zhuzi5.mcstructure
+│   │   │           zhuzi6.mcstructure
+│   │   │           zhuzi7.mcstructure
+│   │   │           zimu1.mcstructure
+│   │   │           zimu2.mcstructure
+│   │   │           zimu3.mcstructure
+│   │   │           zimu4.mcstructure
+│   │   │
+│   │   ├───Echoes of Multiplayer_rp
+│   │   │   │   manifest.json
+│   │   │   │   pack_icon.png
+│   │   │   │
+│   │   │   ├───animations
+│   │   │   │       humanoid.animation.json
+│   │   │   │
+│   │   │   ├───animation_controllers
+│   │   │   │       humanoid.animation_controllers.json
+│   │   │   │
+│   │   │   ├───entity
+│   │   │   │       newb.json
+│   │   │   │
+│   │   │   ├───models
+│   │   │   │   └───entity
+│   │   │   │           humanoidaaa.json
+│   │   │   │           humanoidfemale.json
+│   │   │   │
+│   │   │   ├───render_controllers
+│   │   │   │       aiplayer.render_controllers.json
+│   │   │   │
+│   │   │   ├───texts
+│   │   │   │       en_ES.lang
+│   │   │   │       en_US.lang
+│   │   │   │       es_ES.lang
+│   │   │   │       es_MX.lang
+│   │   │   │       id_ID.lang
+│   │   │   │       pt_BR.lang
+│   │   │   │       pt_PT.lang
+│   │   │   │       ru_RU.lang
+│   │   │   │       zh_CN.lang
+│   │   │   │
+│   │   │   └───textures
+│   │   │       │   item_texture.json
+│   │   │       │   terrain_texture.json
+│   │   │       │
+│   │   │       ├───entity
+│   │   │       │   └───AIplayers
+│   │   │       │           steve.png
+│   │   │       │           tx02.png
+│   │   │       │           tx03.png
+│   │   │       │           tx04.png
+│   │   │       │           tx05.png
+│   │   │       │           tx06.png
+│   │   │       │           tx07.png
+│   │   │       │           tx08.png
+│   │   │       │           tx09.png
+│   │   │       │           tx10.png
+│   │   │       │           tx11.png
+│   │   │       │           tx12.png
+│   │   │       │           tx13.png
+│   │   │       │           tx14.png
+│   │   │       │           tx15.png
+│   │   │       │           tx16.png
+│   │   │       │           tx17.png
+│   │   │       │           tx18.png
+│   │   │       │           tx19.png
+│   │   │       │           tx20.png
+│   │   │       │           tx21.png
+│   │   │       │           tx22.png
+│   │   │       │           tx23.png
+│   │   │       │           tx24.png
+│   │   │       │           tx25.png
+│   │   │       │           tx26.png
+│   │   │       │           tx27.png
+│   │   │       │           tx28.png
+│   │   │       │           tx29.png
+│   │   │       │           tx30.png
+│   │   │       │           tx31.png
+│   │   │       │           tx32.png
+│   │   │       │           tx33.png
+│   │   │       │           tx34.png
+│   │   │       │           tx35.png
+│   │   │       │           tx36.png
+│   │   │       │           tx37.png
+│   │   │       │           tx38.png
+│   │   │       │
+│   │   │       └───items
+│   │   │           │   friends.png
+│   │   │           │   friend_offer.png
+│   │   │           │
+│   │   │           └───egg
+│   │   │                   zps_newb.png
+│   │   │
+│   │   ├───Enhanced Mob Ai
+│   │   │   └───EMA - Enhanced Mob Ai BP
+│   │   │       │   manifest.json
+│   │   │       │   pack_icon.png
+│   │   │       │
+│   │   │       ├───entities
+│   │   │       │       chicken.json
+│   │   │       │       cow.json
+│   │   │       │       creeper.json
+│   │   │       │       pig.json
+│   │   │       │       sample.json
+│   │   │       │       sheep.json
+│   │   │       │       skeleton.json
+│   │   │       │       spider.json
+│   │   │       │       zombie.json
+│   │   │       │
+│   │   │       ├───scripts
+│   │   │       │       creeper.js
+│   │   │       │       main.js
+│   │   │       │       sheep-cow-chicken-pig.js
+│   │   │       │       skeleton.js
+│   │   │       │       spider.js
+│   │   │       │
+│   │   │       └───texts
+│   │   │               en_US.lang
+│   │   │               languages.json
+│   │   │
+│   │   └───Smarter Mobs
+│   │       │   Opinion.txt
+│   │       │   Optimization.txt
+│   │       │   Overview.txt
+│   │       │   Roadmap.txt
+│   │       │   Suggestions.txt
+│   │       │
+│   │       └───EMA - Enhanced Mob Ai BP
+│   │           │   manifest.json
+│   │           │   pack_icon.png
+│   │           │
+│   │           ├───entities
+│   │           │       chicken.json
+│   │           │       cow.json
+│   │           │       creeper.json
+│   │           │       pig.json
+│   │           │       sample.json
+│   │           │       sheep.json
+│   │           │       skeleton.json
+│   │           │       spider.json
+│   │           │       zombie.json
+│   │           │
+│   │           ├───scripts
+│   │           │       creeper.js
+│   │           │       main.js
+│   │           │       sheep-cow-chicken-pig.js
+│   │           │       skeleton.js
+│   │           │       spider.js
+│   │           │
+│   │           └───texts
+│   │                   en_US.lang
+│   │                   languages.json
+│   │
+│   ├───NPC COMERCIANTES
+│   │   ├───NPC COMERCIANTES_behavior_pack
+│   │   │   │   .data
+│   │   │   │   .error
+│   │   │   │   manifest.json
+│   │   │   │   pack_icon.png
+│   │   │   │
+│   │   │   ├───animation_controllers
+│   │   │   │       viking_amethyst_viking_boots.json
+│   │   │   │       viking_amethyst_viking_chestplate.json
+│   │   │   │       viking_amethyst_viking_helmet.json
+│   │   │   │       viking_amethyst_viking_leggings.json
+│   │   │   │       viking_copper_viking_boots.json
+│   │   │   │       viking_copper_viking_chestplate.json
+│   │   │   │       viking_copper_viking_helmet.json
+│   │   │   │       viking_copper_viking_leggings.json
+│   │   │   │       viking_diamond_viking_boots.json
+│   │   │   │       viking_diamond_viking_chestplate.json
+│   │   │   │       viking_diamond_viking_helmet.json
+│   │   │   │       viking_diamond_viking_leggings.json
+│   │   │   │       viking_emerald_viking_boots.json
+│   │   │   │       viking_emerald_viking_chestplate.json
+│   │   │   │       viking_emerald_viking_helmet.json
+│   │   │   │       viking_emerald_viking_leggings.json
+│   │   │   │       viking_gold_viking_boots.json
+│   │   │   │       viking_gold_viking_chestplate.json
+│   │   │   │       viking_gold_viking_helmet.json
+│   │   │   │       viking_gold_viking_leggings.json
+│   │   │   │       viking_iron_viking_boots.json
+│   │   │   │       viking_iron_viking_chestplate.json
+│   │   │   │       viking_iron_viking_helmet.json
+│   │   │   │       viking_iron_viking_leggings.json
+│   │   │   │       viking_netherite_viking_boots.json
+│   │   │   │       viking_netherite_viking_chestplate.json
+│   │   │   │       viking_netherite_viking_helmet.json
+│   │   │   │       viking_netherite_viking_leggings.json
+│   │   │   │       viking_viking_boots.json
+│   │   │   │       viking_viking_chestplate.json
+│   │   │   │       viking_viking_helmet.json
+│   │   │   │       viking_viking_leggings.json
+│   │   │   │
+│   │   │   ├───entities
+│   │   │   │       player.json
+│   │   │   │       sa_shop_armaduras.json
+│   │   │   │       sc_shop_coin.json
+│   │   │   │       sc_shop_comidas.json
+│   │   │   │       sd_shop_discos.json
+│   │   │   │       sm_shop_mobs.json
+│   │   │   │       sp_shop_granja.json
+│   │   │   │       sp_shop_posciones.json
+│   │   │   │
+│   │   │   ├───functions
+│   │   │   │       cd_coin_dem.mcfunction
+│   │   │   │       cn_coin_net.mcfunction
+│   │   │   │       cx_coin_xec.mcfunction
+│   │   │   │       dc_dany_coins.mcfunction
+│   │   │   │       julzpotions_carrot_juice.mcfunction
+│   │   │   │       julzpotions_enchanted_milk.mcfunction
+│   │   │   │       julzpotions_potion_of_flash.mcfunction
+│   │   │   │       julzpotions_potion_of_freeze.mcfunction
+│   │   │   │       julzpotions_potion_of_haste.mcfunction
+│   │   │   │       julzpotions_potion_of_healer.mcfunction
+│   │   │   │       julzpotions_potion_of_magma_master.mcfunction
+│   │   │   │       julzpotions_potion_of_sickness.mcfunction
+│   │   │   │       julzpotions_potion_of_the_greatest_powers.mcfunction
+│   │   │   │       julzpotions_potion_of_turbo_speed.mcfunction
+│   │   │   │       julzpotions_potion_to_clear_all_effects.mcfunction
+│   │   │   │       julzpotions_unlimited_jump_boost_potion.mcfunction
+│   │   │   │       julzpotions_unlimited_water_breathing_potion.mcfunction
+│   │   │   │       NPC_COMERCIANTES.mcfunction
+│   │   │   │       survival_cooked_egg.mcfunction
+│   │   │   │       viking_amethyst_viking_boots.mcfunction
+│   │   │   │       viking_amethyst_viking_chestplate.mcfunction
+│   │   │   │       viking_amethyst_viking_helmet.mcfunction
+│   │   │   │       viking_amethyst_viking_leggings.mcfunction
+│   │   │   │       viking_copper_viking_boots.mcfunction
+│   │   │   │       viking_copper_viking_chestplate.mcfunction
+│   │   │   │       viking_copper_viking_helmet.mcfunction
+│   │   │   │       viking_copper_viking_leggings.mcfunction
+│   │   │   │       viking_diamond_viking_boots.mcfunction
+│   │   │   │       viking_diamond_viking_chestplate.mcfunction
+│   │   │   │       viking_diamond_viking_helmet.mcfunction
+│   │   │   │       viking_diamond_viking_leggings.mcfunction
+│   │   │   │       viking_emerald_viking_boots.mcfunction
+│   │   │   │       viking_emerald_viking_chestplate.mcfunction
+│   │   │   │       viking_emerald_viking_helmet.mcfunction
+│   │   │   │       viking_emerald_viking_leggings.mcfunction
+│   │   │   │       viking_gold_viking_boots.mcfunction
+│   │   │   │       viking_gold_viking_chestplate.mcfunction
+│   │   │   │       viking_gold_viking_helmet.mcfunction
+│   │   │   │       viking_gold_viking_leggings.mcfunction
+│   │   │   │       viking_iron_viking_boots.mcfunction
+│   │   │   │       viking_iron_viking_chestplate.mcfunction
+│   │   │   │       viking_iron_viking_helmet.mcfunction
+│   │   │   │       viking_iron_viking_leggings.mcfunction
+│   │   │   │       viking_netherite_viking_boots.mcfunction
+│   │   │   │       viking_netherite_viking_chestplate.mcfunction
+│   │   │   │       viking_netherite_viking_helmet.mcfunction
+│   │   │   │       viking_netherite_viking_leggings.mcfunction
+│   │   │   │       viking_viking_boots.mcfunction
+│   │   │   │       viking_viking_chestplate.mcfunction
+│   │   │   │       viking_viking_helmet.mcfunction
+│   │   │   │       viking_viking_leggings.mcfunction
+│   │   │   │
+│   │   │   ├───items
+│   │   │   │       cd_coin_dem.json
+│   │   │   │       cn_coin_net.json
+│   │   │   │       cx_coin_xec.json
+│   │   │   │       dc_dany_coins.json
+│   │   │   │       julzpotions_carrot_juice.json
+│   │   │   │       julzpotions_enchanted_milk.json
+│   │   │   │       julzpotions_potion_of_flash.json
+│   │   │   │       julzpotions_potion_of_freeze.json
+│   │   │   │       julzpotions_potion_of_haste.json
+│   │   │   │       julzpotions_potion_of_healer.json
+│   │   │   │       julzpotions_potion_of_magma_master.json
+│   │   │   │       julzpotions_potion_of_sickness.json
+│   │   │   │       julzpotions_potion_of_the_greatest_powers.json
+│   │   │   │       julzpotions_potion_of_turbo_speed.json
+│   │   │   │       julzpotions_potion_to_clear_all_effects.json
+│   │   │   │       julzpotions_unlimited_jump_boost_potion.json
+│   │   │   │       julzpotions_unlimited_water_breathing_potion.json
+│   │   │   │       survival_cooked_egg.json
+│   │   │   │       viking_amethyst_viking_boots.json
+│   │   │   │       viking_amethyst_viking_chestplate.json
+│   │   │   │       viking_amethyst_viking_helmet.json
+│   │   │   │       viking_amethyst_viking_leggings.json
+│   │   │   │       viking_copper_viking_boots.json
+│   │   │   │       viking_copper_viking_chestplate.json
+│   │   │   │       viking_copper_viking_helmet.json
+│   │   │   │       viking_copper_viking_leggings.json
+│   │   │   │       viking_diamond_viking_boots.json
+│   │   │   │       viking_diamond_viking_chestplate.json
+│   │   │   │       viking_diamond_viking_helmet.json
+│   │   │   │       viking_diamond_viking_leggings.json
+│   │   │   │       viking_emerald_viking_boots.json
+│   │   │   │       viking_emerald_viking_chestplate.json
+│   │   │   │       viking_emerald_viking_helmet.json
+│   │   │   │       viking_emerald_viking_leggings.json
+│   │   │   │       viking_gold_viking_boots.json
+│   │   │   │       viking_gold_viking_chestplate.json
+│   │   │   │       viking_gold_viking_helmet.json
+│   │   │   │       viking_gold_viking_leggings.json
+│   │   │   │       viking_iron_viking_boots.json
+│   │   │   │       viking_iron_viking_chestplate.json
+│   │   │   │       viking_iron_viking_helmet.json
+│   │   │   │       viking_iron_viking_leggings.json
+│   │   │   │       viking_netherite_viking_boots.json
+│   │   │   │       viking_netherite_viking_chestplate.json
+│   │   │   │       viking_netherite_viking_helmet.json
+│   │   │   │       viking_netherite_viking_leggings.json
+│   │   │   │       viking_viking_boots.json
+│   │   │   │       viking_viking_chestplate.json
+│   │   │   │       viking_viking_helmet.json
+│   │   │   │       viking_viking_leggings.json
+│   │   │   │
+│   │   │   ├───loot_tables
+│   │   │   │   └───entities
+│   │   │   │           sa_shop_armaduras_equipment.json
+│   │   │   │           sc_shop_coin_equipment.json
+│   │   │   │           sc_shop_comidas_equipment.json
+│   │   │   │           sd_shop_discos_equipment.json
+│   │   │   │           sm_shop_mobs_equipment.json
+│   │   │   │           sp_shop_granja_equipment.json
+│   │   │   │           sp_shop_posciones_equipment.json
+│   │   │   │
+│   │   │   ├───recipes
+│   │   │   │       cd_coin_dem.json
+│   │   │   │       cn_coin_net.json
+│   │   │   │       cx_coin_xec.json
+│   │   │   │       dc_dany_coins.json
+│   │   │   │       julzpotions_carrot_juice.json
+│   │   │   │       julzpotions_enchanted_milk.json
+│   │   │   │       julzpotions_potion_of_flash.json
+│   │   │   │       julzpotions_potion_of_freeze.json
+│   │   │   │       julzpotions_potion_of_haste.json
+│   │   │   │       julzpotions_potion_of_healer.json
+│   │   │   │       julzpotions_potion_of_magma_master.json
+│   │   │   │       julzpotions_potion_of_sickness.json
+│   │   │   │       julzpotions_potion_of_the_greatest_powers.json
+│   │   │   │       julzpotions_potion_of_turbo_speed.json
+│   │   │   │       julzpotions_potion_to_clear_all_effects.json
+│   │   │   │       julzpotions_unlimited_jump_boost_potion.json
+│   │   │   │       julzpotions_unlimited_water_breathing_potion.json
+│   │   │   │       Recipes_5d629a52_custom.json
+│   │   │   │       survival_cooked_egg.json
+│   │   │   │       viking_amethyst_viking_boots.json
+│   │   │   │       viking_amethyst_viking_chestplate.json
+│   │   │   │       viking_amethyst_viking_helmet.json
+│   │   │   │       viking_amethyst_viking_leggings.json
+│   │   │   │       viking_copper_viking_boots.json
+│   │   │   │       viking_copper_viking_chestplate.json
+│   │   │   │       viking_copper_viking_helmet.json
+│   │   │   │       viking_copper_viking_leggings.json
+│   │   │   │       viking_diamond_viking_boots.json
+│   │   │   │       viking_diamond_viking_chestplate.json
+│   │   │   │       viking_diamond_viking_helmet.json
+│   │   │   │       viking_diamond_viking_leggings.json
+│   │   │   │       viking_emerald_viking_boots.json
+│   │   │   │       viking_emerald_viking_chestplate.json
+│   │   │   │       viking_emerald_viking_helmet.json
+│   │   │   │       viking_emerald_viking_leggings.json
+│   │   │   │       viking_gold_viking_boots.json
+│   │   │   │       viking_gold_viking_chestplate.json
+│   │   │   │       viking_gold_viking_helmet.json
+│   │   │   │       viking_gold_viking_leggings.json
+│   │   │   │       viking_iron_viking_boots.json
+│   │   │   │       viking_iron_viking_chestplate.json
+│   │   │   │       viking_iron_viking_helmet.json
+│   │   │   │       viking_iron_viking_leggings.json
+│   │   │   │       viking_netherite_viking_boots.json
+│   │   │   │       viking_netherite_viking_chestplate.json
+│   │   │   │       viking_netherite_viking_helmet.json
+│   │   │   │       viking_netherite_viking_leggings.json
+│   │   │   │       viking_viking_boots.json
+│   │   │   │       viking_viking_chestplate.json
+│   │   │   │       viking_viking_helmet.json
+│   │   │   │       viking_viking_leggings.json
+│   │   │   │
+│   │   │   └───trades
+│   │   │       └───entities
+│   │   │               sa_shop_armaduras_trades.json
+│   │   │               sc_shop_coin_trades.json
+│   │   │               sc_shop_comidas_trades.json
+│   │   │               sd_shop_discos_trades.json
+│   │   │               sm_shop_mobs_trades.json
+│   │   │               sp_shop_granja_trades.json
+│   │   │               sp_shop_posciones_trades.json
+│   │   │
+│   │   └───NPC COMERCIANTES_resource_pack
+│   │       │   manifest.json
+│   │       │   pack_icon.png
+│   │       │
+│   │       ├───animation_controllers
+│   │       │       custom.animation_controllers.json
+│   │       │
+│   │       ├───attachables
+│   │       │       viking_amethyst_viking_boots.json
+│   │       │       viking_amethyst_viking_boots.player.json
+│   │       │       viking_amethyst_viking_chestplate.json
+│   │       │       viking_amethyst_viking_chestplate.player.json
+│   │       │       viking_amethyst_viking_helmet.json
+│   │       │       viking_amethyst_viking_helmet.player.json
+│   │       │       viking_amethyst_viking_leggings.json
+│   │       │       viking_amethyst_viking_leggings.player.json
+│   │       │       viking_copper_viking_boots.json
+│   │       │       viking_copper_viking_boots.player.json
+│   │       │       viking_copper_viking_chestplate.json
+│   │       │       viking_copper_viking_chestplate.player.json
+│   │       │       viking_copper_viking_helmet.json
+│   │       │       viking_copper_viking_helmet.player.json
+│   │       │       viking_copper_viking_leggings.json
+│   │       │       viking_copper_viking_leggings.player.json
+│   │       │       viking_diamond_viking_boots.json
+│   │       │       viking_diamond_viking_boots.player.json
+│   │       │       viking_diamond_viking_chestplate.json
+│   │       │       viking_diamond_viking_chestplate.player.json
+│   │       │       viking_diamond_viking_helmet.json
+│   │       │       viking_diamond_viking_helmet.player.json
+│   │       │       viking_diamond_viking_leggings.json
+│   │       │       viking_diamond_viking_leggings.player.json
+│   │       │       viking_emerald_viking_boots.json
+│   │       │       viking_emerald_viking_boots.player.json
+│   │       │       viking_emerald_viking_chestplate.json
+│   │       │       viking_emerald_viking_chestplate.player.json
+│   │       │       viking_emerald_viking_helmet.json
+│   │       │       viking_emerald_viking_helmet.player.json
+│   │       │       viking_emerald_viking_leggings.json
+│   │       │       viking_emerald_viking_leggings.player.json
+│   │       │       viking_gold_viking_boots.json
+│   │       │       viking_gold_viking_boots.player.json
+│   │       │       viking_gold_viking_chestplate.json
+│   │       │       viking_gold_viking_chestplate.player.json
+│   │       │       viking_gold_viking_helmet.json
+│   │       │       viking_gold_viking_helmet.player.json
+│   │       │       viking_gold_viking_leggings.json
+│   │       │       viking_gold_viking_leggings.player.json
+│   │       │       viking_iron_viking_boots.json
+│   │       │       viking_iron_viking_boots.player.json
+│   │       │       viking_iron_viking_chestplate.json
+│   │       │       viking_iron_viking_chestplate.player.json
+│   │       │       viking_iron_viking_helmet.json
+│   │       │       viking_iron_viking_helmet.player.json
+│   │       │       viking_iron_viking_leggings.json
+│   │       │       viking_iron_viking_leggings.player.json
+│   │       │       viking_netherite_viking_boots.json
+│   │       │       viking_netherite_viking_boots.player.json
+│   │       │       viking_netherite_viking_chestplate.json
+│   │       │       viking_netherite_viking_chestplate.player.json
+│   │       │       viking_netherite_viking_helmet.json
+│   │       │       viking_netherite_viking_helmet.player.json
+│   │       │       viking_netherite_viking_leggings.json
+│   │       │       viking_netherite_viking_leggings.player.json
+│   │       │       viking_viking_boots.json
+│   │       │       viking_viking_boots.player.json
+│   │       │       viking_viking_chestplate.json
+│   │       │       viking_viking_chestplate.player.json
+│   │       │       viking_viking_helmet.json
+│   │       │       viking_viking_helmet.player.json
+│   │       │       viking_viking_leggings.json
+│   │       │       viking_viking_leggings.player.json
+│   │       │
+│   │       ├───entity
+│   │       │       sa_shop_armaduras.json
+│   │       │       sc_shop_coin.json
+│   │       │       sc_shop_comidas.json
+│   │       │       sd_shop_discos.json
+│   │       │       sm_shop_mobs.json
+│   │       │       sp_shop_granja.json
+│   │       │       sp_shop_posciones.json
+│   │       │
+│   │       ├───items
+│   │       │       cd_coin_dem.json
+│   │       │       cn_coin_net.json
+│   │       │       cx_coin_xec.json
+│   │       │       dc_dany_coins.json
+│   │       │       julzpotions_carrot_juice.json
+│   │       │       julzpotions_enchanted_milk.json
+│   │       │       julzpotions_potion_of_flash.json
+│   │       │       julzpotions_potion_of_freeze.json
+│   │       │       julzpotions_potion_of_haste.json
+│   │       │       julzpotions_potion_of_healer.json
+│   │       │       julzpotions_potion_of_magma_master.json
+│   │       │       julzpotions_potion_of_sickness.json
+│   │       │       julzpotions_potion_of_the_greatest_powers.json
+│   │       │       julzpotions_potion_of_turbo_speed.json
+│   │       │       julzpotions_potion_to_clear_all_effects.json
+│   │       │       julzpotions_unlimited_jump_boost_potion.json
+│   │       │       julzpotions_unlimited_water_breathing_potion.json
+│   │       │       survival_cooked_egg.json
+│   │       │
+│   │       ├───materials
+│   │       │       entity.material
+│   │       │       particles.material
+│   │       │
+│   │       ├───models
+│   │       │   └───entity
+│   │       │           pabullet.json
+│   │       │           patnt.json
+│   │       │           sa_shop_armaduras.json
+│   │       │           sc_shop_coin.json
+│   │       │           sc_shop_comidas.json
+│   │       │           sd_shop_discos.json
+│   │       │           sm_shop_mobs.json
+│   │       │           sp_shop_granja.json
+│   │       │           sp_shop_posciones.json
+│   │       │           viking_amethyst_viking_boots.json
+│   │       │           viking_amethyst_viking_chestplate.json
+│   │       │           viking_amethyst_viking_helmet.json
+│   │       │           viking_amethyst_viking_leggings.json
+│   │       │           viking_copper_viking_boots.json
+│   │       │           viking_copper_viking_chestplate.json
+│   │       │           viking_copper_viking_helmet.json
+│   │       │           viking_copper_viking_leggings.json
+│   │       │           viking_diamond_viking_boots.json
+│   │       │           viking_diamond_viking_chestplate.json
+│   │       │           viking_diamond_viking_helmet.json
+│   │       │           viking_diamond_viking_leggings.json
+│   │       │           viking_emerald_viking_boots.json
+│   │       │           viking_emerald_viking_chestplate.json
+│   │       │           viking_emerald_viking_helmet.json
+│   │       │           viking_emerald_viking_leggings.json
+│   │       │           viking_gold_viking_boots.json
+│   │       │           viking_gold_viking_chestplate.json
+│   │       │           viking_gold_viking_helmet.json
+│   │       │           viking_gold_viking_leggings.json
+│   │       │           viking_iron_viking_boots.json
+│   │       │           viking_iron_viking_chestplate.json
+│   │       │           viking_iron_viking_helmet.json
+│   │       │           viking_iron_viking_leggings.json
+│   │       │           viking_netherite_viking_boots.json
+│   │       │           viking_netherite_viking_chestplate.json
+│   │       │           viking_netherite_viking_helmet.json
+│   │       │           viking_netherite_viking_leggings.json
+│   │       │           viking_viking_boots.json
+│   │       │           viking_viking_chestplate.json
+│   │       │           viking_viking_helmet.json
+│   │       │           viking_viking_leggings.json
+│   │       │           villager_with_player_model.json
+│   │       │
+│   │       ├───render_controllers
+│   │       │       fish.json
+│   │       │       translucence.json
+│   │       │
+│   │       ├───texts
+│   │       │       en_US.lang
+│   │       │
+│   │       └───textures
+│   │           │   bullet.png
+│   │           │   item_texture.json
+│   │           │   terrain_texture.json
+│   │           │
+│   │           ├───entity
+│   │           │   └───pamobile
+│   │           │           sa_shop_armaduras.png
+│   │           │           sc_shop_coin.png
+│   │           │           sc_shop_comidas.png
+│   │           │           sd_shop_discos.png
+│   │           │           sm_shop_mobs.png
+│   │           │           sp_shop_granja.png
+│   │           │           sp_shop_posciones.png
+│   │           │           viking_amethyst_viking_boots.png
+│   │           │           viking_amethyst_viking_chestplate.png
+│   │           │           viking_amethyst_viking_helmet.png
+│   │           │           viking_amethyst_viking_leggings.png
+│   │           │           viking_copper_viking_boots.png
+│   │           │           viking_copper_viking_chestplate.png
+│   │           │           viking_copper_viking_helmet.png
+│   │           │           viking_copper_viking_leggings.png
+│   │           │           viking_diamond_viking_boots.png
+│   │           │           viking_diamond_viking_chestplate.png
+│   │           │           viking_diamond_viking_helmet.png
+│   │           │           viking_diamond_viking_leggings.png
+│   │           │           viking_emerald_viking_boots.png
+│   │           │           viking_emerald_viking_chestplate.png
+│   │           │           viking_emerald_viking_helmet.png
+│   │           │           viking_emerald_viking_leggings.png
+│   │           │           viking_gold_viking_boots.png
+│   │           │           viking_gold_viking_chestplate.png
+│   │           │           viking_gold_viking_helmet.png
+│   │           │           viking_gold_viking_leggings.png
+│   │           │           viking_iron_viking_boots.png
+│   │           │           viking_iron_viking_chestplate.png
+│   │           │           viking_iron_viking_helmet.png
+│   │           │           viking_iron_viking_leggings.png
+│   │           │           viking_netherite_viking_boots.png
+│   │           │           viking_netherite_viking_chestplate.png
+│   │           │           viking_netherite_viking_helmet.png
+│   │           │           viking_netherite_viking_leggings.png
+│   │           │           viking_viking_boots.png
+│   │           │           viking_viking_chestplate.png
+│   │           │           viking_viking_helmet.png
+│   │           │           viking_viking_leggings.png
+│   │           │
+│   │           ├───items
+│   │           │   └───pamobile
+│   │           │           cd_coin_dem.png
+│   │           │           cn_coin_net.png
+│   │           │           cx_coin_xec.png
+│   │           │           dc_dany_coins.png
+│   │           │           julzpotions_carrot_juice.png
+│   │           │           julzpotions_enchanted_milk.png
+│   │           │           julzpotions_potion_of_flash.png
+│   │           │           julzpotions_potion_of_freeze.png
+│   │           │           julzpotions_potion_of_haste.png
+│   │           │           julzpotions_potion_of_healer.png
+│   │           │           julzpotions_potion_of_magma_master.png
+│   │           │           julzpotions_potion_of_sickness.png
+│   │           │           julzpotions_potion_of_the_greatest_powers.png
+│   │           │           julzpotions_potion_of_turbo_speed.png
+│   │           │           julzpotions_potion_to_clear_all_effects.png
+│   │           │           julzpotions_unlimited_jump_boost_potion.png
+│   │           │           julzpotions_unlimited_water_breathing_potion.png
+│   │           │           sa_shop_armaduras.png
+│   │           │           sc_shop_coin.png
+│   │           │           sc_shop_comidas.png
+│   │           │           sd_shop_discos.png
+│   │           │           sm_shop_mobs.png
+│   │           │           sp_shop_granja.png
+│   │           │           sp_shop_posciones.png
+│   │           │           survival_cooked_egg.png
+│   │           │           viking_amethyst_viking_boots.png
+│   │           │           viking_amethyst_viking_chestplate.png
+│   │           │           viking_amethyst_viking_helmet.png
+│   │           │           viking_amethyst_viking_leggings.png
+│   │           │           viking_copper_viking_boots.png
+│   │           │           viking_copper_viking_chestplate.png
+│   │           │           viking_copper_viking_helmet.png
+│   │           │           viking_copper_viking_leggings.png
+│   │           │           viking_diamond_viking_boots.png
+│   │           │           viking_diamond_viking_chestplate.png
+│   │           │           viking_diamond_viking_helmet.png
+│   │           │           viking_diamond_viking_leggings.png
+│   │           │           viking_emerald_viking_boots.png
+│   │           │           viking_emerald_viking_chestplate.png
+│   │           │           viking_emerald_viking_helmet.png
+│   │           │           viking_emerald_viking_leggings.png
+│   │           │           viking_gold_viking_boots.png
+│   │           │           viking_gold_viking_chestplate.png
+│   │           │           viking_gold_viking_helmet.png
+│   │           │           viking_gold_viking_leggings.png
+│   │           │           viking_iron_viking_boots.png
+│   │           │           viking_iron_viking_chestplate.png
+│   │           │           viking_iron_viking_helmet.png
+│   │           │           viking_iron_viking_leggings.png
+│   │           │           viking_netherite_viking_boots.png
+│   │           │           viking_netherite_viking_chestplate.png
+│   │           │           viking_netherite_viking_helmet.png
+│   │           │           viking_netherite_viking_leggings.png
+│   │           │           viking_viking_boots.png
+│   │           │           viking_viking_chestplate.png
+│   │           │           viking_viking_helmet.png
+│   │           │           viking_viking_leggings.png
+│   │           │
+│   │           └───pa_particles
+│   │                   smoke.png
+│   │
+│   ├───NPCSoldier[BP]
+│   │   └───NPCSoldier
+│   │       │   manifest.json
+│   │       │   pack_icon.png
+│   │       │
+│   │       ├───entities
+│   │       │   │   soldier.json
+│   │       │   │   soldier2.json
+│   │       │   │   soldier2_d.json
+│   │       │   │   soldier_d.json
+│   │       │   │
+│   │       │   └───bullets
+│   │       │           bullet_akm.json
+│   │       │
+│   │       └───functions
+│   │               team1.mcfunction
+│   │               team2.mcfunction
+│   │               team_leave.mcfunction
+│   │
+│   ├───NPCSoldier[RP]
+│   │   └───NPCSoldier
+│   │       │   biomes_client.json
+│   │       │   Credits.txt
+│   │       │   manifest.json
+│   │       │   pack_icon.png
+│   │       │   sounds.json
+│   │       │
+│   │       ├───animations
+│   │       │   │   soldier2_anima.json
+│   │       │   │   soldier_anima.json
+│   │       │   │
+│   │       │   └───dead
+│   │       │           soldier2_d_anima.json
+│   │       │           soldier_d_anima.json
+│   │       │
+│   │       ├───animation_controllers
+│   │       │   │   soldier.json
+│   │       │   │   soldier2.json
+│   │       │   │
+│   │       │   └───dead
+│   │       │           soldier2_d.json
+│   │       │           soldier_d.json
+│   │       │
+│   │       ├───entity
+│   │       │   │   soldier.json
+│   │       │   │   soldier2.json
+│   │       │   │
+│   │       │   ├───bullets
+│   │       │   │       bullet_akm.json
+│   │       │   │
+│   │       │   └───dead
+│   │       │           soldier2_d.json
+│   │       │           soldier_d.json
+│   │       │
+│   │       ├───materials
+│   │       │       entity.material
+│   │       │
+│   │       ├───models
+│   │       │   └───entity
+│   │       │           soldier.json
+│   │       │           soldier2.json
+│   │       │
+│   │       ├───render_controllers
+│   │       │       soldier.json
+│   │       │       soldier2.json
+│   │       │
+│   │       ├───sounds
+│   │       │   │   sound_definitions.json
+│   │       │   │
+│   │       │   └───bullet
+│   │       │           akm.ogg
+│   │       │
+│   │       ├───texts
+│   │       │       en_US.lang
+│   │       │
+│   │       └───textures
+│   │           │   item_texture.json
+│   │           │
+│   │           ├───entity
+│   │           │       soldier.png
+│   │           │       soldier2.png
+│   │           │
+│   │           ├───items
+│   │           │   └───spawn_egg
+│   │           │           soldier1.png
+│   │           │           soldier2.png
+│   │           │
+│   │           └───models
+│   │                   bullet.png
+│   │
+│   ├───OdysseyNPCs
+│   │   ├───OdysseyBP
+│   │   │   │   manifest.json
+│   │   │   │   pack_icon.png
+│   │   │   │
+│   │   │   ├───entities
+│   │   │   │       custom_npc.json
+│   │   │   │       goto_marker.json
+│   │   │   │       link_marker_0.json
+│   │   │   │       link_marker_1.json
+│   │   │   │       link_marker_2.json
+│   │   │   │       link_marker_3.json
+│   │   │   │       link_marker_4.json
+│   │   │   │       link_marker_5.json
+│   │   │   │       link_marker_6.json
+│   │   │   │       link_marker_7.json
+│   │   │   │       link_marker_8.json
+│   │   │   │       patrol_marker_0.json
+│   │   │   │       patrol_marker_1.json
+│   │   │   │       patrol_marker_2.json
+│   │   │   │       patrol_marker_3.json
+│   │   │   │       patrol_marker_4.json
+│   │   │   │       patrol_marker_5.json
+│   │   │   │       patrol_marker_6.json
+│   │   │   │       patrol_marker_7.json
+│   │   │   │       patrol_marker_8.json
+│   │   │   │
+│   │   │   ├───functions
+│   │   │   │       debug_test.mcfunction
+│   │   │   │
+│   │   │   ├───items
+│   │   │   │       admin_wand.json
+│   │   │   │       faction_horn.json
+│   │   │   │       npc_contract.json
+│   │   │   │
+│   │   │   ├───recipes
+│   │   │   ├───scripts
+│   │   │   │       adminmenu.js
+│   │   │   │       constants.js
+│   │   │   │       events.js
+│   │   │   │       main.js
+│   │   │   │       markers.js
+│   │   │   │       menus.js
+│   │   │   │       menus.js.bak
+│   │   │   │       quest.js
+│   │   │   │       shop.js
+│   │   │   │       state.js
+│   │   │   │       systems.js
+│   │   │   │       worldmode.js
+│   │   │   │
+│   │   │   └───textures
+│   │   │           npc_contract.texture_set.json
+│   │   │
+│   │   └───OdysseyRP
+│   │       │   manifest.json
+│   │       │   pack_icon.png
+│   │       │
+│   │       ├───animations
+│   │       │       custom_npc.animation.json
+│   │       │
+│   │       ├───animation_controllers
+│   │       │       custom_npc.animation_controllers.json
+│   │       │
+│   │       ├───entity
+│   │       │       custom_npc.json
+│   │       │       goto_marker.json
+│   │       │       link_marker_0.json
+│   │       │       link_marker_1.json
+│   │       │       link_marker_2.json
+│   │       │       link_marker_3.json
+│   │       │       link_marker_4.json
+│   │       │       link_marker_5.json
+│   │       │       link_marker_6.json
+│   │       │       link_marker_7.json
+│   │       │       link_marker_8.json
+│   │       │       patrol_marker_0.json
+│   │       │       patrol_marker_1.json
+│   │       │       patrol_marker_2.json
+│   │       │       patrol_marker_3.json
+│   │       │       patrol_marker_4.json
+│   │       │       patrol_marker_5.json
+│   │       │       patrol_marker_6.json
+│   │       │       patrol_marker_7.json
+│   │       │       patrol_marker_8.json
+│   │       │
+│   │       ├───items
+│   │       │       admin_wand.json
+│   │       │       faction_horn.json
+│   │       │       npc_contract.json
+│   │       │
+│   │       ├───models
+│   │       │   └───entity
+│   │       │           custom_npc.geo.json
+│   │       │           marker_invisible.geo.json
+│   │       │           patrol_marker.geo.json
+│   │       │
+│   │       ├───particles
+│   │       │       null_particle.json
+│   │       │
+│   │       ├───render_controllers
+│   │       │       custom_npc.render_controllers.json
+│   │       │
+│   │       ├───sounds
+│   │       │   │   entity_sounds.json
+│   │       │   │   sound_definitions.json
+│   │       │   │
+│   │       │   └───mob
+│   │       │       ├───goto_marker
+│   │       │       │       death.ogg
+│   │       │       │       hurt.ogg
+│   │       │       │
+│   │       │       ├───link_marker
+│   │       │       │       death.ogg
+│   │       │       │       hurt.ogg
+│   │       │       │
+│   │       │       └───patrol_marker
+│   │       │               death.ogg
+│   │       │               hurt.ogg
+│   │       │
+│   │       ├───texts
+│   │       │       en_US.lang
+│   │       │       languages.json
+│   │       │       tr_TR.lang
+│   │       │
+│   │       └───textures
+│   │           │   item_texture.json
+│   │           │
+│   │           ├───entity
+│   │           │   │   marker_invisible.png
+│   │           │   │
+│   │           │   ├───custom_npc
+│   │           │   │       skin_0.png
+│   │           │   │       skin_1.png
+│   │           │   │       skin_2.png
+│   │           │   │       skin_3.png
+│   │           │   │       skin_4.png
+│   │           │   │       skin_5.png
+│   │           │   │       skin_6.png
+│   │           │   │       skin_7.png
+│   │           │   │       skin_8.png
+│   │           │   │       skin_9.png
+│   │           │   │
+│   │           │   └───patrol_marker
+│   │           │           marker.png
+│   │           │
+│   │           ├───items
+│   │           │       admin_wand.png
+│   │           │       faction_horn.png
+│   │           │       npc_contract.png
+│   │           │       README.md
+│   │           │
+│   │           └───item_texture_set
+│   │                   npc_contract.png
+│   │                   npc_contract.texture_set.json
+│   │                   npc_contract_mer.png
+│   │                   npc_contract_normal.png
+│   │
+│   ├───rp
+│   │   │   manifest.json
+│   │   │   pack_icon.png
+│   │   │
+│   │   ├───animations
+│   │   │       humanoid.animation.json
+│   │   │
+│   │   ├───animation_controllers
+│   │   │       humanoid.animation_controllers.json
+│   │   │
+│   │   ├───entity
+│   │   │       aibot.json
+│   │   │
+│   │   ├───models
+│   │   │   └───entity
+│   │   │           humanoidbot.json
+│   │   │
+│   │   ├───render_controllers
+│   │   │       aibot.render_controllers.json
+│   │   │
+│   │   ├───texts
+│   │   │       en_ES.lang
+│   │   │       en_US.lang
+│   │   │       es_ES.lang
+│   │   │       es_MX.lang
+│   │   │       id_ID.lang
+│   │   │       pt_BR.lang
+│   │   │       pt_PT.lang
+│   │   │       ru_RU.lang
+│   │   │
+│   │   └───textures
+│   │       │   item_texture.json
+│   │       │
+│   │       ├───entity
+│   │       │   └───aibots
+│   │       │           skin01.png
+│   │       │           skin02.png
+│   │       │           skin03.png
+│   │       │           skin04.png
+│   │       │           skin05.png
+│   │       │           skin06.png
+│   │       │           skin07.png
+│   │       │           skin08.png
+│   │       │           skin09.png
+│   │       │           skin10.png
+│   │       │           skin11.png
+│   │       │           skin12.png
+│   │       │           skin13.png
+│   │       │           skin14.png
+│   │       │           skin15.png
+│   │       │           skin16.png
+│   │       │           skin17.png
+│   │       │           skin18.png
+│   │       │           skin19.png
+│   │       │           skin20.png
+│   │       │           skin21.png
+│   │       │           skin22.png
+│   │       │           skin23.png
+│   │       │           skin24.png
+│   │       │           skin25.png
+│   │       │           skin26.png
+│   │       │           skin27.png
+│   │       │           skin28.png
+│   │       │           skin29.png
+│   │       │           skin30.png
+│   │       │           skin31.png
+│   │       │           skin32.png
+│   │       │           skin33.png
+│   │       │           skin34.png
+│   │       │           skin35.png
+│   │       │           skin36.png
+│   │       │           skin37.png
+│   │       │           skin38.png
+│   │       │
+│   │       └───items
+│   │               assist.png
+│   │               coords.png
+│   │               friends.png
+│   │               friend_request.png
+│   │               online.png
+│   │               pending.png
+│   │
+│   ├───scripts
+│   │       main.js
+│   │
+│   ├───src
+│   │   └───main
+│   │       ├───java
+│   │       │   └───com
+│   │       │       └───craftai4u
+│   │       │           └───talking_mobs
+│   │       │                   TalkingMobs.java
+│   │       │
+│   │       └───resources
+│   │               fabric.mod.json
+│   │
+│   ├───talking_mobs
+│   │   │   build.gradle
+│   │   │   gradle.properties
+│   │   │   README.md
+│   │   │   settings.gradle
+│   │   │
+│   │   └───src
+│   │       └───main
+│   │           ├───java
+│   │           │   └───com
+│   │           │       └───craftai4u
+│   │           │           └───talking_mobs
+│   │           │                   TalkingMobs.java
+│   │           │
+│   │           └───resources
+│   │                   fabric.mod.json
+│   │
+│   └───VillageFolk 1.6.0
+│       └───VillageFolk
+│           │   CHANGELOG.md
+│           │   manifest.json
+│           │   pack_icon.png
+│           │
+│           └───scripts
+│                   dialogue.js
+│                   eventeffects.js
+│                   gossip.js
+│                   gossipdialogue.js
+│                   hostiles.js
+│                   hostilesdialogue.js
+│                   hurtdialogue.js
+│                   main.js
+│                   moods.js
+│                   names.js
+│                   professions.js
+│                   settings.js
+│                   settingsui.js
+│                   villageevent.js
+│                   wanderingtrader.js
+│
+├───MURMUR - ANIMAL CORE
+│   │   compile.bat
+│   │   compile.py
+│   │   manifest.json
+│   │   MURMUR - ANIMAL CORE_BP_1.0.19.mcpack
+│   │
+│   └───scripts
+│           api.js
+│           conversations.js
+│           main.js
+│           utils.js
+│
+├───MURMUR - ANIMAL PACK
+│   │   compile.bat
+│   │   compile.py
+│   │   manifest.json
+│   │   MURMUR - ANIMAL PACK_BP_1.0.21.mcpack
+│   │
+│   └───scripts
+│           dialogue.js
+│           dialogue_es.js
+│           dialogue_pt.js
+│           register.js
+│
+├───MURMUR - CORE
+│   │   compile.bat
+│   │   compile.py
+│   │   manifest.json
+│   │
+│   └───scripts
+│           animal_priority.js
+│           api.js
+│           commerce.js
+│           conversations.js
+│           dialogue_tree.js
+│           events.js
+│           index.js
+│           langbook.js
+│           localization.js
+│           main.js
+│           memory.js
+│           memoryEvents.js
+│           quests.js
+│           rep_hud.js
+│           utils.js
+│           vault.js
+│           worldadmin.js
+│
+├───MURMUR - CRUEL PACK
+│   │   compile.bat
+│   │   compile.py
+│   │   Make_sure.txt
+│   │   manifest.json
+│   │   MURMUR - CRUEL PACK_BP_1.1.35.mcpack
+│   │   MURMUR_CRUEL_BP.MCPACK
+│   │
+│   └───scripts
+│           dialogue.js
+│           dialogue_es.js
+│           dialogue_pt.js
+│           register.js
+│
+├───MURMUR - MEDIEVAL PACK
+│   │   compile.bat
+│   │   compile.py
+│   │   manifest.json
+│   │   MURMUR - MEDIEVAL PACK_BP_1.1.34.mcpack
+│   │
+│   └───scripts
+│           dialogue.js
+│           dialogue_es.js
+│           dialogue_pt.js
+│           register.js
+│
+├───Murmur - Mojave
+│       Murmur_NewVegasPack.txt
+│
+├───MURMUR - MOSTLY PEACEFUL PROTESTORS
+├───MURMUR - NOIR
+│   │   compile.bat
+│   │   compile.py
+│   │   manifest.json
+│   │   MURMUR - NOIR_BP_1.1.35.mcpack
+│   │   MURMUR - NOIR_BP_1.1.36.mcpack
+│   │
+│   └───scripts
+│           dialogue.js
+│           dialogue_es.js
+│           dialogue_pt.js
+│           register.js
+│
+├───MURMUR - PRAISE PACK
+│   │   compile.bat
+│   │   compile.py
+│   │   manifest.json
+│   │   MURMUR - PRAISE PACK_BP_1.1.35.mcpack
+│   │
+│   └───scripts
+│           dialogue.js
+│           dialogue_es.js
+│           dialogue_pt.js
+│           register.js
+│
+└───MURMUR - UNCANNY
+    │   compile.bat
+    │   compile.py
+    │   manifest.json
+    │   pack_icon.png
+    │
+    ├───Documents
+    │       (IGNORE)NAMEIDEAS.txt
+    │       contextentities.txt
+    │       curseforgedocs.txt
+    │       ideas1.txt
+    │       ideas10.txt
+    │       ideas11.txt
+    │       ideas2.txt
+    │       ideas3.txt
+    │       ideas4.txt
+    │       ideas5.txt
+    │       ideas6.txt
+    │       ideas7.txt
+    │       ideas8.txt
+    │       ideas9.txt
+    │       LLM_OPINION.txt
+    │       lowhangingfruits1.txt
+    │       noises.txt
+    │       stuff_to_fix.txt
+    │       usersplans.txt
+    │       voicelines.txt
+    │       witnessbug.txt
+    │
+    └───scripts
+            dialogue.js
+            dialogue_es.js
+            dialogue_pt.js
+            register.js

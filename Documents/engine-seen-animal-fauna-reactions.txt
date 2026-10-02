@@ -1,0 +1,158 @@
+This is an excellent idea. Adding contextual awareness for nearby passive fauna or rival monsters completely breaks the illusion that these mobs only care about the player or their immediate faction. It makes them feel like they are actually occupying and observing the ecosystem around them.
+
+The best part? You already have the foundational logic for this built into your **Threat Complexity Layer** inside `main_3.js`, where you check for nearby zombies and illagers. We can easily adapt that exact proximity scanning logic to look for animals and other monsters, and then map those to your database structure.
+
+Here is how we can structurally organize this concept, followed by the code to make it happen.
+
+---
+
+## 🎨 The Dialogue Concept: How They See the Fauna
+
+### 1. Villagers: Simple, Weary Husbandry
+
+Villagers shouldn't just love animals; they should look at them with the tired eyes of a medieval farmer who has to clean up after them.
+
+* **Chicken:** *"Stop staring at me. I know you're empty inside."*
+* **Sheep:** *"The wool is getting thick. Time to find the iron shears, {name}."*
+
+* **Cow:** *"Always chewing. Don't you ever get tired of chewing?"*
+
+### 2. Pillagers: Tactical Disgust & Hunger
+
+Pillagers are raiders on the march. They see animals either as filth clogging up their paths or as raw rations to be consumed.
+
+* **Animals (General):** *"Get this squealing meat out of my way."*
+* **Pig/Cow:** *"Throw it on the fire. I'm sick of dried rations."*
+
+### 3. Witches: Alchemical Harvest
+
+Witches should see fauna strictly as a collection of parts waiting to be boiled down into a status effect.
+
+* **Any Animal:** *"The marrow from its bones would stabilize the volatility..."*
+* **Bat / Cat:** *"Speak up, little one. Tell me what he's building over the hill."*
+
+
+### 4. Wither Skeletons: Absolute Abhorrence of Life
+
+Wither Skeletons hate anything that breathes. Seeing a passive animal in the Nether (like a stray chicken from a jockey or a hoglin) should offend their very existence.
+
+* **Any Living Thing:** *"FLESH COVERS THE TRUTH. STRIP IT AWAY."*
+* **Any Living Thing:** *"It beats... it breathes... IT MUST STOP."*
+
+
+---
+
+## 🛠️ Step 1: Update `dialogue_2.js`
+
+Add a new `seen_animal` sub-pool to the relevant entities in your database file:
+
+```javascript
+// Add these inside their respective entity objects in dialogue_2.js
+
+"minecraft:villager_v2": {
+    // ... existing pools ...
+    seen_animal: {
+        "minecraft:chicken": ["Saw a chicken staring at me for a while... didn't like that.", "Stop clicking. My ears are full of clicking."],
+        "minecraft:cow": ["Always chewing. Don't you ever get tired of chewing?", "The leather on that one is thick."],
+        "minecraft:sheep": ["The wool is getting thick, {name}. We need the iron shears.", "The sheep have stopped talking to me."]
+    }
+},
+
+"minecraft:pillager": {
+    // ... existing pools ...
+    seen_animal: {
+        "generic": ["Get this squealing meat out of my way.", "Disgusting creatures. This valley is filthy.", "Throw it on the fire. I'm sick of dried rations."]
+    }
+},
+
+"minecraft:witch": {
+    // ... existing pools ...
+    seen_animal: {
+        "generic": ["The marrow from its bones would stabilize the volatility...", "A living heart makes the poison take root much faster.", "The body remembers... even an animal's body."]
+    }
+},
+
+"minecraft:wither_skeleton": {
+    // ... existing pools ...
+    seen_animal: {
+        "generic": ["FLESH COVERS THE TRUTH. STRIP IT AWAY.", "It beats... it breathes... IT MUST STOP.", "MELT THE MEAT OFF ITS BONES."]
+    }
+}
+
+```
+
+---
+
+## 🛠️ Step 2: Integrating the Scanner into `main_3.js`
+
+We will add a new **Fauna Proximity Layer** right below your vehicle riding query layer in `main_3.js`. This scans a $5$-block radius for any target animals, captures their ID, and overrides the active text pool if it hits.
+
+Here is how the update looks integrated into your main loop:
+
+```javascript
+            // VEHICLE RIDING QUERY LAYER: Checks if riding a boat
+            let isRidingBoat = false;
+            try {
+                const rideComponent = entity.getComponent("minecraft:riding");
+                if (rideComponent && rideComponent.entityRidden) {
+                    const vehicleType = rideComponent.entityRidden.typeId;
+                    if (vehicleType && vehicleType.includes("boat")) {
+                        isRidingBoat = true;
+                    }
+                }
+            } catch (e) {}
+
+            // NEW: FAUNA & ANIMAL PROXIMITY SCANNER LAYER
+            let foundNearbyAnimalType = null;
+            try {
+                const nearbyFauna = entity.dimension.getEntities({
+                    location: entity.location,
+                    maxDistance: 5
+                });
+                
+                const animalTargets = ["minecraft:chicken", "minecraft:cow", "minecraft:sheep", "minecraft:pig", "minecraft:wolf", "minecraft:cat", "minecraft:rabbit"];
+                
+                for (const target of nearbyFauna) {
+                    if (target && target.isValid() && animalTargets.includes(target.typeId)) {
+                        foundNearbyAnimalType = target.typeId;
+                        break; // Prioritize the closest animal found
+                    }
+                }
+            } catch (e) {}
+
+            // LOOKUP PEER STATUS LAYER: See if a close peer is currently injured
+            // ... [Keep existing peer code here] ...
+
+```
+
+Then, look further down in `main_3.js` where your **Layered Prioritization Tree** dictates which text pool wins. Insert the animal comment conditional logic right above the base proximity fallback:
+
+```javascript
+            } else if (isRidingBoat && pool.boat) {
+                activeTextPool = pool.boat;
+            } else if (foundInjuredPeer && pool.peer_wounded) {
+                activeTextPool = pool.peer_wounded;
+                dynamicReplacementName = foundInjuredPeer.nameTag || "someone";
+            } else if (foundNearbyAnimalType && pool.seen_animal) {
+                // Check if our entity has a specific line for this exact animal, otherwise use generic fallback
+                if (pool.seen_animal[foundNearbyAnimalType]) {
+                    activeTextPool = pool.seen_animal[foundNearbyAnimalType];
+                } else if (pool.seen_animal["generic"]) {
+                    activeTextPool = pool.seen_animal["generic"];
+                }
+            }
+
+```
+
+---
+
+## Why this keeps the "Low Hanging Fruit" rules:
+
+1. **Reuses Existing Queries:** It intercepts the `getEntities` calls you are already executing, meaning zero added performance strain on your queue iterator.
+
+
+2. **Scalable:** If you ever want an Evoker to talk trash to an Iron Golem, or a Piglin to mock a Hoglin, you just add their `typeId` to the `animalTargets` array and create a matching entry inside `dialogue_2.js`.
+
+
+
+Do you want to apply this environmental scanning to block types next (like mobs reacting if they are standing near a deep cavern cliff, or close to lava)?

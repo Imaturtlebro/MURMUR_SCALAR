@@ -1,0 +1,55 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "product_type": "addon"
+    },
+    "header": {
+        "description": "Uncanny, liminal, and philosophical ambient mob chatter, now with branching dialogue trees, a villager errand quest, and faction-aware witness reactions. Part of the MURMUR Ecosystem.",
+        "name": "MURMUR Uncanny Pack",
+        "uuid": "d5e6f7a8-b9c0-4d1e-af32-56789abcdef0",
+        "version": [
+            1,
+            1,
+            58
+        ],
+        "min_engine_version": [
+            1,
+            21,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "Content Registration Module",
+            "type": "script",
+            "language": "javascript",
+            "uuid": "e6f7a8b9-c0d1-4e2f-b043-6789abcdef01",
+            "version": [
+                1,
+                1,
+                58
+            ],
+            "entry": "scripts/register.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.11.0"
+        },
+        {
+            "uuid": "7f9a1b2c-3d4e-4f5a-6b7c-8d9e0f1a2b3c",
+            "version": [
+                1,
+                1,
+                57
+            ]
+        }
+    ],
+    "events": [
+        "murmur:data",
+        "murmur:tree",
+        "murmur:diag",
+        "murmur:resend"
+    ]
+}

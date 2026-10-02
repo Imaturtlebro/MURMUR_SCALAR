@@ -1,0 +1,37 @@
+"⚠️ What to Watch Out For (The Gotchas & Hidden Fault Lines)
+1. The seen_animal Array-Extraction Trap (High Crash Risk)
+In dialogue.js, you structured seen_animal as a nested object:
+
+JavaScript
+seen_animal: { 
+    "minecraft:wolf": [...], 
+    "generic": [...] 
+}
+The Danger: Your Core engine's selection logic expects situational pools to be plain arrays so it can grab a line using getRandomElement(activeTextPool).
+
+The Catch: If the core engine triggers a tracking scan and extracts pool.seen_animal, it will pass that nested Object directly into getRandomElement(). Because objects don't have a .length property like arrays do, the calculation will return undefined or completely drop the dialogue execution step silently.
+
+2. The Self-Assignment Loop Hole (Silent Data Omission)
+At the bottom of dialogue.js, look closely at these configuration mirrors:
+
+JavaScript
+DIALOGUE["minecraft:evoker"] = DIALOGUE["minecraft:evoker"];
+DIALOGUE["minecraft:vindicator"] = DIALOGUE["minecraft:vindicator"];
+DIALOGUE["minecraft:piglin_brute"] = DIALOGUE["minecraft:piglin_brute"];
+The Danger: Unlike the pillager captain line (which correctly inherits from the base pillager layout), these lines are assigning the object to itself.
+
+The Catch: If DIALOGUE["minecraft:evoker"] wasn't explicitly populated with its own heavy text layout higher up in the script, this line sets it to its own value (which would be undefined). If you intended for the Evoker, Vindicator, and Brute to inherit lines from their base factions (like pillagers or regular piglins), they are currently receiving nothing at all.
+
+3. Redundant Memory Over-allocation in the NAME_MAP Fallback
+In your register.js loop, you serialize each entity type individually:
+
+JavaScript
+const data = JSON.stringify({
+    names: NAME_MAP[typeId] || MONSTER_NAMES,
+    dialogue: pool
+});
+The Danger: If multiple monster variations (like blazes, endermen, skeletons) fall back to using the global MONSTER_NAMES array, JSON.stringify will copy those exact same name strings into every single payload packet sent across the bridge.
+
+The Catch: While it functions perfectly, you're forcing the script engine to process and reconstruct identical text datasets over and over. Dedicating a single isolated packId payload step solely for global name indexes would slash your initialization network traffic significantly."
+
+

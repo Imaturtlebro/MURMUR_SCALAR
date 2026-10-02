@@ -1,0 +1,44 @@
+# ---------------------------------------------------------------------------
+# Third-party reference material - NOT ours, deliberately not published.
+# These are other developers' mods kept locally for analysis/comparison only.
+# VillageFolk, OdysseyNPCs, NPCSoldier, Enhanced Mob AI, FlatWorld Villages,
+# AI Multiplayer, talking_mobs (Fabric), NPC Comerciantes.
+# ---------------------------------------------------------------------------
+MODTOANALYZEANDEXTRACTFROM/
+
+# ---------------------------------------------------------------------------
+# Superseded builds - the folder name is the warning.
+# ---------------------------------------------------------------------------
+old-builds-do-not-upload/
+
+# ---------------------------------------------------------------------------
+# Third-party binaries stashed at the repo root for reference.
+# ---------------------------------------------------------------------------
+better ai player 1.12 bp + rp.mcaddon
+Distant Horizons Bedrock 0.0.2.mcpack
+
+# ---------------------------------------------------------------------------
+# Build output. Packs are rebuilt from source with compile.py / build_mcpack.py,
+# so compiled .mcpack files are not tracked.
+# ---------------------------------------------------------------------------
+*.mcpack
+*.mcaddon
+
+# Editor / OS noise
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local scratch
+*.log
+logs/
+*.tmp

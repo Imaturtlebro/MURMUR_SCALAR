@@ -1,0 +1,55 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "product_type": "addon"
+    },
+    "header": {
+        "description": "An atmospheric pack where mobs narrate their actions like a gritty, cynical main character in an old-school detective movie, complete with inner monologues",
+        "name": "MURMUR NOIR PACK",
+        "uuid": "7c3d4e5f-6a7b-4c8d-9e0f-2c3d4e5f6a7b",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            21,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "Content Registration Module",
+            "type": "script",
+            "language": "javascript",
+            "uuid": "8d4e5f6a-7b8c-4d9e-0f1a-3d4e5f6a7b8c",
+            "version": [
+                1,
+                0,
+                0
+            ],
+            "entry": "scripts/register.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.11.0"
+        },
+        {
+            "uuid": "7f9a1b2c-3d4e-4f5a-6b7c-8d9e0f1a2b3c",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "events": [
+        "murmur:data",
+        "murmur:tree",
+        "murmur:diag",
+        "murmur:resend"
+    ]
+}

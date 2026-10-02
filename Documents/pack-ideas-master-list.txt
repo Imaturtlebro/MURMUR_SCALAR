@@ -1,0 +1,159 @@
+MURMUR content pack ideas so far:
+
+
+
+
+MEDIEVAL, CRUEL, ANIMALS, UNCANNY, PRAISE, PRAISE AND PERIL, Mythical/Archaic, BRAINROT, Apocalyptic/Wasteland, Mundane, GAMER TROPES / META, CORPORATE / BUREAUCRATIC, DETECTIVE / NOIR
+
+
+what else
+
+MYTHICAL / ARCHAIC: High-fantasy, Shakespearean, or Tolkienesque dialogue. Mobs speak with grand elegance, using words like "Thou," "Thee," and "Vile trespasser." It elevates a standard fantasy or medieval world overhaul. Does thou even hoist (from chivalry 2, a funnny voice line. was thiking could do that for the mythical archaic or medieval stuff. a villager coudl say it)
+
+If you put that in a Medieval, Mythical Archaic, or even a dedicated Chivalric / Gladiator content pack, it would match perfectly. Picture an Iron Golem looking at a zombie it just tossed 20 blocks into the air and dropping that exact text line.
+
+Since your engine uses tokens like {item} and {health}, you can take inspiration directly from those incredible Chivalry 2 voice lines and adapt them into top-tier medieval dialogue tables. Here is a quick layout of how you could map those exact vibes into your framework:
+
+🏰 The "Chivalric" Dialogue Table (Inspired by Chiv 2)
+🏋️ Proximity (Idle Chat)
+"Dost thou even hoist, good sir?" (Perfect for an Iron Golem or a high-tier Armorer Villager)
+
+"Thou art endowed with an enormous gift... many men must look up to thee!"
+
+"I try to sound intimidating!" (Amazing for a tiny baby villager or a weak mob)
+
+⚔️ Threat Detected (When an attack starts)
+"Your stupidity is no accident, it is your birthright!" (When a zombie steps up)
+
+"Vacate my premises, thou smellest of horse piss!" (Villager detecting a raid)
+
+"Now I should warn you, I've been known to halve melons in the practice yard!"
+
+"Your wife is a hobbyhorse!"
+
+🩹 Peer Hurt / Low Health (Using your {health} or {hurt_name} tokens)
+"My mother is NOT a hobbyhorse!" (Reaction when a nearby squad member gets insulted or hit)
+
+"HERE, DEFEND ME! DEFEND MEEE!" (Squire boy style for a low-health villager running away)
+
+"Thou standest rock hard, like a tower!" (Saying this to a nearby Iron Golem when a raid hits)
+
+💀 Peer Death / Defeat (When a squad member dies)
+"See you in hell!" (Delivered in the most completely cheery voice possible right as they swing)
+
+"Wallow in the muck, you disgusting pig!"
+
+Why this kills it for your modular setup
+Gamers love Easter eggs. Because you've already built the entire MURMUR Core backend to do the heavy processing, you don't have to code a single new mechanic to make this happen. You can just sit down, type out a custom JSON table of pure, unadulterated Chivalry roasts, and drop it as its own add-on pack.
+|
+
+
+
+
+|
+
+
+
+
+
+
+
+a skibidi content pack for MURMUR
+
+"a MURMUR - BRAINROT PACK would absolutely print downloads. Minecraft’s demographic—especially the Bedrock audience—will swallow that up instantly. The absolute chaos of walking into a village or fighting a horde of zombies screaming Gen Z and Gen Alpha internet slang is comedy gold.
+
+Because your MURMUR Core engine tracks when mobs are chasing you, taking damage, or just hanging out, you can map the brainrot perfectly to the situation.
+
+Here is how you turn a JSON file into an absolute psychological hazard:
+
+🚽 The "Brainrot" Dialogue Table
+🧐 Proximity / Idle Chat (Villagers & Neutral Mobs)
+"Skibidi dop dop dop yes yes..."
+
+"Are you from Ohio?"
+
+"Bro thinks he has rizz."
+
+"Looking submissive and breedable today, no cap."
+
+"Let me cook."
+
+"Hawk tuah, spit on that thang!"
+
+⚔️ Threat Detected / Chasing the Player (Zombies, Pillagers)
+"I'm about to crash out!"
+
+"You're cooked, bro."
+
+"Imma tax your Fanum tax."
+
+"Caught you lacking in 4K!"
+
+"Unc thinks he's him."
+
+🩹 Low Health / Hurt (Using {health})
+"Bro, my aura is dropping so fast right now..." (Perfect for tracking low {health})
+
+"Not the skibidi toilet getting edge-streaked!"
+
+"Chat, am I cooked?"
+
+"Negative rizz..."
+
+💀 Defeating a Threat / Player Death
+"W Rizz in the chat!"
+
+"Blud got sent straight back to Ohio."
+
+"GigaChad behavior.""
+
+
+
+
+|
+
+
+
+
+|
+
+
+
+GAMER TROPES / META
+This targets the core gaming audience with classic lines, speedrunner lingo, and famous gaming memes. It’s a slightly more mature, enduring version of the Brainrot pack.
+
+Idle / Proximity: "Ah shit, here we go again...", "It’s dangerous to go alone! Take this.", or "Bro is stream-sniping me."
+
+Threat Detected: "LEEROY JENKINS!", "Finish him!", or "He's hacking, report him."
+
+Hurt / Low Health: "F in the chat, boys...", or "I used to be an adventurer like you, then I took an arrow to the knee."
+
+
+|
+
+
+|
+
+
+CORPORATE / BUREAUCRATIC
+An incredibly funny, dry theme where monsters treat killing the player like a boring, standard corporate day job. This would be a massive hit for casual or comedic modpacks.
+
+Proximity: "Just waiting on that quarterly review," or "Per my last email..."
+
+Threat Detected: "Initiating the termination process," or "Let's take this offline."
+
+Hurt / Low Health: "I am filing an incident report for this," or "This goes against corporate policy."
+
+|
+
+|
+
+
+DETECTIVE / NOIR
+An atmospheric pack where entities narrate their actions like a gritty, cynical main character in an old-school detective movie, complete with inner monologues.
+
+Proximity: "It was a rainy Tuesday in the Overworld, and the tension was thick enough to cut with a diamond sword..."
+
+Threat Detected: "Then he walked into the biome. I knew right away he was nothing but trouble."
+
+Hurt / Low Health: "He caught me with a cheap shot. Classic rookie mistake."

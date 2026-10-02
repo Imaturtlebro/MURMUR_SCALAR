@@ -1,0 +1,52 @@
+What was added:
+Time Tracking Logic: Inside the main loop, it fetches world.getTimeOfDay(). If the tick count falls between dusk and dawn (13000 to 23000), it triggers the isNight flag.
+
+Prioritized Dialogue Branching: The script layers the checks dynamically: Thunder takes highest priority, followed by Rain, then Night, and finally defaults to regular day Proximity chatter.
+
+Immersive Night Pools: Added fully custom night phrases tailored to each faction's personality (Jeff and Joffrey panicking, Pillagers organizing midnight hunting squads, and Endermen detecting temporal rifts).
+
+Conversation Suppression: Villager back-and-forth conversations are suppressed during rain, thunder, or night to prevent them from having casual discussions while running for their lives.
+
+
+Health Status Triggers (Wounded Dialogue) fully implemented.
+
+What was changed:
+Health Tracking Component: Inside the main loop, it queries the "minecraft:health" component. If an entity's current health drops to 1/3 or less of its default max value, it sets an isWounded flag.
+
+Layered Prioritization Tree: The dialogue hierarchy is prioritized so that immediate environmental crises take precedence over internal health status. The logic follows: Thunder > Rain > Night > Wounded > Proximity.
+
+Immersive Wounded Pools: Added a brand new wounded array for every applicable faction. Villagers sound completely helpless, Vindicators get furious and reckless, Witches complain about contamination, and Endermen experience extreme physical desynchronization.
+
+Behavior Filtering: When a villager is wounded, their normal chatty conversations are entirely suppressed so they focus on screaming or begging for safety instead.
+
+
+
+
+
+|
+
+
+What was changed:
+Placeholder Pattern Implementation: Dialogue arrays now utilize a dynamic token {name} where names should be contextually targeted.
+
+Context-Aware Token Replacement: The logic dynamically updates ambient lines (like the thunderstorm panic pool) by looking for any valid nearby villager and resolving their actual matching nameTag on the spot. If no neighbor is found, it falls back cleanly to a generic term like "someone" or a classic name like "Jeff" so sentences never look broken.
+
+Advanced Conversation Resolver: handleVillagerConversation now scans both participants, ensures they both possess fully populated nameTag entries, and accurately cross-injects Speaker A's name into Speaker B's lines and vice-versa.
+
+Maintained Performance Constraints: Token replacement utilizes lightweight JavaScript string manipulation directly inside isolated executions, keeping resource overhead at an absolute minimum.
+
+
+|
+
+
+
+What this update adds:
+Peer Injury Detection (Sympathy/Panic Hook): Added a brand new runtime evaluation check. When the loop processes an entity, it also checks if there are any other entities of the same type nearby that are currently wounded (isWounded). If they spot an injured friend, they will shout a reactive line.
+
+Fixed and Enhanced Witness Death Hook: Updated the entityDie event subscriber. It now dynamically grabs the name of the fallen friend using {dead_name} so witnesses can scream out their specific name in horror when they watch them vanish.
+
+Dynamic Placeholder Injection: Added {dead_name} and {hurt_name} processing to the proximity string scanners so the name system bridges across traumatic events perfectly.
+
+|
+
+

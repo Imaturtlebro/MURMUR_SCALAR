@@ -1,0 +1,22 @@
+## 3. Persistent Memory / "Grudge" Engine
+Right now, the Snitch Engine reacts beautifully to immediate pain and death events[: 13]. You can turn this into long-term psychological tension by introducing a tiny, dynamic property map on the entity.
+
+* **The Expansion:** Utilize dynamic properties (`entity.setDynamicProperty()`) to store a single state: `murmur:has_witnessed_violence` (boolean or player name).
+* **The Logic:** When a mob's peer dies or they survive an attack from a player, flip this bit to `true`[: 13]. 
+* **The Payoff:** The next time the master iterator processes that specific entity hours later, if `has_witnessed_violence` is true, it overrides their standard idle pool with a paranoid or vengeful pool (`pool.traumatized` or `pool.grudge`)[: 13]. They don't forget what you did.
+
+|
+
+## 4. Item-Specific "Roast" Overrides
+Your `getItemRoast` utility is fantastic for giving mobs a biting personality[: 13, 14]. You can make it feel even more reactive by letting content packs register custom roasts for items introduced by other mods[: 11, 14].
+
+* **The Expansion:** Update `api.js` to allow content packs to pass an optional `itemRoasts` object during registration[: 11].
+* **The Implementation:** Merge these incoming custom item IDs directly into your `ITEM_ROASTS` mapping in `utils.js`[: 11, 14]. If a player approaches a villager holding a custom weapon from a survival overhaul mod, the villager will explicitly name or mock that specific item[: 13, 14].
+
+|
+
+## 5. Global Panic Chains
+When the Snitch Engine catches an `entityDie` event, nearby witnesses speak[cite: 13]. You can weaponize this by causing a localized cascade.
+
+* **The Expansion:** If a faction member dies, don't just make one bystander say a line[cite: 13]. Have that witness apply a temporary `panic` tag to other nearby peers.
+* **The Execution:** For the next 30 seconds, any mob with the panic tag drops its chatter cooldown threshold from 25 seconds down to 5 seconds, causing a flurry of frantic, back-and-forth dialogue across the entire crowd as a situation spirals out of control

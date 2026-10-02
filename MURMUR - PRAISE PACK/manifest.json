@@ -1,0 +1,49 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "product_type": "addon"
+    },
+    "header": {
+        "description": "A chilling dialogue overhaul where mobs treat you as their terrifying Creator, chanting cultish prayers and cosmic praise.",
+        "name": "MURMUR PRAISE PACK",
+        "uuid": "9e5f6a7b-8c9d-4e0f-1a2b-4e5f6a7b8c9d",
+        "version": [
+            1,
+            1,
+            37
+        ],
+        "min_engine_version": [
+            1,
+            21,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "Content Registration Module",
+            "type": "script",
+            "language": "javascript",
+            "uuid": "0f6a7b8c-9d0e-4f1a-2b3c-5f6a7b8c9d0e",
+            "version": [
+                1,
+                1,
+                37
+            ],
+            "entry": "scripts/register.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.11.0"
+        },
+        {
+            "uuid": "7f9a1b2c-3d4e-4f5a-6b7c-8d9e0f1a2b3c",
+            "version": [
+                1,
+                1,
+                37
+            ]
+        }
+    ]
+}

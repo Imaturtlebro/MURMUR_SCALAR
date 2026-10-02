@@ -1,0 +1,1 @@
+User SuggestionFeature PotentialDev ExecutionDynamic Structure Hints(Villagers whispering about nearby unvisited Pillager Outposts)Extremely High. Gives players a functional reason to read chat logs, turning atmospheric text into an actual gameplay radar.Easy to trigger using Scripting API entity/structure proximity checks.

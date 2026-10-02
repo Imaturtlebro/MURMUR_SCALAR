@@ -1,0 +1,78 @@
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+
+[Scripting][error]-[MURMUR Core] UnsupportedFunctionalityError: Unsupported functionality: EntityQueryOptions property 'closest' is incompatible with function world.getPlayers.    at <anonymous> (main.js:46)
+
+

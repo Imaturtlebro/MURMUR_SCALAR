@@ -1,0 +1,28 @@
+Regarding the frequency issue, there are a few ways to approach this technically to balance engagement without turning the game into a constant stream of text spam:
+
+Proximity-Based Triggers: As you suspected, the player might just be out of range, or perhaps your current scriptevent listener for dialogue has a cooldown that feels too long for active players. You could introduce a variable check where mobs check for the player's presence more frequently, perhaps scaling the frequency based on how close they are.
+
+The "Idle vs. Combat" Logic: You could create a distinction where mobs have a faster "chatter rate" when they are in combat or within a 5-block radius, versus a slower, more atmospheric rate when they are just wandering aimlessly.
+
+Update-Based Testing: Since you are already planning a massive update with "choice options, reputation tracking, and mob memory," this is the perfect time to optimize the ticker logic. Adjusting the frequency constant in your core engine would be a simple patch to test for your next version.
+
+|
+
+
+
+
+
+Heres feedback from users.
+
+
+"Minecraftdude 
+
+Posted 21 hours ago
+
+#29
+
+I had a ton of fun playing this but I wish there were a way to communicate back to the villagers and all the other guys"
+
+I think the mobs like zombies and the zombie villages and spiders would have names
+
+And in all your mumur packs i wish they would talk more instead of them talking every 10 or more minutes

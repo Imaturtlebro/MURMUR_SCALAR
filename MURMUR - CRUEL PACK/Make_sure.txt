@@ -1,0 +1,3 @@
+Missing Entity Additions: Add explicit Spanish mappings for missing Nether and End mobs to balance translation depth across packs.
+
+Context Variable Alignment: Ensure the Core receiver parses special variables like {item} and {health} cleanly without throwing undefined string errors when a mob has no active target or equipped item.

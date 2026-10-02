@@ -1,0 +1,22 @@
+
+
+item detection, simple terms and other words for items objects, health etc.
+
+
+maybe even specific mobs can detect player health? and comment
+
+|
+
+
+
+then also like
+
+{item} just like how {name} works, so like 
+
+villager dude: "Why are you holding {item}.. you look weird"
+
+etc
+
+idk
+
+just an example

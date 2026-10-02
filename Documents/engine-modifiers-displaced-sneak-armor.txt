@@ -1,0 +1,123 @@
+To make MURMUR CORE even better while staying strictly within your performance budget (3 mobs per interval), here is how we can implement these features cleanly into main.js and utils.js:  1. Dynamic Token Modifiers (The Variant Prefix Engine)Instead of adding massive new text arrays for every single hybrid state, you can update the Universal Placeholder Engine in main.js to inject prefixes or suffixes based on environmental factors like light levels or dawn alerts.  Implementation (main.js - Inside the text processor):Right before sendCleanChat(entity, processedLine, players);, append context modifiers:  JavaScript// --- DYNAMIC VARIANT MODIFIER ENGINE ---
+if (isWounded && isNight && Math.random() < 0.35) {
+    const desperationPrefixes = ["*coughing in the dark* ", "...it's so dark... ", "*whispering frantically* "];
+    processedLine = getRandomElement(desperationPrefixes) + processedLine;
+}
+
+const timeOfDay = world.getTimeOfDay();
+if (timeOfDay >= 22000 && entity.typeId.includes("zombie") || entity.typeId === "minecraft:skeleton") {
+    // Sunrise Panic Variant Modifier
+    if (Math.random() < 0.4) {
+        processedLine = processedLine + " !! *hisses at the dawn sky*";
+    }
+}
+2. Implement the "Displaced Traveler" CheckYour architectural iterator can evaluate if a mob is completely out of its native dimension instantly via entity.dimension.id.  Implementation (main.js - Priority Tree):Add this high-priority dimension-hop trap right above your weather/night checks:  JavaScriptconst currentDimension = entity.dimension.id;
+const isOverworldMob = entity.typeId === "minecraft:villager_v2" || entity.typeId.includes("pillager");
+const isNetherMob = entity.typeId.includes("piglin");
+
+if (currentDimension.includes("nether") && isOverworldMob) {
+    activeTextPool = pool.dimension_nether || pool.proximity; // Fallback to proximity if not defined
+} else if (currentDimension.includes("overworld") && isNetherMob && !entity.hasTag("minecraft:zombified")) {
+    activeTextPool = pool.dimension_overworld || pool.proximity;
+} else if (currentDimension.includes("the_end") && isOverworldMob) {
+    activeTextPool = pool.dimension_the_end || pool.proximity;
+}
+3. Weaponize Sneaking DetectionChecking if a player is creeping up behind a mob changes their lines from aggressive to completely oblivious or intensely paranoid.  Implementation (main.js - Context Scanner):Inside your loop where you fetch the players array:  JavaScriptconst nearestPlayer = players[0];
+const isSneaking = nearestPlayer ? nearestPlayer.isSneaking : false;
+
+// If a player is sneaking nearby and the entity isn't already alert or burning
+if (isSneaking && !isOnFire && !isWounded && pool.player_sneaking) {
+    if (Math.random() < 0.5) {
+        activeTextPool = pool.player_sneaking;
+    }
+}
+4. Expand utils.js for "Critical Health" & Armor ScalingLet's add the helper functions required to feed the placeholder engine tactical evaluations of the player.  Implementation (utils.js):Add these lightweight data lookups to calculate weapon/armor tiering:  JavaScript/**
+ * Evaluates the player's current defense armor tier.
+ */
+export function getPlayerArmorTier(player) {
+    if (!player) return "soft";
+    try {
+        const equipment = player.getComponent("minecraft:equippable");
+        if (!equipment) return "soft";
+        
+        let heavyPieces = 0;
+        const slots = ["Chest", "Head", "Legs", "Feet"];
+        
+        for (const slot of slots) {
+            const item = equipment.getEquipment(slot);
+            if (item && (item.typeId.includes("diamond") || item.typeId.includes("netherite"))) {
+                heavyPieces++;
+            }
+        }
+        return heavyPieces >= 2 ? "plated" : "soft";
+    } catch (e) { return "soft"; }
+}
+Then hook it right into main.js during player assessment:  JavaScriptlet closeArmoredPlayer = false;
+let closeSoftPlayer = false;
+
+if (nearestPlayer) {
+    const armorTier = getPlayerArmorTier(nearestPlayer);
+    if (armorTier === "plated") closeArmoredPlayer = true;
+    else closeSoftPlayer = true;
+}
+5. Cross-Talk "Monster Huddles"Because your conversation engine script in conversations.js uses a beautiful stage-increment timeout structure, you don't have to keep it restricted to villagers. You can mirror this structure to build a generic patrol banter engine.  Implementation (conversations.js):Add an exported multi-faction conversational framework:  JavaScriptexport function handleMonsterHuddle(entity, typeId, allianceTypes) {
+    const hostileLines = {
+        "minecraft:pillager": [
+            ["Did the Captain say which way the village was?", "He said follow the smoke, you idiot.", "Good. My bolts are hungry."],
+            ["Hear anything down that ridge?", "Just wind and gravel.", "Keep your eyes open."]
+        ],
+        "minecraft:skeleton": [
+            ["Do you ever feel a breeze... straight through your ribs?", "Every single night. Shut up.", "Fair enough."]
+        ]
+    };
+
+    const conversationPool = hostileLines[typeId];
+    if (!conversationPool) return;
+
+    const conversation = getRandomElement(conversationPool);
+    let currentStage = 0;
+
+    function runHostileStage() {
+        if (!entity || !entity.isValid()) return;
+
+        const nearbyPeers = entity.dimension.getEntities({
+            location: entity.location,
+            maxDistance: 6,
+            types: allianceTypes
+        }).filter(e => e.id !== entity.id);
+
+        const primaryNeighbor = nearbyPeers ? nearbyPeers[0] : null;
+        if (!primaryNeighbor || !primaryNeighbor.isValid()) return;
+
+        const activePlayers = entity.dimension.getEntities({
+            location: entity.location,
+            maxDistance: 8,
+            types: ["minecraft:player"]
+        });
+        if (activePlayers && activePlayers.length > 0) return; // Cut the conversation if a player jumps them
+
+        let speaker = currentStage % 2 === 0 ? entity : primaryNeighbor;
+        
+        if (speaker && speaker.isValid()) {
+            const line = conversation[currentStage];
+            sendCleanChat(speaker, line, entity.dimension.getEntities({ location: entity.location, maxDistance: 12, types: ["minecraft:player"] }));
+        }
+
+        currentStage++;
+        if (currentStage < conversation.length) {
+            system.runTimeout(runHostileStage, Math.floor(Math.random() * 30) + 35);
+        }
+    }
+    runHostileStage();
+}
+How to layout the new JSON schemas in content packs:Thanks to your "murmur:data" bridge, content packs can immediately utilize these structural hooks by registering databases configured like this:  JSON{
+  "typeId": "minecraft:pillager",
+  "names": ["Joffrey", "Garrick", "Kaelen"],
+  "dialogue": {
+    "proximity": ["Keep formation.", "Keep moving."],
+    "player_sneaking": ["Did you hear the grass bend just now?", "I swear I saw a shadow clip through the stone."],
+    "dimension_nether": ["The red dust is getting inside my head.", "Watch the crimson cliffs."],
+    "night_wounded": ["Squad is scattered... night is compromised! Hold the line!"],
+    "armored_player": ["Target is heavily plated!", "Aim for the joints!"]
+  }
+}

@@ -1,0 +1,46 @@
+DO NOT EXECUTE IDEAS IN "NameIdeas.txt"
+
+friend suggested, i make iron golems have name, he said "Tyrone"
+
+
+
+which is hilarious but also stupid
+
+That is peak Bedrock mod testing right there. Your friend is completely right—it is hilarious, and it is beautifully stupid.
+
+Adding Iron Golems into this psychological disaster zone is actually a brilliant mechanical move, though. Think about the sheer storytelling contrast: you have these fragile, hyper-neurotic villagers panicking over a drizzle of rain, and standing right next to them is a literal 15-foot-tall automation of pure, cold stone and iron named Tyrone who just completely acts like a jaded corporate bouncer.
+
+If you add them, the dialogue dynamic writes itself perfectly:
+
+The Villagers: "Tyrone, there's a zombie! TYRONE DO SOMETHING!" * Tyrone: "I am literally holding a poppy right now. Leave me alone." or "I don't get paid enough iron nuggets for this."
+
+And if Tyrone takes enough hits and passes that 1/3 health threshold where he starts physically cracking up?
+
+Tyrone (Wounded): "The joints... are seizing..." or "System error: Structural integrity compromised."
+
+Villagers (Peer Wounded nearby): "If Tyrone falls, we're actually dead! Joffrey, get the iron blocks!"
+
+Do we want to add a tiny IRON_GOLEM_NAMES pool (with Tyrone leading the charge, obviously) and a minecraft:iron_golem database entry to the file, or are we keeping the focus strictly on the organic factions for now?
+
+
+
+
+|
+
+|
+
+
+
+
+Keeping it on deck in `NameIdeas.txt` is the right move. Staging your ideas in a separate scratchpad file gives you room to breathe and sketch out the dialogue templates before polluting your primary execution loops.
+
+Whenever you decide "Tyrone" is ready to officially clock in for bouncer duty, we can easily extend the engine. All it will take is adding a small name mapper rule inside `selectName()`:
+
+```javascript
+if (type.includes("golem")) return "Tyrone"; // Or a pool if you add more later
+
+```
+
+And then dropping a `"minecraft:iron_golem"` database block into your `DIALOGUE` object filled with appropriately deadpan lines, environmental complaints, and mechanical error handling for when he gets cracked up.
+
+Take your time testing the current stress-response and peer-injury builds. Let me know when you're ready to open up `NameIdeas.txt` or pivot to the next system!

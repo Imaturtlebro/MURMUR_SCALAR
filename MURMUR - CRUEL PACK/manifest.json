@@ -1,0 +1,49 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "product_type": "addon"
+    },
+    "header": {
+        "description": "Unfiltered Hostility & Roast Culture. Ambient mob chatter that actively mocks and roasts the player.",
+        "name": "MURMUR Cruel Pack",
+        "uuid": "1a7b8c9d-0e1f-4a2b-3c4d-6a7b8c9d0e1f",
+        "version": [
+            1,
+            1,
+            37
+        ],
+        "min_engine_version": [
+            1,
+            21,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "Content Registration Module",
+            "type": "script",
+            "language": "javascript",
+            "uuid": "2b8c9d0e-1f2a-4b3c-4d5e-7b8c9d0e1f2a",
+            "version": [
+                1,
+                1,
+                37
+            ],
+            "entry": "scripts/register.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.11.0"
+        },
+        {
+            "uuid": "7f9a1b2c-3d4e-4f5a-6b7c-8d9e0f1a2b3c",
+            "version": [
+                1,
+                1,
+                37
+            ]
+        }
+    ]
+}

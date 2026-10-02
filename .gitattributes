@@ -1,0 +1,16 @@
+# Windows / editor line endings
+
+# Force consistent handling so builds don't churn with a whole-file diff
+# every time a pack is opened on a different machine.
+* text=auto eol=lf
+
+# Batch files must stay CRLF - cmd.exe will not run LF-only .bat files.
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+# Binary assets: never touch line endings
+*.png    binary
+*.mcstructure binary
+*.ogg    binary
+*.tga    binary
+*.material text eol=lf

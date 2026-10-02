@@ -1,0 +1,85 @@
+wait
+
+
+
+malcom holmes or whateveR
+
+
+
+fallout new vegas
+
+
+
+who?
+
+
+
+
+
+
+
+what if
+
+
+
+made that annoying guy randomly spawn in out of sight and run up to player and force them into a dialogue tree menu where they have to respond lmao
+
+In Fallout: New Vegas, Malcolm Holmes is the guy who tracks you down the exact second you pick up your very first Sunset Sarsaparilla Blue Star Bottle Cap.
+
+No matter where you are in the desert—sleeping in a bed, sneaking past Deathclaws, or in the middle of an intense firefight—Malcolm silently spawns, sprints across the entire map, and forces you into a locked dialogue camera to tell you about the "legend of the Star Caps." Because he jumpscares players in the worst possible moments, almost every Fallout player kills him on sight (especially since he carries six Star Caps on his corpse).
+
+Building a "Malcolm Holmes" mechanic in Bedrock with your MURMUR engine would be hilarious and absurdly effective.
+
+How to Hook It Up
+The Item Trigger:
+Listen for the player picking up a specific "trigger" item in script (e.g., a minecraft:echo_shard, a rare "Blue Emerald", or a custom item).
+
+Out-of-Sight Spawn:
+When triggered, calculate a position 15–20 blocks behind the player’s view vector (where they aren't looking) and spawn a custom NPC entity (murmur:persistent_stranger).
+
+The Relentless Sprint:
+Set the entity's movement speed high and pathfind directly to player.location.
+
+Forced Dialogue Lockout:
+As soon as distanceTo(player) < 2.5, clear the entity's target, fire your UI form trigger in script, and force-open the MURMUR dialogue menu on the player's screen.
+
+Uncanny Dialogue Menu Concept
+[NPC Sprints up from nowhere, forcing the UI open]
+
+Malcolm Analog:
+
+"Almost walked right past you! I saw you pick up that Blue Glazed Shard. I've been sprinting through three unrendered chunks just to catch your hitboxes before you logged off."
+
+Option A: "How did you find me? I was in a sealed cave."
+
+Response: "I followed the sound of your inventory opening. The cave walls aren't real anyway, they're just dirt parameters holding up the lighting engine."
+
+Option B: "Are you going to attack me for it?"
+
+Response: "Me? No. But there are things lurking in the void that track those shards. Keep it in your off-hand if you want your save file to survive."
+
+Option C: [Attack / Close Dialogue]
+
+Response: "Fair enough! I'll just stand three blocks behind you while you sleep!"
+
+Once the dialogue ends, you could give him an AI goal to just slowly walk away into the dark—or silently follow 10 blocks behind the player forever until killed.
+
+|
+
+|
+
+
+|
+
+
+Bingo Bango Bongo needs to be saved as an internal script branch name or an achievement trigger for finding a broken jukebox in the sand.
+
+The Mojave setting opens up some incredible desert-specific uncanny tropes:
+
+Heat Mirage Encounters: Wandering NPCs or "prospectors" that sprint up to you out of a dust storm, force-open a dialogue menu, and then instantly vanish or turn into a dead bush as soon as you close the UI.
+
+The Relentless Scavenger: The Malcolm Holmes clone tracking you down across 10 red sand chunks the exact second you pick up a copper ingot or an echo shard.
+
+Wasteland Paranoia: Desert villagers convinced the sun is a giant unblinking eye staring down at the sand, or trading rusty iron nuggets for a single bucket of "sky-water."
+
+Old World Radio Logs: Broken lecterns or jukeboxes out in desert ruins that spit out weird number-station dialogue trees

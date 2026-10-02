@@ -1,0 +1,25 @@
+[Scripting][verbose]-Plugin Discovered [MURMUR Cruel Pack] PackId [c82e0a24-1f3a-4e2b-8c7d-9a0b1c2d3e4f_1.1.33] ModuleId [f4d3c2b1-0a9b-8c7d-6e5f-4d3c2b1a0e9d]
+
+[Scripting][verbose]-Plugin Discovered [MURMUR Core] PackId [7f9a1b2c-3d4e-4f5a-6b7c-8d9e0f1a2b3c_1.0.19] ModuleId [9a8b7c6d-5e4f-3a2b-1c0d-e1f2a3b4c5d6]
+
+[Scripting][verbose]-Plugin [MURMUR Cruel Pack] - promoted [@minecraft/server] from [1.11.0] to [1.19.0] requested by [MURMUR Cruel Pack - 1.1.33].
+
+[Scripting][verbose]-Plugin [MURMUR Cruel Pack] - promoted [@minecraft/server-bindings] from [1.11.0] to [1.19.0] requested by [@minecraft/server - 1.11.0].
+
+[Scripting][verbose]-Plugin [MURMUR Core] - promoted [@minecraft/server] from [1.11.0] to [1.19.0] requested by [MURMUR Core - 1.0.19].
+
+[Scripting][verbose]-Plugin [MURMUR Core] - promoted [@minecraft/server-bindings] from [1.11.0] to [1.19.0] requested by [@minecraft/server - 1.11.0].
+
+[Scripting][error]-[MURMUR Cruel Pack] ReferenceError: Import [dialogue.js] not found.
+
+[Scripting][inform]-[MURMUR CORE] API Initialized (Standalone Mode).
+
+[Scripting][error]-Plugin [MURMUR Cruel Pack - 1.1.33] - [register.js] ran with error: [ReferenceError: Import [dialogue.js] not found.]
+
+
+
+i ran MURMUR - CRUEL with MURMUR - CORE
+
+and it gave this error.
+
+

@@ -1,0 +1,41 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "product_type": "addon"
+    },
+    "header": {
+        "description": "Ultra-lightweight specialized engine for animal narrative actions. zero-lag immersion.",
+        "name": "MURMUR Animal Core",
+        "uuid": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6e",
+        "version": [
+            1,
+            0,
+            22
+        ],
+        "min_engine_version": [
+            1,
+            21,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "Animal Logic Module",
+            "type": "script",
+            "language": "javascript",
+            "uuid": "e1f2a3b4-c5d6-7a8b-9c0d-1e2f3a4b5c6f",
+            "version": [
+                1,
+                0,
+                22
+            ],
+            "entry": "scripts/main.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.11.0"
+        }
+    ]
+}
