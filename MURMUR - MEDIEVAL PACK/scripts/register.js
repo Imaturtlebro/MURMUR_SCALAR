@@ -44,6 +44,7 @@ function b64encode(input) {
 // profiles. Pace the sends and re-send on request.
 const SEND_QUEUE = [];
 let queueGateway = false;
+let sendInterval = null;
 
 function queueChunks(eventId, typeId, jsonData) {
     const total = Math.ceil(jsonData.length / CHUNK_SIZE);
@@ -54,8 +55,15 @@ function queueChunks(eventId, typeId, jsonData) {
     }
 }
 
+function clearSendInterval() {
+    if (sendInterval !== null) {
+        try { system.clearRunInterval(sendInterval); } catch (e) { }
+        sendInterval = null;
+    }
+}
+
 function sendStep() {
-    if (SEND_QUEUE.length === 0) { queueGateway = false; return; }
+    if (SEND_QUEUE.length === 0) { queueGateway = false; clearSendInterval(); return; }
     let sent = 0;
     while (SEND_QUEUE.length > 0 && sent < PER_TICK) {
         const entry = SEND_QUEUE.shift();
@@ -69,7 +77,7 @@ function sendStep() {
 function startSend() {
     if (queueGateway) return;
     queueGateway = true;
-    system.runInterval(() => sendStep(), 1);
+    sendInterval = system.runInterval(() => sendStep(), 1);
 }
 
 function sendRegistration() {

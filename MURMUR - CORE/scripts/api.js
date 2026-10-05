@@ -338,6 +338,15 @@ system.afterEvents.scriptEventReceive.subscribe((event) => {
                 const fullData = reassembleChunks(pieces);
                 delete CHUNK_BUFFER[bufferKey];
                 delete CHUNK_AGE[bufferKey];
+                // Also clear the retry counter. Registration is idempotent and a
+                // pack re-sends its whole payload on every resend, so this same
+                // bufferKey will be rebuilt many times over a session. Without
+                // this, CHUNK_RETRY accumulated one entry per successful
+                // registration forever (a slow leak), AND a re-registration kept
+                // the stale count — so a profile that had already burned retries
+                // could hit CHUNK_MAX_RETRY and be abandoned mid-assembly even
+                // though the pack was sending it perfectly well.
+                delete CHUNK_RETRY[bufferKey];
 
                 if (!fullData) {
                     world.sendMessage(`§c[MURMUR CORE] Reassembly failed (bad payload): ${packId} -> ${typeId}`);

@@ -47,7 +47,8 @@ function b64encode(input) {
 // assemblies on a timer and replies with murmur:resend, so this pack must pace
 // itself and answer that request, or profiles simply never arrive.
 const SEND_QUEUE = [];
-let queueGateway = false; // guards the interval from being started twice
+let queueGateway = false;
+let sendInterval = null;   // live handle so the gateway can be cancelled when the queue drains
 
 function queueChunks(eventId, typeId, jsonData) {
     const total = Math.ceil(jsonData.length / CHUNK_SIZE);
@@ -58,8 +59,15 @@ function queueChunks(eventId, typeId, jsonData) {
     }
 }
 
+function clearSendInterval() {
+    if (sendInterval !== null) {
+        try { system.clearRunInterval(sendInterval); } catch (e) { }
+        sendInterval = null;
+    }
+}
+
 function sendStep() {
-    if (SEND_QUEUE.length === 0) { queueGateway = false; return; }
+    if (SEND_QUEUE.length === 0) { queueGateway = false; clearSendInterval(); return; }
     let sent = 0;
     while (SEND_QUEUE.length > 0 && sent < PER_TICK) {
         const entry = SEND_QUEUE.shift();
@@ -73,11 +81,11 @@ function sendStep() {
 function startSend() {
     if (queueGateway) return;
     queueGateway = true;
-    system.runInterval(() => sendStep(), 1);
+    sendInterval = system.runInterval(() => sendStep(), 1);
 }
 
 function sendRegistration() {
-    world.sendMessage(`§8[MURMUR CRUEL] Starting registration...`);
+    world.sendMessage(`Â§8[MURMUR CRUEL] Starting registration...`);
 
     const NAME_MAP = {
         "minecraft:villager_v2": VILLAGER_NAMES,
@@ -139,9 +147,9 @@ function sendRegistration() {
             const data = JSON.stringify({ names: multiLangNames, dialogue: multiLangDialogue });
             queueChunks("murmur:data", typeId, data);
         }
-        world.sendMessage(`§8[MURMUR CRUEL] ${Object.keys(DIALOGUE).length} profiles queued.`);
+        world.sendMessage(`Â§8[MURMUR CRUEL] ${Object.keys(DIALOGUE).length} profiles queued.`);
     } catch (e) {
-        world.sendMessage(`§c[MURMUR CRUEL] Registration CRASHED: ${e}`);
+        world.sendMessage(`Â§c[MURMUR CRUEL] Registration CRASHED: ${e}`);
     }
 }
 
@@ -153,9 +161,9 @@ system.afterEvents.scriptEventReceive.subscribe((event) => {
     if (event.id !== "murmur:resend") return;
     const want = (event.message || "").trim();
     if (want && want !== "*") {
-        world.sendMessage(`§8[MURMUR CRUEL] Re-sending requested profile: ${want.split("|").pop()}`);
+        world.sendMessage(`Â§8[MURMUR CRUEL] Re-sending requested profile: ${want.split("|").pop()}`);
     } else {
-        world.sendMessage(`§8[MURMUR CRUEL] Re-sending all profiles per manual request...`);
+        world.sendMessage(`Â§8[MURMUR CRUEL] Re-sending all profiles per manual request...`);
     }
     sendRegistration();
     startSend();

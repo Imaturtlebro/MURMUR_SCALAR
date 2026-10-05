@@ -163,7 +163,8 @@ function sendRegistration() {
 
 const SEND_QUEUE = [];
 const PER_TICK = 3;       // conservative: Bedrock drops scriptevents when too many fire per tick
-let queueGateway = false; // guards the interval from being started twice
+let queueGateway = false;
+let sendInterval = null;   // live handle so the gateway can be cancelled when the queue drains
 
 // Builds one entry in the queue: a fully-formed scriptevent command in CORE's
 // chunk protocol:  scriptevent murmur:<event> <packId>|<typeId>|<idx>|<total>|<payload>
@@ -176,8 +177,15 @@ function queueChunks(eventId, typeId, jsonData) {
     }
 }
 
+function clearSendInterval() {
+    if (sendInterval !== null) {
+        try { system.clearRunInterval(sendInterval); } catch (e) { }
+        sendInterval = null;
+    }
+}
+
 function sendStep() {
-    if (SEND_QUEUE.length === 0) { queueGateway = false; return; }
+    if (SEND_QUEUE.length === 0) { queueGateway = false; clearSendInterval(); return; }
     let sent = 0;
     while (SEND_QUEUE.length > 0 && sent < PER_TICK) {
         const entry = SEND_QUEUE.shift();
@@ -192,7 +200,7 @@ function sendStep() {
 function startSend() {
     if (queueGateway) return;
     queueGateway = true;
-    system.runInterval(() => sendStep(), 1);
+    sendInterval = system.runInterval(() => sendStep(), 1);
 }
 
 // --- TREE SENDER ---------------------------------------------

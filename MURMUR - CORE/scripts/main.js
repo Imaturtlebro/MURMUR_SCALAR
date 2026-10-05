@@ -98,9 +98,12 @@ system.runInterval(() => {
 
     if (!entityIterator) {
         let allEntities = [];
-        for (const dimId of ["overworld", "nether", "the_end"]) {
+        // Only iterate dimensions that are actually loaded and ticking.
+        // Hardcoding ["overworld","nether","the_end"] forces the engine to spin up
+        // a dimension's chunk space just to hand back an empty array when nobody
+        // has ever visited it - wasted work every rebuild of this iterator.
+        for (const dim of world.getDimensions()) {
             try {
-                const dim = world.getDimension(dimId);
                 const found = dim.getEntities({ types: targetTypes });
                 if (found) allEntities.push(...found);
             } catch (e) { }
@@ -208,7 +211,10 @@ system.runInterval(() => {
                     const invMap = (typeof pool.inventory === "object" && !Array.isArray(pool.inventory))
                         ? (pool.inventory[currentLang] || pool.inventory["en_US"])
                         : pool.inventory;
-                    const itemPool = invMap?.[cleanId];
+                    // Same trailing-space hazard as seen_animal below: packs key
+                    // these by item id and several ship "minecraft:wheat " with a
+                    // stray space, which an exact lookup can never match.
+                    const itemPool = invMap?.[cleanId] || invMap?.[cleanId.trim()];
                     if (itemPool && itemPool.length > 0) {
                         specialPool = itemPool;
                     }
@@ -255,7 +261,15 @@ system.runInterval(() => {
                     const seenMap = (typeof pool.seen_animal === "object" && !Array.isArray(pool.seen_animal))
                         ? (pool.seen_animal[currentLang] || pool.seen_animal["en_US"])
                         : pool.seen_animal;
-                    const specificPool = seenMap?.[seenAnimal.typeId] || seenMap?.["generic"];
+                    // Content packs key these sub-entries by typeId, and several
+                    // ship them with a stray trailing space ("minecraft:cow ").
+                    // This lookup was an exact match, so every one of those pools
+                    // silently never fired. Try the exact id, then the trimmed one.
+                    const seenTypeId = seenAnimal.typeId;
+                    const specificPool = seenMap?.[seenTypeId]
+                        || seenMap?.[seenTypeId.trim()]
+                        || seenMap?.[`minecraft:${seenTypeId.split(":")[1]}`]
+                        || seenMap?.["generic"];
                     if (specificPool && specificPool.length > 0) {
                         specialPool = specificPool;
                     }

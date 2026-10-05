@@ -1,11 +1,11 @@
-// --- MURMUR MOJAVE — registration bridge ---
+// --- MURMUR MOJAVE â€” registration bridge ---
 // Ships this pack's dialogue profiles, name pools and dialogue trees into
 // MURMUR CORE using the chunked murmur:data / murmur:tree protocol.
 //
 // Protocol per profile:
 //   scriptevent murmur:data <packId>|<typeId>|<idx>|<total>|<base64 chunk>
 // CORE reassembles the chunks, then hands back murmur:resend if a profile
-// stalls halfway — we re-send everything, which is safe because registration
+// stalls halfway â€” we re-send everything, which is safe because registration
 // is idempotent.
 
 import { system, world } from "@minecraft/server";
@@ -86,7 +86,8 @@ const FACTIONS = {
 
 // --- QUEUED / THROTTLED SENDER ---------------------------------------------
 const SEND_QUEUE = [];
-let queueGateway = false; // guards the interval from being started twice
+let queueGateway = false;
+let sendInterval = null;   // live handle so the gateway can be cancelled when the queue drains
 
 function queueChunks(eventId, typeId, jsonData) {
     const total = Math.ceil(jsonData.length / CHUNK_SIZE);
@@ -97,8 +98,15 @@ function queueChunks(eventId, typeId, jsonData) {
     }
 }
 
+function clearSendInterval() {
+    if (sendInterval !== null) {
+        try { system.clearRunInterval(sendInterval); } catch (e) { }
+        sendInterval = null;
+    }
+}
+
 function sendStep() {
-    if (SEND_QUEUE.length === 0) { queueGateway = false; return; }
+    if (SEND_QUEUE.length === 0) { queueGateway = false; clearSendInterval(); return; }
     let sent = 0;
     while (SEND_QUEUE.length > 0 && sent < PER_TICK) {
         const entry = SEND_QUEUE.shift();
@@ -112,12 +120,12 @@ function sendStep() {
 function startSend() {
     if (queueGateway) return;
     queueGateway = true;
-    system.runInterval(() => sendStep(), 1);
+    sendInterval = system.runInterval(() => sendStep(), 1);
 }
 
 // --- PROFILES ---------------------------------------------------------------
 function sendRegistration() {
-    world.sendMessage(`§8[MURMUR MOJAVE] Starting registration...`);
+    world.sendMessage(`Â§8[MURMUR MOJAVE] Starting registration...`);
     try {
         for (const [rawId, pool] of Object.entries(DIALOGUE)) {
             // Trim defensively: a trailing space in a key would make the
@@ -137,23 +145,23 @@ function sendRegistration() {
 
             queueChunks("murmur:data", typeId, data);
         }
-        world.sendMessage(`§8[MURMUR MOJAVE] ${Object.keys(DIALOGUE).length} profiles queued.`);
+        world.sendMessage(`Â§8[MURMUR MOJAVE] ${Object.keys(DIALOGUE).length} profiles queued.`);
     } catch (e) {
-        world.sendMessage(`§c[MURMUR MOJAVE] Registration CRASHED: ${e}`);
+        world.sendMessage(`Â§c[MURMUR MOJAVE] Registration CRASHED: ${e}`);
     }
 }
 
 // --- TREES ------------------------------------------------------------------
 function sendTrees() {
     if (!TREES || Object.keys(TREES).length === 0) return;
-    world.sendMessage(`§8[MURMUR MOJAVE] Sending ${Object.keys(TREES).length} dialogue trees...`);
+    world.sendMessage(`Â§8[MURMUR MOJAVE] Sending ${Object.keys(TREES).length} dialogue trees...`);
     try {
         for (const [rawId, tree] of Object.entries(TREES)) {
             const typeId = String(rawId).trim();
             queueChunks("murmur:tree", typeId, JSON.stringify(tree));
         }
     } catch (e) {
-        world.sendMessage(`§c[MURMUR MOJAVE] Tree registration CRASHED: ${e}`);
+        world.sendMessage(`Â§c[MURMUR MOJAVE] Tree registration CRASHED: ${e}`);
     }
 }
 
@@ -174,9 +182,9 @@ system.afterEvents.scriptEventReceive.subscribe((event) => {
     const want = (event.message || "").trim();
     if (want && want !== "*") {
         const typeId = want.split("|").pop();
-        world.sendMessage(`§8[MURMUR MOJAVE] Re-sending requested profile: ${typeId}`);
+        world.sendMessage(`Â§8[MURMUR MOJAVE] Re-sending requested profile: ${typeId}`);
     } else {
-        world.sendMessage(`§8[MURMUR MOJAVE] Re-sending all profiles per manual request...`);
+        world.sendMessage(`Â§8[MURMUR MOJAVE] Re-sending all profiles per manual request...`);
     }
     sendRegistration();
     sendTrees();

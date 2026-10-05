@@ -46,7 +46,8 @@ function b64encode(input) {
 // a timer and replies with murmur:resend, so this pack must also (a) pace
 // itself and (b) answer that request.
 const SEND_QUEUE = [];
-let queueGateway = false; // guards the interval from being started twice
+let queueGateway = false;
+let sendInterval = null;   // live handle so the gateway can be cancelled when the queue drains
 
 function queueChunks(eventId, typeId, jsonData) {
     const total = Math.ceil(jsonData.length / CHUNK_SIZE);
@@ -57,8 +58,15 @@ function queueChunks(eventId, typeId, jsonData) {
     }
 }
 
+function clearSendInterval() {
+    if (sendInterval !== null) {
+        try { system.clearRunInterval(sendInterval); } catch (e) { }
+        sendInterval = null;
+    }
+}
+
 function sendStep() {
-    if (SEND_QUEUE.length === 0) { queueGateway = false; return; }
+    if (SEND_QUEUE.length === 0) { queueGateway = false; clearSendInterval(); return; }
     let sent = 0;
     while (SEND_QUEUE.length > 0 && sent < PER_TICK) {
         const entry = SEND_QUEUE.shift();
@@ -72,11 +80,11 @@ function sendStep() {
 function startSend() {
     if (queueGateway) return;
     queueGateway = true;
-    system.runInterval(() => sendStep(), 1);
+    sendInterval = system.runInterval(() => sendStep(), 1);
 }
 
 function sendRegistration() {
-    world.sendMessage(`§8[MURMUR NOIR] Starting registration...`);
+    world.sendMessage(`Â§8[MURMUR NOIR] Starting registration...`);
 
     const NAME_MAP = {
         "minecraft:villager_v2": VILLAGER_NAMES,
@@ -153,9 +161,9 @@ function sendRegistration() {
 
             queueChunks("murmur:data", typeId, data);
         }
-        world.sendMessage(`§8[MURMUR NOIR] ${Object.keys(DIALOGUE).length} profiles queued.`);
+        world.sendMessage(`Â§8[MURMUR NOIR] ${Object.keys(DIALOGUE).length} profiles queued.`);
     } catch (e) {
-        world.sendMessage(`§c[MURMUR NOIR] Registration CRASHED: ${e}`);
+        world.sendMessage(`Â§c[MURMUR NOIR] Registration CRASHED: ${e}`);
     }
 }
 
@@ -168,9 +176,9 @@ system.afterEvents.scriptEventReceive.subscribe((event) => {
     const want = (event.message || "").trim();
     if (want && want !== "*") {
         const typeId = want.split("|").pop();
-        world.sendMessage(`§8[MURMUR NOIR] Re-sending requested profile: ${typeId}`);
+        world.sendMessage(`Â§8[MURMUR NOIR] Re-sending requested profile: ${typeId}`);
     } else {
-        world.sendMessage(`§8[MURMUR NOIR] Re-sending all profiles per manual request...`);
+        world.sendMessage(`Â§8[MURMUR NOIR] Re-sending all profiles per manual request...`);
     }
     sendRegistration();
     startSend();

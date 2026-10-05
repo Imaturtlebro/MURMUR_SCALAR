@@ -41,9 +41,10 @@
             "uuid": "7f9a1b2c-3d4e-4f5a-6b7c-8d9e0f1a2b3c",
             "version": [
                 1,
-                1,
-                36
-            ]
+                0,
+                49
+            ],
+            "description": "MURMUR Core Engine"
         }
     ]
 }
