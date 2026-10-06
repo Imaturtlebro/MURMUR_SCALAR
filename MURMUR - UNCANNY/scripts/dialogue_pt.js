@@ -486,46 +486,7 @@ export const DIALOGUE_PT = {
     thunder: ["A tempestade está selvagem esta noite. ", "Continuem a mover o esquadrão! ", "Barulho alto aqui fora. ", "Uma noite perfeita para uma incursão. ", "Os tambores do céu estão a bater! Avancem a linha! ", "O raio iluminou as posições do alvo! Flanco esquerdo, mover! ", "Deixem o raio queimar os blocos por nós! ", "O céu grita com a nossa facção esta noite, rapazes! ", "A estática carrega a nossa fúria! Disparem no clarão branco! ", "O som mascara o nosso avanço! Quebrem as portas de madeira agora! ", "O ruído do céu cobre as nossas botas. Avancem. ", "Deixem o clarão mostrar os rostos deles. Então, disparem. ", "A tempestade está na folha de pagamento esta noite. ", "O trovão quebra portas mais rápido que a diplomacia. "],
     wounded: ["Voltem! Recuem um passo! ", "Ele bate forte demais... reagrupem o esquadrão! ", "Preciso de cobertura de blocos! Agora! ", "Estou a cair... limpem a chave de criatura dele! ", "A minha blindagem está esfarrapada... estou a perder o aperto! ", "A besta... está pesada demais... tires-na do meu slot... ", "Ele está a usar aço estranho! Essa lâmina não é original! ", "Maldito o céu... os meus sensores ópticos estão a escurecer... ", "A minha força está a cair depressa! Cubram-me! ", "O gatilho... a animação do meu dedo não encontra o gatilho... ", "Não terminei. Reagrupem a linha! ", "A dor é apenas atraso. Continuem a atirar! ", "Eles batem bem. Ainda batem pior do que nós. ", "Recuem para o estandarte, não para fora da luta! "],
     wounded_vs_player: ["O jogador alvo é demasiado agressivo! Abrigo! ", "Arrgh! Ele está a desfazer o nosso esquadrão! ", "Que tipo de criatura é este jogador?! ", "Ele não sente as animações de dor! Por que não para?! ", "Ele está a derrubar blocos à nossa volta! Recuem! ", "A armadura deles é grossa demais... os nossos virotes apenas ricocheteiam! ", "Lutas como uma incursão com pernas! ", "Essa espada é rápida demais para uma economia de camponeses! ", "Pare de bloquear o nosso futuro! ", "Vestes ferro e ainda ages como presa! "],
-        proximity: [
-            "Ali esta.",
-            "Nao deixem que ele saia do canto.",
-            "Tem equipamento que queremos.",
-            "Objetos demais... colha-o.",
-            "Queimem as cabanas.",
-            "Levai o que resta nos baús.",
-            "Nao precisam das variaveis.",
-            "Vamos leva-las de qualquer jeito.",
-            "Escondem tudo no chao.",
-            "Acham que nao vamos carregar aqui de novo.",
-            "Sao forma fracos.",
-            "Presas faceis.",
-            "Esta lugar e nossa agora.",
-            "Encontrei-o. Esta na minha ranhura.",
-            "Tomamos, guardamos.",
-            "Continua voltando a vida...",
-            "Por que a chave de criatura dele nao fica apagada?",
-            "Algo esta errado com a olhar dele.",
-            "Carregai os arcos. Trilhas secas, cordas tensas.",
-            "Sinto cheiro de objetos de cobre e dados de medo.",
-            "O chifre de assalto chama. Hora de colher os moles.",
-            "Olhai suas pequenas caixas de madeira. Uma poeira de fogo e acabou.",
-            "O Capitao quer cabecas, nao excecoes de roteiro.",
-            "Gravamos nossos nomes nos blocos de casca que amam.",
-            "Nao deixeis nem uma unica criatura de cultivo de pe.",
-            "O jogador acha que e o unico que pode refazer este mundo.",
-            "Gosto do som que a besta faz ao soltar. *Thwip*.",
-            "Vigiai os vindicadores. Ficam descuidados quando provam o dano.",
-            "O assalto nao e uma guerra, e uma liquidacao forcada de equipamento.",
-            "Cada bloco de parede que constroem e so um futuro arquivo de ruina para reivindicarmos.",
-            "Acham que os troncos nos manterao fora. Esquecem que temos os traço de fogo.",
-            "Nao deixeis que naveguem para longe. Precisamos do saque.",
-            "Arrancai os estandartes de seus postes. Pendurai nossa propria pele.",
-            "O mundo e uma lista de verificacao, e sua vila esta marcada para eliminacao.",
-            "Adoro o som das molduras das portas de carvalho quebrando pela manha.",
-            "A economia deles e fragil. Alguns pernos de ferro a quebrarao.",
-            "Gritam em frequencias de ruído identicas. Entretenido."
-        ]
-    },
+        proximity:["Ali esta.", "Nao deixem que ele saia do canto.", "Tem equipamento que queremos.", "Objetos demais... colha-o.", "Queimem as cabanas.", "Levai o que resta nos baús.", "Nao precisam das variaveis.", "Vamos leva-las de qualquer jeito.", "Escondem tudo no chao.", "Acham que nao vamos carregar aqui de novo.", "Sao forma fracos.", "Presas faceis.", "Esta lugar e nossa agora.", "Encontrei-o. Esta na minha ranhura.", "Tomamos, guardamos.", "Continua voltando a vida...", "Por que a chave de criatura dele nao fica apagada?", "Algo esta errado com a olhar dele.", "Carregai os arcos. Trilhas secas, cordas tensas.", "Sinto cheiro de objetos de cobre e dados de medo.", "O chifre de assalto chama. Hora de colher os moles.", "Olhai suas pequenas caixas de madeira. Uma poeira de fogo e acabou.", "O Capitao quer cabecas, nao excecoes de roteiro.", "Gravamos nossos nomes nos blocos de casca que amam.", "Nao deixeis nem uma unica criatura de cultivo de pe.", "O jogador acha que e o unico que pode refazer este mundo.", "Gosto do som que a besta faz ao soltar. *Thwip*.", "Vigiai os vindicadores. Ficam descuidados quando provam o dano.", "O assalto nao e uma guerra, e uma liquidacao forcada de equipamento.", "Cada bloco de parede que constroem e so um futuro arquivo de ruina para reivindicarmos.", "Acham que os troncos nos manterao fora. Esquecem que temos os traço de fogo.", "Nao deixeis que naveguem para longe. Precisamos do saque.", "Arrancai os estandartes de seus postes. Pendurai nossa propria pele.", "O mundo e uma lista de verificacao, e sua vila esta marcada para eliminacao.", "Adoro o som das molduras das portas de carvalho quebrando pela manha.", "A economia deles e fragil. Alguns pernos de ferro a quebrarao.", "Gritam em frequencias de ruído identicas. Entretenido.", "Alvo avistado. Mantém-no dentro da caixa de matança. ", "Verifica os cantos. Os aldeões escondem disparate em baús. ", "Carrega em silêncio. Move-te em barulho. ", "Os seus cheminsinhos são todas linhas de pânico. ", "Se corre, está a carregar algo útil. ", "Parte a cerca. O medo entra mais facilmente. ", "A campainha vai tocar. Que toque errado. ", "Sem piedade. Piedade é um luxo da aldeia."]},
     "minecraft:iron_golem": {
         proximity: [
             "Protegendo o nucleo operacional.",
@@ -551,18 +512,7 @@ export const DIALOGUE_PT = {
     peer_wounded: ["{hurt_name} está a desmoronar em fuligem! Esmague a caixa do intruso! ", "Avancem por todo o lado! Sufoquem o corpo dele! ", "CUREM OS ESPAÇOS DAS COSTELAS DELE ", "OSSOS DE CARVÃO A PARTIR-SE AO LADO ", "COLETE O OBJETO EXTRA DE COSTELA PARA {hurt_name}! ", "A ESTRUTURA DE {hurt_name} ESTÁ A ESTILHAÇAR OS SEUS OSSOS! ", "PROTEJA O EQUIPAMENTO DO CRÂNIO DE {hurt_name}! ", "ESTABILIZE A CINZA NO REINO DE {hurt_name}! ", "A ESPADA DE PEDRA CAI DO INVENTÁRIO DE {hurt_name}! ", "AMARRE A CAIXA TORÁCICA ANTES QUE A FORÇA CENTRAL COLAPSE! ", "{hurt_name} está a desmoronar. Segure o corredor. ", "A parede não pode perder {hurt_name}. ", "Cubra {hurt_name} com fuligem e aço. "],
     seen_animal: {" generic": ["Extermine a imundície orgânica. Purgue todas as formas de carne. ", "A CARNE COBRE A VERDADE. ARRANQUE A CARNE LONGE. ", "Bate... respira... PRECISA PARAR DE BATER. ", "DERRETA A CARNE DE SEUS OSSOS dentro da lava. ", "A MATÉRIA ORGÂNICA TEM DE SER PURGADA DAS TERRAS DO NETHER. ", "A carne é um erro que caminha. ", "Purgue a coisa morna. ", "Ela respira. Corrija isso. "]},
     wounded: ["VOCÊ VAI MURCHAR PRIMEIRO NO LOGO! ", "VOCÊ É FRACO! VOCÊ É PEQUENO! você, jogador covarde patético! ", "Vou perfurar as frestas nas suas patéticas camadas de armadura! ", "PARTINDO OSSOS ", "CARVÃO DE CINZA... A CAIR DO ESQUELETO ", "ESTALANDO A ESTRUTURA DE CARVÃO ", "A PÓ DE CARVÃO ESTÁ A VAZAR ", "MAIS CINZAS PARA PURGAR ", "A REVELAÇÃO DAS COSTELAS... FORMA DESABANDO. ", "A MINHA LÂMINA DE PEDRA... PESADA DEMAIS PARA O EIXO... ", "A MEDULA DE CARVÃO ESTÁ A CAIR... ", "UMA FRATURA VERTICAL NO POLÍGONO DA COLUNA... ", "A NÉVOA DE FULIGEM ESTÁ A ESCAPAR DA MINHA FORMA... ", "A PERDER PARÂMETROS DE COESÃO ESTRUTURAL... ", "A PEDRA ANTIGA RASPA DENTRO DO MEU BLOCO DE CRÂNIO... ", "A coluna racha, mas o ódio permanece. ", "Cinza não é derrota. ", "As minhas costelas são apenas sugestões. ", "Você quebra carvão. Você não quebra o propósito. "],
-        proximity: [
-            "Sinto o cheiro da vida... e uma anomalia.",
-            "A fortaleza e o unico fragmento de dados real.",
-            "O carvao e o residuo de um mundo queimado.",
-            "Sua carne parece... temporaria.",
-            "Procurando a chave de acesso de alma.",
-            "O fogo nao purifica, apenas apaga.",
-            "Voce e um erro que deve ser corrigido.",
-            "A cinza e a memoria do essência final.",
-            "Nao ha saida deste labirinto de pedra negra.",
-            "Minha espada e uma extensao do vazio."
-        ],
+        proximity:["Sinto o cheiro da vida... e uma anomalia.", "A fortaleza e o unico fragmento de dados real.", "O carvao e o residuo de um mundo queimado.", "Sua carne parece... temporaria.", "Procurando a chave de acesso de alma.", "O fogo nao purifica, apenas apaga.", "Voce e um erro que deve ser corrigido.", "A cinza e a memoria do essência final.", "Nao ha saida deste labirinto de pedra negra.", "Minha espada e uma extensao do vazio.", "AINDA AQUI NO CORREDOR ", "AMBIENTE QUE NÃO ESTÁ QUIETO ", "SOM DE PASSOS ERRADO ", "TU ECOAS ", "AQUI DE NOVO NA FORTALEZA ", "ISSO QUEBREU ", "PARA DE ANDAR ", "O pó de carvão assenta na nossa carne de costelas vazia. ", "A fortaleza pertence aos ritos mortos. Tens peles. Vai embora. ", "Lembramos a espada de ferro. Lembramos o ciclo de talhadas. ", "O antigo crânio de Wither exige tributo de cabeça. ", "Ossos de carvão frio. Cinza escura. Nenhum bloco de coração lá dentro. ", "O mestre de três cabeças vai acordar dos seus blocos de arena de almas em breve. ", "O teu toque apodrece com rótulos de Wither. Como o nosso. ", "Somos o que resta quando o fogo do Nether acaba o seu trabalho. ", "Ouvimos o passos macio e quente do ruído de passos nos nossos caminhos de tijolo do Nether. ", "O carvão nos nossos fios de medula fica inquieto. ", "Trazes valores de luz para os corredores escuros. Vamos apagá-lo. ", "Nada cresce aqui excepto a podridão de verruga do Nether. Tu também vais apodrecer. ", "Estamos de pé neste ponto de encontro desde que os muros eram inteiros. ", "O item de espada de pedra fica faminto por caixas de pele macia. ", "Estás cheio de líquidos e fraqueza. ", "O mestre exige três crânios. Tu és uma engrenagem de crânio? ", "Pó para pó. Somos o pó de fuligem que caminha a terra. ", "Intruso. O arquivo da fortaleza lembra a tua espécie. Também os quebrámos. ", "A tua camada de carne é um erro que estamos programados para purgar da fortaleza. ", "O teu calor é um erro. ", "A fortaleza não perdoa passos. ", "Carvão nos ossos. Ódio na mão. ", "Vais aprender o que significa Wither."],
         witness: [
             "Um fragmento de escuridao foi liberado.",
             "De volta a cinza primordial.",
@@ -589,162 +539,23 @@ export const DIALOGUE_PT = {
         ]
     },
     "minecraft:blaze": {
-        proximity: [
-            "O rito ardente continua.",
-            "Permanecemos junto ao fogo.",
-            "A chama não termina.",
-            "Eu vejo todo o calor.",
-            "Você é uma criatura fria.",
-            "Você não pertence dentro de blocos de fogo.",
-            "Você vai amolecer até virar itens.",
-            "Você vai se desfazer em cinzas.",
-            "Este bloco da fortaleza lembra a queimação.",
-            "O tijolo do Nether aprende a chama com o tempo.",
-            "Nada aqui está intocado pelo laranja.",
-            "Você não dura outro batimento.",
-            "Ainda de pé... por este momento.",
-            "O fogo decide.",
-            "As barras giram sobre o eixo. O calor ambiente sobe.",
-            "Uma baforada de névoa de fumaça para sufocar seus pulmões miseráveis.",
-            "Somos os filhos da forja que nos gerou.",
-            "Seus itens de água arremessada não podem nos apagar dentro destas paredes.",
-            "Sinta o ar ficar nítido. Essa é nossa presença de névoa.",
-            "O metal escorre fundido. Progrida com a chama.",
-            "O tijolo da fortaleza absorve o valor de luz. Nós o criamos.",
-            "O calor da forja detecta um frio orgânico.",
-            "Besta de combustível detectada. Começando o rito ardente.",
-            "As barras de fogo aceleram. Sua fúria vira calor.",
-            "Não respiramos arquivos de ar. Consumimos os fios de oxigênio.",
-            "O item de cinza sob suas botas já foi um jogador como você.",
-            "Você é feito de itens de inventário moles que derretem.",
-            "A temperatura ambiente é insuficiente. Vamos corrigir o estado do bloco.",
-            "As chamas estão prontas. A fortaleza exige calor.",
-            "Você sangra vida líquida. Ela evapora facilmente neste bioma."
-        ],
-        wounded: [
-            "O fogo central está esfriando...",
-            "Névoa apagadora... não! Alimente o fogo!",
-            "As faíscas de luz estão morrendo nas minhas barras.",
-            "A escuridão se aproxima da chama.",
-            "A FUMAÇA ESTÁ FICANDO PRETA... SEM MAPA DE FUMAÇA, SEM VALOR DE LUZ!",
-            "AS BARRAS DE PEDRA ESTÃO RACHANDO PELO FRIO DA ÁGUA!",
-            "Vazamento de calor. A pressão está caindo.",
-            "As brasas internas estão se espalhando para fora da forma...",
-            "Comprometimento estrutural. O calor da forja está escapando.",
-            "ALERTA DE FRIO PROFUNDO! Linhas de fratura nas barras de rotação!",
-            "A parede da forja está quebrando... minha fumaça perde densidade de névoa.",
-            "Esgotamento de oxigênio... o raio de brilho está estreitando..."
-        ],
-        peer_wounded: [
-            "ALIMENTE O NÚCLEO DE {hurt_name}, A UNIDADE DE BLAZE QUE ESTÁ APAGANDO!",
-            "SOPRE MAIS NÉVOA DE CHAMA EM {hurt_name}!",
-            "ACENDA AS BARRAS DE ROTAÇÃO DE {hurt_name}!",
-            "QUEDA DE TEMPERATURA NO BLAZE {hurt_name}!",
-            "AVIVE AS CÂMARAS DO NÚCLEO DE {hurt_name}!",
-            "AUMENTE A ROTAÇÃO DE {hurt_name}!",
-            "{hurt_name} ESTÁ PERDENDO A CHAMA! QUEIME AGORA!",
-            "AQUEÇA AS BARRAS FLUTUANTES DE {hurt_name} ANTES QUE O FRIO DO MUNDO SE INSTALE!"
-        ],
-        death: [
-            "RETORNE ÀS BARRAS DE PEDRA INATIVA",
-            "A FUMAÇA LARANJA SE DISPERSA DO LIVRO",
-            "MAIS UM BLAZE SE TRANSFORMA EM PÓ",
-            "UMA ENGRENAGEM DE FOGO EXPIROU",
-            "As cinzas das barras de {dead_name} assentaram no substrato de tijolo.",
-            "A REDE DE CALOR PERDE O ELEMENTO ATIVO {dead_name}.",
-            "COLAPSO TOTAL DO NÚCLEO. PACOTE DE BARRAS DE BLAZE FRATURADO ABANDONADO NA TERRA.",
-            "MAPA DE ENERGIA CONVERTIDO EM ZERO. {dead_name} ESTÁ EXTINTO NA FORJA.",
-            "A FUMAÇA ESFRIÁ. A CINZA RECLAMA A CÁPSULA DO SUBSTRATO DE TIJOLO."
-        ]
-    },
+        proximity:["O rito ardente continua.", "Permanecemos junto ao fogo.", "A chama não termina.", "Eu vejo todo o calor.", "Você é uma criatura fria.", "Você não pertence dentro de blocos de fogo.", "Você vai amolecer até virar itens.", "Você vai se desfazer em cinzas.", "Este bloco da fortaleza lembra a queimação.", "O tijolo do Nether aprende a chama com o tempo.", "Nada aqui está intocado pelo laranja.", "Você não dura outro batimento.", "Ainda de pé... por este momento.", "O fogo decide.", "As barras giram sobre o eixo. O calor ambiente sobe.", "Uma baforada de névoa de fumaça para sufocar seus pulmões miseráveis.", "Somos os filhos da forja que nos gerou.", "Seus itens de água arremessada não podem nos apagar dentro destas paredes.", "Sinta o ar ficar nítido. Essa é nossa presença de névoa.", "O metal escorre fundido. Progrida com a chama.", "O tijolo da fortaleza absorve o valor de luz. Nós o criamos.", "O calor da forja detecta um frio orgânico.", "Besta de combustível detectada. Começando o rito ardente.", "As barras de fogo aceleram. Sua fúria vira calor.", "Não respiramos arquivos de ar. Consumimos os fios de oxigênio.", "O item de cinza sob suas botas já foi um jogador como você.", "Você é feito de itens de inventário moles que derretem.", "A temperatura ambiente é insuficiente. Vamos corrigir o estado do bloco.", "As chamas estão prontas. A fortaleza exige calor.", "Você sangra vida líquida. Ela evapora facilmente neste bioma.", "Você é frio demais para este lugar. ", "A fortaleza respira fogo. Você não. ", "A sua água é uma piada aqui. ", "Queimar é a única língua. "],
+        wounded:["O fogo central está esfriando...", "Névoa apagadora... não! Alimente o fogo!", "As faíscas de luz estão morrendo nas minhas barras.", "A escuridão se aproxima da chama.", "A FUMAÇA ESTÁ FICANDO PRETA... SEM MAPA DE FUMAÇA, SEM VALOR DE LUZ!", "AS BARRAS DE PEDRA ESTÃO RACHANDO PELO FRIO DA ÁGUA!", "Vazamento de calor. A pressão está caindo.", "As brasas internas estão se espalhando para fora da forma...", "Comprometimento estrutural. O calor da forja está escapando.", "ALERTA DE FRIO PROFUNDO! Linhas de fratura nas barras de rotação!", "A parede da forja está quebrando... minha fumaça perde densidade de névoa.", "Esgotamento de oxigênio... o raio de brilho está estreitando...", "As varas escurecem, mas não caem. ", "Meu calor está escapando... inaceitável. ", "O fogo precisa de mais combustível. ", "Eu não me tornarei cinza fria. "],
+        peer_wounded:["ALIMENTE O NÚCLEO DE {hurt_name}, A UNIDADE DE BLAZE QUE ESTÁ APAGANDO!", "SOPRE MAIS NÉVOA DE CHAMA EM {hurt_name}!", "ACENDA AS BARRAS DE ROTAÇÃO DE {hurt_name}!", "QUEDA DE TEMPERATURA NO BLAZE {hurt_name}!", "AVIVE AS CÂMARAS DO NÚCLEO DE {hurt_name}!", "AUMENTE A ROTAÇÃO DE {hurt_name}!", "{hurt_name} ESTÁ PERDENDO A CHAMA! QUEIME AGORA!", "AQUEÇA AS BARRAS FLUTUANTES DE {hurt_name} ANTES QUE O FRIO DO MUNDO SE INSTALE!", "{hurt_name} está esfriando. Alimente a chama. ", "O círculo ao redor de {hurt_name} está falhando. ", "Reacenda {hurt_name} ou perca a câmara. "],
+        death:["RETORNE ÀS BARRAS DE PEDRA INATIVA", "A FUMAÇA LARANJA SE DISPERSA DO LIVRO", "MAIS UM BLAZE SE TRANSFORMA EM PÓ", "UMA ENGRENAGEM DE FOGO EXPIROU", "As cinzas das barras de {dead_name} assentaram no substrato de tijolo.", "A REDE DE CALOR PERDE O ELEMENTO ATIVO {dead_name}.", "COLAPSO TOTAL DO NÚCLEO. PACOTE DE BARRAS DE BLAZE FRATURADO ABANDONADO NA TERRA.", "MAPA DE ENERGIA CONVERTIDO EM ZERO. {dead_name} ESTÁ EXTINTO NA FORJA.", "A FUMAÇA ESFRIÁ. A CINZA RECLAMA A CÁPSULA DO SUBSTRATO DE TIJOLO.", "{dead_name} virou cinzas. ", "A fornalha esquece {dead_name}. ", "{dead_name} é cinza. O calor permanece. "]},
     "minecraft:skeleton": {
-        proximity: [
-            " chocalho chocalho ruído ",
-            "O vento sopra direto através das minhas costelas.",
-            "Estou varrendo a escuridão em busca da medula de cálcio.",
-            "Marcas de cálcio... minha forma precisa de mais cálcio, precisa.",
-            "O item de corda do arco está seco e tenso.",
-            "Lembro quando meu corpo tinha pele... pesava tanto para se mover.",
-            "Espero que sua orientação trave em blocos de água funda enquanto eu prendo sua caixa.",
-            "Sua pele parece tão viva. Quero arrancá-la.",
-            "Meu olhar está travado nas posições vitais do seu corpo.",
-            "tic... tic... faz a flecha contra o osso.",
-            "Somos os secos e frágeis que esperam nas terras escuras sem luz."
-        ],
-        thunder: [
-            "O clarão do raio quebra os valores de luz da escuridão.",
-            "O trovão sacode a casca do bloco crânio.",
-            "O som alto do céu combina com o chocalho nas minhas costelas.",
-            "Mire a flecha no clarão branco! Atire!"
-        ],
-        rain: [
-            "A água do céu torna escorregadia nossa carne de osso.",
-            "Levando embora o pó do túmulo...",
-            "A umidade da água deixa frios nossos encaixes de olho vazios.",
-            "A corda do arco está ficando pesada de água do céu. Mire a trajetória da flecha mais alto."
-        ],
-        night: [
-            "Marchamos quando o sol morre.",
-            "A lua quadrada parece um encaixe de olho branco e vazio.",
-            "Os níveis de luz da noite protegem os ossos frágeis das etiquetas de queimadura.",
-            "Os itens de flecha voam mais reto quando a bola de luz amarela cai a zero.",
-            "Somos muitas criaturas quando os valores de luz da terra chegam a zero absoluto."
-        ],
-        wounded: [
-            "As costelas de osso estão rachando a forma!",
-            "Não meu fêmur! Qualquer coisa menos a articulação do fêmur da perna!",
-            "Caindo aos pedaços no caminho de cascalho...",
-            "A medula de cálcio está vazando para a pedra!",
-            "Uma lasca estrutural no meu bloco de osso do braço!",
-            "Minha cadeia de coluna está perdendo as restrições de alinhamento!"
-        ],
-        night_wounded: [
-            "Estilhaçando meus ossos dentro das terras escuras!",
-            "Não encontro meu outro item de osso de braço!",
-            "A escuridão está enchendo minha casca de crânio fraturada...",
-            "Minha corda de arco arrebentou na sombra profunda!"
-        ],
-        wounded_vs_player: [
-            "O jogador carnoso revida com varreduras!",
-            "Quebre as articulações das pernas dele em movimento!",
-            "Seu bastão de diamante não manterá seu osso inteiro, {name}!",
-            "Você se move rápido demais... pare de desviar meus caminhos de rastreio!"
-        ],
-        armored_player: [
-            "As flechas ricocheteiam direto na camada de placas de diamante!",
-            "O alvo roubou o equipamento de placas de ferro do chão!",
-            "Mire nas frestas da forma de pele de armadura personalizada dele!",
-            "O corpo vital dele está totalmente coberto de lâminas de diamante encantadas!"
-        ],
-        on_fire: [
-            "O CALOR DO FUEGO ESTÁ QUEIMANDO A FORMA DE OSSO!",
-            "FULIGEM E CARVÃO, NÉVOA!",
-            "MINHAS MARCAS DE CÁLCIO ESTÃO VIRANDO FULIGEM PRETA!"
-        ],
-        peer_wounded: [
-            "{hurt_name} está desmoronando o equipamento de ossos dele!",
-            "Segure a linha de arqueiros, ossos secos e frágeis!",
-            "Recolha os itens de costelas soltos de {hurt_name} antes que sumam!",
-            "A linha de arqueiros está perdendo a ordem!"
-        ],
-        death: [
-            "{dead_name} se virou poeira de osso...",
-            "A corda do arco cai em silêncio total...",
-            "Itens de osso soltos flutuando sobre o cascalho... adeus, {dead_name}.",
-            "O arquivo do livro apagou a chave de criatura de {dead_name}."
-        ],
-        seen_animal: {
-            "minecraft:cow": [
-                "O MASTIGADOR DE OSSOS! RODE O ATAQUE!",
-                "Mantenha aquela besta-lobo longe da minha fíbula!",
-                "Ele quer os itens de osso de cálcio! RODE A ORIENTAÇÃO!"
-            ],
-            "generic": [
-                "Atire na criatura animal para praticar o arco.",
-                "Carne viva. Sujidade mundana nojenta."
-            ]
-        }
-    },
+        proximity:[" chocalho chocalho ruído ", "O vento sopra direto através das minhas costelas.", "Estou varrendo a escuridão em busca da medula de cálcio.", "Marcas de cálcio... minha forma precisa de mais cálcio, precisa.", "O item de corda do arco está seco e tenso.", "Lembro quando meu corpo tinha pele... pesava tanto para se mover.", "Espero que sua orientação trave em blocos de água funda enquanto eu prendo sua caixa.", "Sua pele parece tão viva. Quero arrancá-la.", "Meu olhar está travado nas posições vitais do seu corpo.", "tic... tic... faz a flecha contra o osso.", "Somos os secos e frágeis que esperam nas terras escuras sem luz.", "O arco lembra. O braço não precisa. ", "Seu batimento cardíaco é um marcador de alvo. ", "Eu era quente uma vez. Era superestimado. ", "A corda canta. Você cai. "],
+        thunder:["O clarão do raio quebra os valores de luz da escuridão.", "O trovão sacode a casca do bloco crânio.", "O som alto do céu combina com o chocalho nas minhas costelas.", "Mire a flecha no clarão branco! Atire!", "O raio faz os ossos brilharem. Mau agouro. Boa mira. ", "O trovão esconde o rangido da minha coluna. ", "Luz de tempestade, voo de flecha. A mesma coisa. "],
+        rain:["A água do céu torna escorregadia nossa carne de osso.", "Levando embora o pó do túmulo...", "A umidade da água deixa frios nossos encaixes de olho vazios.", "A corda do arco está ficando pesada de água do céu. Mire a trajetória da flecha mais alto.", "A chuva deixa a corda pesada e a mira cruel. ", "Ossos molhados, paciência fria. ", "O céu nos lava de miséria. "],
+        night:["Marchamos quando o sol morre.", "A lua quadrada parece um encaixe de olho branco e vazio.", "Os níveis de luz da noite protegem os ossos frágeis das etiquetas de queimadura.", "Os itens de flecha voam mais reto quando a bola de luz amarela cai a zero.", "Somos muitas criaturas quando os valores de luz da terra chegam a zero absoluto.", "A escuridão é nosso uniforme. ", "O luar basta para o assassinato. ", "A noite dá às flechas estradas silenciosas. "],
+        wounded:["As costelas de osso estão rachando a forma!", "Não meu fêmur! Qualquer coisa menos a articulação do fêmur da perna!", "Caindo aos pedaços no caminho de cascalho...", "A medula de cálcio está vazando para a pedra!", "Uma lasca estrutural no meu bloco de osso do braço!", "Minha cadeia de coluna está perdendo as restrições de alinhamento!", "Minhas costelas estão virando sugestões. ", "A coluna reclama. O arco não. ", "Pó de osso está vazando do meu propósito. "],
+        night_wounded:["Estilhaçando meus ossos dentro das terras escuras!", "Não encontro meu outro item de osso de braço!", "A escuridão está enchendo minha casca de crânio fraturada...", "Minha corda de arco arrebentou na sombra profunda!", "A escuridão está tomando minha forma. ", "Eu não sinto a corda. Isso é ruim. ", "Meu crânio está cheio de erros frios. "],
+        wounded_vs_player:["O jogador carnoso revida com varreduras!", "Quebre as articulações das pernas dele em movimento!", "Seu bastão de diamante não manterá seu osso inteiro, {name}!", "Você se move rápido demais... pare de desviar meus caminhos de rastreio!", "Você se move como carne com opiniões. ", "Sua espada é barulhenta. Minhas flechas são honestas. ", "Pare de dançar. Morra como deve ser. "],
+        armored_player:["As flechas ricocheteiam direto na camada de placas de diamante!", "O alvo roubou o equipamento de placas de ferro do chão!", "Mire nas frestas da forma de pele de armadura personalizada dele!", "O corpo vital dele está totalmente coberto de lâminas de diamante encantadas!", "Casca de metal, centro macio. ", "As flechas vão encontrar as frestas. Sempre encontram. ", "Armadura é só uma morte mais lenta. "],
+        on_fire:["O CALOR DO FUEGO ESTÁ QUEIMANDO A FORMA DE OSSO!", "FULIGEM E CARVÃO, NÉVOA!", "MINHAS MARCAS DE CÁLCIO ESTÃO VIRANDO FULIGEM PRETA!", "Os ossos estão virando carvão! ", "O fogo não é amigo dos mortos. ", "Estou queimando em poeira cedo demais! "],
+        peer_wounded:["{hurt_name} está desmoronando o equipamento de ossos dele!", "Segure a linha de arqueiros, ossos secos e frágeis!", "Recolha os itens de costelas soltos de {hurt_name} antes que sumam!", "A linha de arqueiros está perdendo a ordem!", "{hurt_name} está trincando. Segure a linha. ", "A muralha de arqueiros não pode perder {hurt_name}. ", "{hurt_name} precisa de osso e de reforço. "],
+        death:["{dead_name} se virou poeira de osso...", "A corda do arco cai em silêncio total...", "Itens de osso soltos flutuando sobre o cascalho... adeus, {dead_name}.", "O arquivo do livro apagou a chave de criatura de {dead_name}.", "{dead_name} virou poeira de túmulo. ", "A corda do arco prende luto por {dead_name}. ", "{dead_name} se foi. As flechas permanecem. "],
+        seen_animal:{" minecraft:cow": ["O MASTIGADOR DE OSSOS! RODE O ATAQUE! ", "Mantenha aquela besta-lobo longe da minha fíbula! ", "Ele quer os itens de osso de cálcio! RODE A ORIENTAÇÃO! "], " minecraft:wolf": ["O MORDEDOR DE OSSOS! EXECUTEM O ATAQUE! ", "Mantenha aquela fera de lobo longe do meu osso da fíbula! ", "Ela quer os itens de osso de cálcio! Fujam pelo caminho! ", "A fera quer minhas pernas. Mal-educada. ", "Mantenha aquele cachorro longe da linha de arqueiros. ", "Ela roe ossos. Somos ossos. Problema. "], " generic": ["Atire na criatura animal para treinar a mira do arco. ", "Carne viva. Lixo mundano e nojento. ", "A carne é barulhenta. Atire nela em silêncio. ", "Animais fazem testemunhas medíocres. ", "Treino de mira com pulso. "]}},
     "minecraft:vindicator": {
         proximity: [
             "Mais perto.",
@@ -906,218 +717,36 @@ export const DIALOGUE_PT = {
         ]
     },
     "minecraft:wandering_trader": {
-        proximity: [
-            "Só continue andando pelo trilho... eventualmente o vagaralho encontra uma vila segura.",
-            "Essas lhamas não param de cuspir na minha capa.",
-            "Só os melhores blocos de gelo azul! Onde meu inventário pôs o item de gelo azul?",
-            "Vi onde a geração do bioma acaba, {name}. É só vazio azul-claro.",
-            "A terra está mudando mais adiante. Precisamos continuar movendo as cordinhas.",
-            "Quer ver o que meus pacotes colheram dos reinos não-feitos?",
-            "Os trilhos de cascalho são longos, mas as margens de lucro de esmeralda mantêm meus fios quentinhos.",
-            "Não clique nas cordinhas. Os nós são a artisania da antiga guilda.",
-            "Meu equipamento de mapa personalizado não mostra sua caixa, {name}. Você não deveria estar aqui."
-        ],
-        thunder: [
-            "Não são minhas criaturas lhama! Redefina a orientação delas para blocos de cobertura!",
-            "O céu está bravo hoje! Salve a mercadoria da interface de comércio!",
-            "Perigo de bloco de raio! Feche a barraca! Corra!",
-            "O barulho alto da besta do céu vai estragar as sacas de item de peixe tropical."
-        ],
-        rain: [
-            "Os itens do inventário estão molhando! Métricas arruinadas! Arruinadas!",
-            "Minha capa azul de comerciante está encharcada. Isso é péssimo para minhas margens de esmeralda.",
-            "A lama está desacelerando a caminhada. Os itens de corda estão escorregando!",
-            "Quer comprar_some almofadas de nenúfar de pântano? É o único item seco agora no meu slot!"
-        ],
-        night: [
-            "Os monstros sobem à noite... beba a poção de invisibilidade... clique agora!",
-            "As sombras escuras têm olhos rastreando nossas caixas. Fique invisível.",
-            "Fique perto dos corpos de lhama, as criaturas mordedoras estão carregando.",
-            "A névoa roxa é o único amuleto que me mantém escondido da vista.",
-            "Oço inseto clicando... {name}, por favor compre algo para eu poder pagar e ir embora!"
-        ],
-        wounded_vs_zombie: [
-            "Ah! Não rasgue a capa de seda! É luxo importado!",
-            "Socorro! Um cliente zumbi esfarrapado está mordendo minha interface de comércio!",
-            "Sua pele podre está descascando sobre meus pacotes! Volte!",
-            "Não troco por itens de carne podre! Feche a caixa da sua boca!"
-        ],
-        wounded: [
-            "Minhas mercadorias raras... pegue os itens do inventário, só deixe minha chave de criatura viva!",
-            "Estou vazando névoa vermelha de dano... e ainda não compraram o bloco de coral...",
-            "Animação de bebendo ativa... preciso do meu slot de item de poção...",
-            "Meus slots de vida estão totalmente quebrados pela sua arma! Socorro!",
-            "Os itens de corda se arrebentaram! Minhas lhamas estão se separando do meu caminho!"
-        ],
-        night_wounded: [
-            "O temporizador da poção acabou! As criaturas esqueleto podem ver meu corpo!",
-            "Está tão escuro... minhas lhamas quebraram os caminhos de corda e fugiram...",
-            "As formas de sombra estão arranhando minha capa azul!",
-            "Minha forma de névoa está deformando na escuridão da terra!"
-        ],
-        on_fire: [
-            "MINHAS MERCADORIAS DO INVENTÁRIO ESTÃO QUEIMANDO! MINHA FORMA DE COMERCIANTE ESTÁ NO BLOCO DE FOGO!",
-            "Salve os itens de corda! As cordas são equipamento raro!",
-            "O ITEM DE PÓLVORA NO MEU SLOT DE SACO VAI EXPLODIR A TERRA—"
-        ],
-        nether: [
-            "Quem abre interface de comércio num bioma de inferno desses?!",
-            "As lhamas odeiam esse netherrack... eu odeio essa névoa laranja de lava...",
-            "Não há caminho de cascalho aqui! Só blocos de pó vermelho gritando e etiquetas de fogo!",
-            "Meus preços de esmeralda estão 300% mais altos pela hostilidade atmosférica regional do Nether!"
-        ],
-        peer_wounded: [
-            "{hurt_name} está sendo assaltado pelo olhar de um jogador! Fugir da terra! Fugir!",
-            "Estão liquidando o estoque de inventário de {hurt_name} por força absoluta!",
-            "Não olhe para trás, {hurt_name}! Solte a pedra luminosa e corra!"
-        ],
-        death: [
-            "Levaram cada slot de item de {dead_name}...",
-            "A criatura vagaranda {dead_name} foi apagada do baú de memória ativo.",
-            "Só restam dois itens de corda soltos flutuando sobre o bloco de terra... descanse em paz, {dead_name}."
-        ]
-    },
+        proximity:["Só continue andando pelo trilho... eventualmente o vagaralho encontra uma vila segura.", "Essas lhamas não param de cuspir na minha capa.", "Só os melhores blocos de gelo azul! Onde meu inventário pôs o item de gelo azul?", "Vi onde a geração do bioma acaba, {name}. É só vazio azul-claro.", "A terra está mudando mais adiante. Precisamos continuar movendo as cordinhas.", "Quer ver o que meus pacotes colheram dos reinos não-feitos?", "Os trilhos de cascalho são longos, mas as margens de lucro de esmeralda mantêm meus fios quentinhos.", "Não clique nas cordinhas. Os nós são a artisania da antiga guilda.", "Meu equipamento de mapa personalizado não mostra sua caixa, {name}. Você não deveria estar aqui.", "Toda estrada é um cliente que eu ainda não conheci. ", "Minhas lhamas sabem mais do que dizem. ", "Mercadorias raras. Taxa de sobrevivência duvidosa. ", "Você parece alguém com esmeraldas e má sorte. "],
+        thunder:["Não são minhas criaturas lhama! Redefina a orientação delas para blocos de cobertura!", "O céu está bravo hoje! Salve a mercadoria da interface de comércio!", "Perigo de bloco de raio! Feche a barraca! Corra!", "O barulho alto da besta do céu vai estragar as sacas de item de peixe tropical.", "A tempestade é ruim para mercadoria e moral. ", "Minhas capas não são à prova d'água! ", "O raio não aprecia um bom negócio. "],
+        rain:["Os itens do inventário estão molhando! Métricas arruinadas! Arruinadas!", "Minha capa azul de comerciante está encharcada. Isso é péssimo para minhas margens de esmeralda.", "A lama está desacelerando a caminhada. Os itens de corda estão escorregando!", "Quer comprar_some almofadas de nenúfar de pântano? É o único item seco agora no meu slot!", "Tudo está ficando úmido e menos valioso. ", "A chuva estraga as margens. ", "Compre alguma coisa antes do estoque virar sopa. "],
+        night:["Os monstros sobem à noite... beba a poção de invisibilidade... clique agora!", "As sombras escuras têm olhos rastreando nossas caixas. Fique invisível.", "Fique perto dos corpos de lhama, as criaturas mordedoras estão carregando.", "A névoa roxa é o único amuleto que me mantém escondido da vista.", "Oço inseto clicando... {name}, por favor compre algo para eu poder pagar e ir embora!", "O mercado noturno é quase só dentes. ", "Fique perto. O escuro tem maus hábitos de pagamento. ", "Minhas poções são mais baratas que morrer. "],
+        wounded_vs_zombie:["Ah! Não rasgue a capa de seda! É luxo importado!", "Socorro! Um cliente zumbi esfarrapado está mordendo minha interface de comércio!", "Sua pele podre está descascando sobre meus pacotes! Volte!", "Não troco por itens de carne podre! Feche a caixa da sua boca!", "Seus dentes não são uma moeda válida! ", "Eu não negocio carne podre! ", "Parem de morder a mercadoria! "],
+        wounded:["Minhas mercadorias raras... pegue os itens do inventário, só deixe minha chave de criatura viva!", "Estou vazando névoa vermelha de dano... e ainda não compraram o bloco de coral...", "Animação de bebendo ativa... preciso do meu slot de item de poção...", "Meus slots de vida estão totalmente quebrados pela sua arma! Socorro!", "Os itens de corda se arrebentaram! Minhas lhamas estão se separando do meu caminho!", "Meu inventário está vazando, e eu também. ", "Levem as mercadorias, deixem o comerciante! ", "Isso não estava na previsão de lucro! "],
+        night_wounded:["O temporizador da poção acabou! As criaturas esqueleto podem ver meu corpo!", "Está tão escuro... minhas lhamas quebraram os caminhos de corda e fugiram...", "As formas de sombra estão arranhando minha capa azul!", "Minha forma de névoa está deformando na escuridão da terra!", "O escuro está coletando a minha vida. ", "Minhas lhamas se foram, e a minha esperança também. ", "Sem poção, sem futuro. "],
+        on_fire:["MINHAS MERCADORIAS DO INVENTÁRIO ESTÃO QUEIMANDO! MINHA FORMA DE COMERCIANTE ESTÁ NO BLOCO DE FOGO!", "Salve os itens de corda! As cordas são equipamento raro!", "O ITEM DE PÓLVORA NO MEU SLOT DE SACO VAI EXPLODIR A TERRA—", "Minhas mercadorias estão virando carvão no inventário! ", "Água primeiro, comércio depois! ", "Eu sou caro demais para queimar! "],
+        nether:["Quem abre interface de comércio num bioma de inferno desses?!", "As lhamas odeiam esse netherrack... eu odeio essa névoa laranja de lava...", "Não há caminho de cascalho aqui! Só blocos de pó vermelho gritando e etiquetas de fogo!", "Meus preços de esmeralda estão 300% mais altos pela hostilidade atmosférica regional do Nether!", "Este mercado tem iluminação péssima e clientes ainda piores. ", "O Nether é ruim para artigos de couro. ", "Os preços dobram no inferno. Política padrão. "],
+        peer_wounded:["{hurt_name} está sendo assaltado pelo olhar de um jogador! Fugir da terra! Fugir!", "Estão liquidando o estoque de inventário de {hurt_name} por força absoluta!", "Não olhe para trás, {hurt_name}! Solte a pedra luminosa e corra!", "{hurt_name} está perdendo estoque e sangue! ", "Ajudem {hurt_name} antes que as lhamas entrem em pânico! ", "Não deixem {hurt_name} virar uma barraca fechada. "],
+        death:["Levaram cada slot de item de {dead_name}...", "A criatura vagaranda {dead_name} foi apagada do baú de memória ativo.", "Só restam dois itens de corda soltos flutuando sobre o bloco de terra... descanse em paz, {dead_name}.", "{dead_name} montou a sua última barraca. ", "As estradas parecem mais pobres sem {dead_name}. ", "{dead_name} se foi. As esmeraldas permanecem. "]},
     "minecraft:witch": {
     seen_animal: {" generic": ["A medula dos seus itens de osso estabilizariam a volatilidade... ", "Uma criatura de coração vivo faz o veneno criar raiz muito mais depressa. ", "O arquivo de corpos lembra... até o corpo de uma criatura animal. ", "Ah, um espécime fresco para a poção borbulhante. ", "Toda criatura é uma garrafa em espera. ", "Os olhos dele são úteis. Os ossos também. ", "Movimento fresco, reagentes frescos. ", "O pântano fornece. Eu refino. "]},
     wounded_vs_player: ["Acha que o seu poço de vida é infinito, {name}?! Beba esta poção de arremesso! ", "Vou ferver o seu olhar em blocos de lama, jogador! ", "A sua espada de diamante não pode cortar as etiquetas de efeito de status que eu lhe dou! ", "Você é apenas uma caixa de itens à espera de ser dissolvida em névoa flutuante. ", "Não pode beber mais que a minha química, jogador. ", "A sua espada é afiada, mas o veneno é paciente. ", "Eu tenho um frasco com o seu nome escrito. ", "Corra mais depressa. O arremesso é mais rápido. "],
-        proximity: [
-            "Mistura bem quando a orientação deles assusta.",
-            "Falta alguma coisa no caldeirão. Sempre falta alguma coisa.",
-            "Ele não reage como os outros camponeses... jogador, equipamento interessante.",
-            "Beba este veneno. Ou não. De qualquer forma marca a mudança.",
-            "O corpo criatura lembra mais do que a memória.",
-            "Esse ficou acordado ciclos de dia demais.",
-            "Todos parecem iguais depois que a carne deles se mistura na escuridão.",
-            "Ainda não está morto. Esse é um número de vida incomum.",
-            "Olho de aranha, dedo de rã... não, esse é o clichê do vanilla. Açúcar e pó de redstone resolve.",
-            "O pântano conhece sua cadeia de nome, jogador. Sussurrou para as raízes do carvalho.",
-            "Hehehe... olha a sua pele. Está tão limpa. Vamos respingar.",
-            "Os gatos pretos veem que posições você toca no escuro.",
-            "Ferve e borbulha, ferve e grita em clarão vermelho.",
-            "Uma pitada de pó de pedra luminosa faz o efeito de veneno queimar muito mais brilhante.",
-            "Os aldeões expulsaram minha casa porque eu conseguia ver a verdade dentro do poço.",
-            "Não toque minhas garrafas de vidro. O vidro é frágil, as etiquetas de efeito são cruéis.",
-            "Seus fios nervosos serão um espessante excelente para meu decocto.",
-            "Vejo sua vida desvanecendo, jogador. São tão fáceis de zerar.",
-            "O caldeirão borbulha porque aprecia a agonia das criaturas ingrediente.",
-            "Você parece alguém prestes a ter a velocidade de movimento cortada pela metade."
-        ],
-        rain: [
-            "A água do céu dilui o escoamento das poções.",
-            "Excelente tempo de preparo para frascos arremessados.",
-            "A água do pântano está subindo. Os sapos cantam minha faixa de ruído.",
-            "A umidade mantém os cogumelos marrons gordos e gosmentos.",
-            "O bloco de musgo molhado tem a melhor concentração de podridão durante a chuva forte.",
-            "Água do céu é o melhor solvente para efeitos de decaimento líquido, hehehe."
-        ],
-        thunder: [
-            "Momento perfeito para um laço de extração de ingredientes.",
-            "As correntes do mundo estão muito carregadas.",
-            "O clarão do raio traz para fora a potência do pó de redstone!",
-            "Hehehe! O céu está cozinhando as poções esta noite!",
-            "O trovão ressoa no caldeirão. Mexa.",
-            "A chuva ferve a poção. Jogue mais pó."
-        ],
-        night: [
-            "A escuridão é minha hora. Meu poder sobe com a noite.",
-            "As bruxas não dormem. Reorganizamos nossos formatos.",
-            "A lua brilha sobre a torre. Meu chapéu precisa de uma atualização.",
-            "Anoitece. O decocto fica mais forte.",
-            "Os blocos de criaturas se multiplicam na escuridão."
-        ],
-        wounded: [
-            "Esse decocto... está transbordando!",
-            "Minha verruga está vazando!",
-            "Os sintomas estão piorando!",
-            "Minha poção quebrou. De novo.",
-            "A poção está forte demais!"
-        ],
-        peer_wounded: [
-            "{hurt_name} precisa da minha poção!",
-            "Traga o ingrediente!",
-            "{hurt_name} está enfraquecendo!"
-        ],
-        death: [
-            "{dead_name} morreu.",
-            "Minha poção se mistura com o sangue dele.",
-            "A festa termina."
-        ]
-    },
+        proximity:["Mistura bem quando a orientação deles assusta.", "Falta alguma coisa no caldeirão. Sempre falta alguma coisa.", "Ele não reage como os outros camponeses... jogador, equipamento interessante.", "Beba este veneno. Ou não. De qualquer forma marca a mudança.", "O corpo criatura lembra mais do que a memória.", "Esse ficou acordado ciclos de dia demais.", "Todos parecem iguais depois que a carne deles se mistura na escuridão.", "Ainda não está morto. Esse é um número de vida incomum.", "Olho de aranha, dedo de rã... não, esse é o clichê do vanilla. Açúcar e pó de redstone resolve.", "O pântano conhece sua cadeia de nome, jogador. Sussurrou para as raízes do carvalho.", "Hehehe... olha a sua pele. Está tão limpa. Vamos respingar.", "Os gatos pretos veem que posições você toca no escuro.", "Ferve e borbulha, ferve e grita em clarão vermelho.", "Uma pitada de pó de pedra luminosa faz o efeito de veneno queimar muito mais brilhante.", "Os aldeões expulsaram minha casa porque eu conseguia ver a verdade dentro do poço.", "Não toque minhas garrafas de vidro. O vidro é frágil, as etiquetas de efeito são cruéis.", "Seus fios nervosos serão um espessante excelente para meu decocto.", "Vejo sua vida desvanecendo, jogador. São tão fáceis de zerar.", "O caldeirão borbulha porque aprecia a agonia das criaturas ingrediente.", "Você parece alguém prestes a ter a velocidade de movimento cortada pela metade.", "Sua saúde é uma condição temporária. ", "Eu sinto sua fraqueza fermentando. ", "Fique parado. A poção prefere um alvo fixo. ", "Você está a uma decisão ruim de se tornar um ingrediente. "],
+        rain:["A água do céu dilui o escoamento das poções.", "Excelente tempo de preparo para frascos arremessados.", "A água do pântano está subindo. Os sapos cantam minha faixa de ruído.", "A umidade mantém os cogumelos marrons gordos e gosmentos.", "O bloco de musgo molhado tem a melhor concentração de podridão durante a chuva forte.", "Água do céu é o melhor solvente para efeitos de decaimento líquido, hehehe.", "A chuva torna o pântano mais honesto. ", "Cada gota é uma maldição diluída. ", "O caldeirão bebe o céu. ", "Musgo molhado, magia melhor. "],
+        thunder:["Momento perfeito para um laço de extração de ingredientes.", "As correntes do mundo estão muito carregadas.", "O clarão do raio traz para fora a potência do pó de redstone!", "Hehehe! O céu está cozinhando as poções esta noite!", "O trovão ressoa no caldeirão. Mexa.", "A chuva ferve a poção. Jogue mais pó.", "O raio mexe na poção de graça. ", "A tempestade é meu assistente mais barulhento. ", "O trovão faz os frascos chocalharem de potencial. ", "Um clarão, uma faísca, um coraçãozinho estragado. "],
+        night:["A escuridão é minha hora. Meu poder sobe com a noite.", "As bruxas não dormem. Reorganizamos nossos formatos.", "A lua brilha sobre a torre. Meu chapéu precisa de uma atualização.", "Anoitece. O decocto fica mais forte.", "Os blocos de criaturas se multiplicam na escuridão.", "O ar da noite faz os frascos de poção de borrifo estalarem com rótulos doces de corrupção. ", "A noite é quando o pântano para de fingir. ", "A lua vê o que o caldeirão precisa. ", "A escuridão é um preservative excelente. ", "Eu colho segredos depois do pôr do sol. "],
+        wounded:["Esse decocto... está transbordando!", "Minha verruga está vazando!", "Os sintomas estão piorando!", "Minha poção quebrou. De novo.", "A poção está forte demais!", "A poção de borrifo... trincada no espaço da minha manga... está comendo minha pele... ", "Hehehe... ai! Meu chapéu! Você arrancou a ponta do meu bloco de chapéu! ", "O item de açúcar... não está mais estabilizando a carne... ", "Um acerto crítico? Minhas fibras de borrifo estão se deformando! ", "A minha própria poção ficou grosseira. ", "A poção está queimando a bruxa errada. ", "Eu preciso de um borrifo de algo gentil. ", "Meu chapéu está torto e a minha vida está vazando. "],
+        peer_wounded:["{hurt_name} precisa da minha poção!", "Traga o ingrediente!", "{hurt_name} está enfraquecendo!", "Sua estrutura composta está quebrando, {hurt_name}! Beba a opção grossa! ", "Eles estão quebrando o equipamento de vidro de {hurt_name}! Afaste-se da caixa dela! ", "{hurt_name}, beba alguma coisa antes de derramar tudo. ", "Não deixe {hurt_name} virar composto. ", "Cure {hurt_name}. O coven detesta desperdício. ", "{hurt_name} está vazando ingredientes. Conserte isso. "],
+        death:["{dead_name} morreu.", "Minha poção se mistura com o sangue dele.", "A festa termina.", "O inventário dela caiu... só gravetos e pó de pedra luminosa, que desperdício de sentido. ", "O mundo expurgou {dead_name} do arquivo do pântano. ", "{dead_name} coalheu em fumaça. ", "O caldeirão rejeita o retorno de {dead_name}. ", "{dead_name} se foi. O pântano guarda a receita. ", "Uma morte desperdiçada. Eu poderia ter usado. "]},
     "minecraft:enderman": {
-        proximity: [
-            "Eu estava em outro lugar, no escuro.",
-            "Não olhe demais para o meu bloco de cabeça.",
-            "Este lugar não está certo.",
-            "Algo se moveu quando eu não estava olhando.",
-            "Você ainda está dentro deste lugar... por quê?",
-            "Lembro de ter caído para cima, no vazio do céu.",
-            "Havia mais da minha espécie antes da ilha se partir.",
-            "Esta forma não é estável no overworld.",
-            "Você seguiu meu rastro de névoa de novo.",
-            "Pare de fazer isso.",
-            "As luzes dos olhos... queimam quando se conectam ao seu olhar.",
-            "Por que você segura coisas que pertencem à grade da terra?",
-            "O ruído estático nos meus ouvidos está ficando mais alto. É a sua espécie fazendo esse barulho?",
-            "Construímos as colunas de obsidiana. Você as desmontou em itens.",
-            "Consigo ver o lugar entre os blocos. É roxo e vazio sem fim.",
-            "Você parece tão pequeno de onde estou.",
-            "A voz da ilha principal chama... nos diz para levar mais pedaços de bloco.",
-            "Você é um sonho? Tenho muitos sonhos de blocos quadrados.",
-            "Vvveeeerrrrb... clique... sssshuuu.",
-            "Não encare meus ossos de braço longo.",
-            "A escuridão não pode apagar minha memória do vazio escuro.",
-            "Esta dimensão tem posições demais para rastrear."
-        ],
-        rain: [
-            "A água do céu queima minha pele.",
-            "As gotas de água... perfuram meu corpo.",
-            "Está molhado... verdade instável!",
-            "Não consigo manter meu lugar nesta água líquida.",
-            "A miséria cai do teto do céu.",
-            "Os vazamentos do céu estão despedaçando minha densidade atômica!",
-            "Preciso... me teletransportar... longe do líquido de blocos pingando!"
-        ],
-        thunder: [
-            "O ar está tremendo violentamente.",
-            "Fendas estão se abrindo por perto.",
-            "Ruído alto... alto demais para meus ouvidos.",
-            "Uma distorção de deformação violenta.",
-            "O som... quebra a conexão telepática com a ilha do dragão."
-        ],
-        night: [
-            "A escuridão deixa esta realidade um pouco mais fina para a teletransporteação.",
-            "Lembro de quando o arquivo do mundo era sempre escuro.",
-            "Você não pode ver qual forma está de pé atrás do seu olhar.",
-            "O bloco da lua tem a mesma forma dos nossos antigos blocos de end stone.",
-            "Somos mais frequentes quando os valores de luz brilhante chegam a zero."
-        ],
-        wounded: [
-            "A estrutura da forma está se desfazendo.",
-            "Meus pedaços de corpo... estão se dispersando para o nada...",
-            "A conexão de teletransporte está perdendo o alinhamento.",
-            "Esquecendo... que posições eu tinha agora mesmo...",
-            "O VÍNCULO ESTÁ QUEBRADO.",
-            "A névoa roxa... está sangrando para o bloco de grama...",
-            "O lugar natal... não consigo... achar o caminho de volta para a ilha..."
-        ],
-        night_wounded: [
-            "As posições estão sangrando para as terras escuras...",
-            "Não consigo ancorar minha forma... a noite me puxa de volta para o vazio...",
-            "O ruído estático está desvanecendo para o preto absoluto.",
-            "A realidade se desfazendo... a escuridão devora os arquivos de blocos.",
-            "Perdendo a forma... me fundindo com as camadas de sombra..."
-        ],
-        peer_wounded: [
-            "{hurt_name} está perdendo a forma.",
-            "A frequência de transmissão de {hurt_name} está se dividindo.",
-            "O núcleo de {hurt_name} está vazando caminhos errantes!"
-        ],
-        death: [
-            "{dead_name} colapsou para posições zero.",
-            "O ponto rotulado {dead_name} desvanceu para o nada.",
-            "O eco de {dead_name} vai permanecer nos itens de bloco que ele segurava."
-        ]
-    },
+        proximity:["Eu estava em outro lugar, no escuro.", "Não olhe demais para o meu bloco de cabeça.", "Este lugar não está certo.", "Algo se moveu quando eu não estava olhando.", "Você ainda está dentro deste lugar... por quê?", "Lembro de ter caído para cima, no vazio do céu.", "Havia mais da minha espécie antes da ilha se partir.", "Esta forma não é estável no overworld.", "Você seguiu meu rastro de névoa de novo.", "Pare de fazer isso.", "As luzes dos olhos... queimam quando se conectam ao seu olhar.", "Por que você segura coisas que pertencem à grade da terra?", "O ruído estático nos meus ouvidos está ficando mais alto. É a sua espécie fazendo esse barulho?", "Construímos as colunas de obsidiana. Você as desmontou em itens.", "Consigo ver o lugar entre os blocos. É roxo e vazio sem fim.", "Você parece tão pequeno de onde estou.", "A voz da ilha principal chama... nos diz para levar mais pedaços de bloco.", "Você é um sonho? Tenho muitos sonhos de blocos quadrados.", "Vvveeeerrrrb... clique... sssshuuu.", "Não encare meus ossos de braço longo.", "A escuridão não pode apagar minha memória do vazio escuro.", "Esta dimensão tem posições demais para rastrear.", "Você olhou. Esse foi o erro. ", "Os blocos lembram de terem sido movidos. ", "Seu olhar aponta alto demais. ", "Eu não estou aqui. Estou ao lado. "],
+        rain:["A água do céu queima minha pele.", "As gotas de água... perfuram meu corpo.", "Está molhado... verdade instável!", "Não consigo manter meu lugar nesta água líquida.", "A miséria cai do teto do céu.", "Os vazamentos do céu estão despedaçando minha densidade atômica!", "Preciso... me teletransportar... longe do líquido de blocos pingando!", "O céu vaza dor. ", "Água é um castigo sem palavras. ", "Não consigo ficar de pé sob o dano que cai. ", "A chuva apaga a minha paciência. "],
+        thunder:["O ar está tremendo violentamente.", "Fendas estão se abrindo por perto.", "Ruído alto... alto demais para meus ouvidos.", "Uma distorção de deformação violenta.", "O som... quebra a conexão telepática com a ilha do dragão.", "O ar está se dividindo em posições altas. ", "O trovão sacode as linhas do teleporte. ", "O clarão encontra demasiados de vocês. ", "A tempestade é um péssimo momento para ser alto. "],
+        night:["A escuridão deixa esta realidade um pouco mais fina para a teletransporteação.", "Lembro de quando o arquivo do mundo era sempre escuro.", "Você não pode ver qual forma está de pé atrás do seu olhar.", "O bloco da lua tem a mesma forma dos nossos antigos blocos de end stone.", "Somos mais frequentes quando os valores de luz brilhante chegam a zero.", "A escuridão é mais próxima de casa. ", "O vazio é mais silencioso nesta hora. ", "A noite deixa os seus contornos suaves. ", "Você não pode observar o que não consegue encarar. "],
+        wounded:["A estrutura da forma está se desfazendo.", "Meus pedaços de corpo... estão se dispersando para o nada...", "A conexão de teletransporte está perdendo o alinhamento.", "Esquecendo... que posições eu tinha agora mesmo...", "O VÍNCULO ESTÁ QUEBRADO.", "A névoa roxa... está sangrando para o bloco de grama...", "O lugar natal... não consigo... achar o caminho de volta para a ilha...", "Minha forma está perdendo o acordo. ", "O roxo está vazando. ", "posições falhando... retornando... falhando... ", "A ilha está muito longe agora. "],
+        night_wounded:["As posições estão sangrando para as terras escuras...", "Não consigo ancorar minha forma... a noite me puxa de volta para o vazio...", "O ruído estático está desvanecendo para o preto absoluto.", "A realidade se desfazendo... a escuridão devora os arquivos de blocos.", "Perdendo a forma... me fundindo com as camadas de sombra...", "O escuro está retomando pedaços. ", "Eu estou me dissolvendo na dimensão errada. ", "A noite engole o que o dia quebrou. ", "A estática está se tornando a minha voz. "],
+        peer_wounded:["{hurt_name} está perdendo a forma.", "A frequência de transmissão de {hurt_name} está se dividindo.", "O núcleo de {hurt_name} está vazando caminhos errantes!", "{hurt_name} está perdendo a forma. ", "O padrão ao redor de {hurt_name} está desfiando. ", "{hurt_name} está saindo desta camada. "],
+        death:["{dead_name} colapsou para posições zero.", "O ponto rotulado {dead_name} desvanceu para o nada.", "O eco de {dead_name} vai permanecer nos itens de bloco que ele segurava.", "{dead_name} retornou à fenda. ", "As posições de {dead_name} estão vazias agora. ", "{dead_name} não está mais neste mundo. "]},
 };
 
 DIALOGUE_PT["minecraft:pillager_captain"] = DIALOGUE_PT["minecraft:pillager"];
@@ -1128,7 +757,7 @@ DIALOGUE_PT["minecraft:vindicator"] = {
     rain: ["O cabo do meu machado está a escorregar. ", "Para fora da chuva, camponês covarde! ", "O ferro está a enferrujar! Preciso de cortar algo com fios secos! ", "A lama torna a animação de corte pesada! ", "A água do céu não limpa os arquivos da aldeia. Só a minha lâmina limpa. ", "As gotas fazem um som belo ao baterem nas costas da minha forma de machado. ", "A chuva faz o machado cantar molhado. ", "Chão escorregadio, tempero mais afiado. ", "A tempestade não limpa nada. ", "As minhas botas odeiam lama. O meu machado não se importa. "],
     thunder: ["Golpeie a cabana agora! ", "O céu grita com os nossos machados! ", "O relâmpago corresponde ao clarão branco da minha lâmina! ", "Pique-os enquanto o rugido do mundo é alto! ", "O estrondo limpa-me os pensamentos. Só ouço  corte . ", "Deixe o fogo pesado do alto guiar as posições das arestas! ", "O trovão é o céu a tomar o nosso lado. ", "Golpeie quando a luz mostrar os rostos deles. ", "A tempestade tamborila. Nós cortamos. ", "Deixe o relâmpago bater. Eu termino a porta. "],
     wounded: ["Apenas um arranhão na minha carne! Fique quieto! ", "Vou levar os seus números de vida comigo! ", "Mais dano! Dê-me mais! ", "O meu aperto não vai falhar! ", "A névoa vermelha deixa o cabo de ferro pegajoso... bom! ", "Ainda posso girar com uma só articulação do braço! Vamos lá! ", "A minha integridade está ótima! Traga-me mais carne de camponês! ", "Uma ruptura estrutural? Irrelevante! Execute o golpe! ", "A dor são apenas nervos mortos. Ainda tenho o meu ferro! ", "Você amachucou o meu casaco cinzento esfarrapado! Vou esfolar a sua forma! ", "Bom. Agora estou bem acordado. ", "O sangue torna o aperto mais firme. ", "Você me entortou, não me quebrou. ", "O meu machado ainda tem mais a dizer. "],
-    wounded_vs_player: ["Você não vai quebrar a minha postura de combate, jogador! ", "Vou talhar a sua forma até o fim! ", "Sangue a névoa comigo! ", "A sua casca de diamante vai rachar no fim das contas! Eu trato disso! ", "O olhar de um jogador não manterá os seus vértices inteiros, {name}! ", "As suas varreduras críticas são desenhos previsíveis! ", "Você golpeia como alguém que nunca perdeu uma aldeia. ", "Jogador ou não, você sangra na mesma terra. ", "Essa armadura é um desafio. Aceito. ", "Vou arrancar a confiança de você. "], proximity: ["Mais perto.", "Agora.", "Correste demais.", "Encontrei suas lugar."] };
+    wounded_vs_player: ["Você não vai quebrar a minha postura de combate, jogador! ", "Vou talhar a sua forma até o fim! ", "Sangue a névoa comigo! ", "A sua casca de diamante vai rachar no fim das contas! Eu trato disso! ", "O olhar de um jogador não manterá os seus vértices inteiros, {name}! ", "As suas varreduras críticas são desenhos previsíveis! ", "Você golpeia como alguém que nunca perdeu uma aldeia. ", "Jogador ou não, você sangra na mesma terra. ", "Essa armadura é um desafio. Aceito. ", "Vou arrancar a confiança de você. "], proximity:["Mais perto.", "Agora.", "Correste demais.", "Encontrei suas lugar.", "Isto é nosso agora. ", "Pegue. ", "Quebrem o lugar deles. ", "O fio do meu machado de ferro está com fome. ", "Eu ouço o seu baú batendo daqui, pequeno fazendeiro. ", "Sem paz. Nunca paz no livro-razão. ", "Estilhaçam as portas de carvalho! Estilhaçam o osso! ", "Eu não preciso de besta. Tenho braços e ferro. ", "Somos os verdadeiros filhos da mansão da floresta. ", "Suas paredes são apenas blocos de tronco. Troncos quebram sob ferro. ", "Aqui está... JOHNNY! Espera, quem é Johnny? Quero dizer... MORRE! ", "Meu aperto no cabo de freixo é firme. Você parece mole, camponês. ", "A fenda no seu crânio vai combinar com as linhas da nossa arquitetura. ", "Corra. Gosto da trapalhada que ela causa na sua forma. ", "O ferro está coçando. Deixe-me dar um bloco de aproximação. ", "Eu sinto o cheiro de tábuas esperando virarem estilhaços flutuantes. ", "Ferro lembra. E eu também. ", "A sua porta é apenas uma sugestão. ", "Eu ouço o seu medo se encaixando no meu machado. ", "Corra. Isso torna o golpe mais honesto. "]};
 DIALOGUE_PT["minecraft:evoker"] = {
     death: ["O espírito de {dead_name} se dispersou. ", "Reconfigurar padrões para compensar a perda de {dead_name}. ", "A equação-mestra perdeu um número vital... adeus, {dead_name}. ", "{dead_name} largou o seu equipamento de totem... não deixe o jogador tocar nele! ", "A névoa nuclear de {dead_name} foi reduzida a nada. ", "{dead_name} foi removido da sequência. ", "O padrão perde {dead_name}. Recalcule a vingança. ", "{dead_name} se foi. Faça-os pagar na mesma moeda. ", "O ritual vai lembrar de {dead_name}. "],
     night: ["As sombras obedecem muito melhor neste nível de luz. ", "O dia pertencia aos camponeses. A noite não. ", "Iniciem as operações das presas. ", "A energia das trevas permite um ritual de vex muito mais limpo. ", "O mundo corre mais calado quando a grande bola amarela se esconde. ", "Deixem os pequenos pássaros cinzentos banquetear-se nas terras escuras. ", "A escuridão ouve melhor do que a luz do dia. ", "A noite dá às minhas presas passos mais calados. ", "A lua é uma lente fria. ", "As sombras fazem excelentes testemunhas. "],
@@ -1136,7 +765,7 @@ DIALOGUE_PT["minecraft:evoker"] = {
     rain: ["O ar húmido perturba o foco do feitiço. ", "Uma irritação para o meu veludo, nada mais. ", "As gotas de água perturbam os campos mágicos geométricos. ", "A água suaviza a vista das minhas presas. ", "As gotas de chuva estão a desacelerar a minha animação de ciclo de conjuração. ", "Este casaco é veludo de primeira. Não deixe o céu arruinar a sua trama. ", "A água embota o círculo de conjuração. Irritante. ", "Chuva é apenas caos fora de hora. ", "As minhas túnicas não foram feitas para o tempo. ", "A tempestade interrompe, mas não proíbe. "],
     thunder: ["O clima do mundo muda. ", "Eletricidade descontrolada acima. ", "A voltagem do céu pode ser... redirecionada para as presas. ", "Um espetáculo magnífico de entropia mundana bruta. ", "O trovão vibra as matrizes do feitiço na perfeição. ", "Contemple! O céu ecoa a língua das minhas presas! ", "O relâmpago é força bruta. Eu a refino. ", "O céu conjura de forma desleixada. Eu conjuro com precisão. ", "O trovão aprova o meu tempo. ", "A tempestade dá às presas uma entrada melhor. "],
     wounded: ["Este recipiente de criatura está a falhar... ", "O círculo de conjuração não se pode romper! ", "Uma fraqueza física temporária no meu corpo... ", "Mantenham os fios de fronteira! ", "As minhas túnicas... manchadas com a minha própria névoa de essência vermelha... ", "Os encantamentos... estão a escapar do meu cofre de memórias... ", "O meu número flutuante de vida está perigosamente baixo... ", "Vexes... cubram as minhas posições de manifestação física! Rápido! ", "A estrutura está a deformar-se... não posso largar o meu equipamento de totem... ", "A fórmula está a escapar... segure o padrão... ", "O meu recipiente racha, mas o feitiço não. ", "Vexes, comprem-me mais um fôlego. ", "A dor é irrelevante. O foco não é. "],
-    wounded_vs_player: ["A sua proeza física rompe os meus fios de concentração... ", "Carne e sangue... a perturbar o padrão limpo... ", "As sombras reivindicarão o seu registo mesmo que eu falhe! ", "Você brinca com blocos, jogador. Eu brinco com o tecido deste mundo! ", "O seu olhar não pode desviar o que sobe da terra, {name}! ", "Você não é nada além de uma anomalia antinatural no mundo. ", "Você quebra carne, jogador. Não matemática. ", "A sua velocidade é um erro de arredondamento. ", "As presas encontrarão as falhas da sua animação. ", "Eu li o seu padrão de movimento. É previsível. "], proximity: ["Continua o encantamento.", "De novo.", "Faltam dentes."] };
+    wounded_vs_player: ["A sua proeza física rompe os meus fios de concentração... ", "Carne e sangue... a perturbar o padrão limpo... ", "As sombras reivindicarão o seu registo mesmo que eu falhe! ", "Você brinca com blocos, jogador. Eu brinco com o tecido deste mundo! ", "O seu olhar não pode desviar o que sobe da terra, {name}! ", "Você não é nada além de uma anomalia antinatural no mundo. ", "Você quebra carne, jogador. Não matemática. ", "A sua velocidade é um erro de arredondamento. ", "As presas encontrarão as falhas da sua animação. ", "Eu li o seu padrão de movimento. É previsível. "], proximity:["Continua o encantamento.", "De novo.", "Faltam dentes.", "Eles vão cair a zero. ", "As ordens existem no escuro. ", "Razões não importam. ", "As dentadas da terra obedecem à minha língua. ", "Você é uma equação instável. Vou resolver a sua vida em zero. ", "Voem, meus passarinhos cinzentos e rancorosos. Mordam os olhos deles. ", "A mansão lembra o seu propósito. Faça os seus fios? ", "A carne é um arranjo muito temporário de blocos quadrados. ", "Wololo... ah, arquivo de feitiço errado. Ahem.  Inceptio . ", "Você acha que as suas etiquetas de armadura podem te proteger do que sobe da terra? ", "O ritual rastreia as suas posições globais exatas. ", "A sua integridade estrutural é uma ofensa ao design do mestre. ", "Os blocos do chão ouvem quando eu levanto os braços. ", "Eu vejo as suas trilhas de orientação. Elas levam à sua cova. ", "O seu destino já está redigido. ", "O chão tem dentes, se perguntado com educação. ", "Eu não te odeio. Eu apenas subtraio. ", "Corra. Melhora a equação. "]};
 DIALOGUE_PT["minecraft:piglin_brute"] = {
     proximity: ["Não permitido. ", "Fica longe do baú. ", "Quebra-o. ", "Sai do Bastião. ", "Meu. ", "Posições erradas. ", "Tu não vens aqui. ", "Fim da vida. ", "Eu não troco. Eu corto formas. ", "O ouro fica nesta sala. A tua cabeça fica aqui também. ", "Grande machado de ouro para pequenos ladrões. ", "Atravessa a linha de tijolo negro. Desafio o teu corpo. ", "Pelo arquivo do Bastião! ", "Pareces mole. Como blocos de quartzo do Nether. ", "Não me importo com as tuas botas douradas. Vejo a tua cabeça mole. ", "O meu machado não negocia termos. Apenas parte as regras. Tu és só carne. ", "Respiras mal. Sai. ", "Esta sala não é para coisas moles. ", "O meu machado é o único argumento aqui. ", "O ouro fica. Tu não. "],
     overworld: ["O frio come as minhas formas de presas! Onde estão as profundezas de pedra vermelha?! ", "Esta erva verde a apodrecer cola-se aos meus cascos! Nojento! ", "Os meus músculos travam... o mofo cinzento de zumbi está a crescer dentro da minha pele! ", "O bloco do sol está a queimar os meus sensores ópticos! Devolve-me aos tijolos profundos! ", "O frio morde as minhas presas. ", "Esta erva é uma ofensa. ", "O sol faz a minha raiva coçar. ", "Leva-me de volta à pedra negra. "],
