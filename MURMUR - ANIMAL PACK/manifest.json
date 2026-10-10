@@ -4,7 +4,7 @@
         "product_type": "addon"
     },
     "header": {
-        "description": "Emergent Reactive Commentary. Silent judgment and subtle behavior descriptions for animals.",
+        "description": "Emergent Reactive Commentary. Silent judgment and subtle behavior descriptions for animals. (ACHIEVEMENT FRIENDLY)",
         "name": "MURMUR Animal Pack",
         "uuid": "b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
         "version": [
@@ -42,7 +42,7 @@
             "version": [
                 1,
                 0,
-                23
+                22
             ]
         }
     ]

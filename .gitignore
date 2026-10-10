@@ -42,3 +42,9 @@ venv/
 *.log
 logs/
 *.tmp
+
+# ---------------------------------------------------------------------------
+# Local scratch backups. Pre-change snapshots of source files kept only so a
+# bad edit can be reverted. Not part of the published project.
+# ---------------------------------------------------------------------------
+_backups/

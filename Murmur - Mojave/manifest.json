@@ -4,13 +4,13 @@
         "product_type": "addon"
     },
     "header": {
-        "description": "Wasteland-flavoured ambient and reactive chatter for vanilla Minecraft mobs. Settlers, Sentries, Legion raiders, wasteland snipers, Centurions, Incinerators, caravan hands and rad-chemists. Original writing. Part of the MURMUR Ecosystem.",
+        "description": "Wasteland-flavoured ambient and reactive chatter for vanilla Minecraft mobs. Settlers, Sentries, Legion raiders, wasteland snipers, Centurions, Incinerators, caravan hands and rad-chemists. Original writing. Part of the MURMUR Ecosystem. (ACHIEVEMENT FRIENDLY)",
         "name": "MURMUR Mojave Pack",
         "uuid": "f85f9de6-c759-49ec-bb90-0fb97058839e",
         "version": [
             1,
             0,
-            0
+            1
         ],
         "min_engine_version": [
             1,
@@ -27,7 +27,7 @@
             "version": [
                 1,
                 0,
-                0
+                1
             ],
             "entry": "scripts/register.js"
         }

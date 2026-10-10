@@ -1,4 +1,4 @@
-﻿// --- RANDOM NAME POOLS ---
+// --- RANDOM NAME POOLS ---
 export const VILLAGER_NAMES = [
  "Burl ",  "Garth ",  "Joffrey ",  "Murn ",  "Kren ",  "Slood ",  "Hurn ",  "Fald ",  "Ror ",  "Vren ",  "Kloog ",
  "Wurn ",  "Thadd ",  "Blud ",  "Gorf ",  "Nard ",  "Splint ",  "Grim ",  "Orin ",  "Kael ",  "Rigo ",  "Meek ",
@@ -48,6 +48,53 @@ export const SKELETON_NAMES = [
 // --- DIALOGUE ARCHIVES ---
 export const DIALOGUE = {
  "minecraft:villager_v2 ": {
+        sneaking: [
+            "There you are. Quiet feet, loud intentions.",
+            "You move like something that has done this before.",
+            "The wheat does not care. I do.",
+            "Snuck in past the fence, did you.",
+            "I am not the village watch. But I notice.",
+            "Come closer. I will not scream."
+        ],
+        jumping: [
+            "Up and down like a bird that forgot the ground.",
+            "You nearly took the gate with you.",
+            "The children copy you. They should not.",
+            "Go on. Jump again. I am counting.",
+            "Something about that landing. Almost right.",
+            "The chickens are not impressed."
+        ],
+        holding_weapon: [
+            "Steel, in my village. Interesting.",
+            "That has an edge. I can hear it from here.",
+            "Point it elsewhere and we will be friends.",
+            "The last person who brandished that is a scarecrow.",
+            "You carry death like a bag of shopping.",
+            "Put it down. Pick up a hoe instead."
+        ],
+        holding_useful: [
+            "Ah. Something you intend to use.",
+            "Give me that and I will get you double.",
+            "A farmer's tool. You are one of us, then.",
+            "You could trade that for a better one.",
+            "Most visitors carry nothing worth having.",
+            "That will keep a body alive through winter."
+        ],
+        jukebox: [
+            "Music. In the middle of all this.",
+            "Play it again. The village needs it.",
+            "That song travels further than you know.",
+            "I remember dancing to that, once.",
+            "Every record skips at the same place."
+        ],
+        wealth: [
+            "You are richer than the field you are standing in.",
+            "Do not count it here. People watch.",
+            "That purse is a target, not a comfort.",
+            "I have seen that much coin end a man.",
+            "Spend it on something that cannot be taken."
+        ],
+        
   greeting_friend: [
    "Oh, it's you, {name}. Good. The village feels right when you're near. ",
    "You again! You always bring the right kind of noise. ",
@@ -911,13 +958,30 @@ death: [
 ]
 },
  "minecraft:piglin ": {
+        witness: [
+            "Gone... may I keep what he carried?",
+            "Born in fire, returned to the Nether's dust.",
+            "The horde remembers.",
+            "More gold for those who remain."
+        ],
+        
   greeting_friend: [
-   "Gold-friend! You smell of shiny. Come, barter. ",
-   "You give good gold. The bastion remembers kindness. "
+      "Gold-friend! You smell of shiny. Come, barter. ",
+      "You give good gold. The bastion remembers kindness. ",
+      "You again. Good. The hoard has not been raided since you came.",
+      "I did not expect to enjoy a face. Yours is... tolerable.",
+      "You have not stolen. That is more than most manage.",
+      "Stay a while. The gold is warmer when it is watched.",
+      "I will remember this. I remember everything about metal."
   ],
   greeting_foe: [
-   "Gold-thief. I know your scent, overworlder. ",
-   "You took from us. My tusks haven't forgotten. "
+      "Gold-thief. I know your scent, overworlder. ",
+      "You took from us. My tusks haven't forgotten. ",
+      "You. I counted every step you took toward the hoard.",
+      "Do not come closer. The gold has teeth tonight.",
+      "I will not mourn you. I will count you.",
+      "You smell of iron. I mean that literally.",
+      "Back away. Slowly. I am still deciding."
   ],
   proximity: [
   "More gold items. Always more gold. ",  "That's not enough gold for the barter. ",  "Gold keeps your strength alive. ",
@@ -1181,6 +1245,13 @@ death: [
 ]
 },
  "minecraft:wither_skeleton ": {
+        witness: [
+            "A fragment of darkness has been released.",
+            "Returned to the primordial ash.",
+            "The soul-net has lost a node.",
+            "Fewer guardians... more silence."
+        ],
+        
 proximity: [
  "Kill the hide ",  "Break its armor ",  "Heard a step sound ",  "I HEARD THAT STEP ",  "MOVE NOW ",  "THERE ",  "NOW SLICE ",
  "AGAIN SWING ",  "NO BLOCKING ",  "HEAR IT CLICK ",  "STILL THERE IN CORRIDOR ",  "NOT QUIET ENVIRONMENT ",  "WRONG FOOTSTEP SOUND ",  "YOU ECHO ",
@@ -1317,13 +1388,30 @@ death: [
 ]
 },
  "minecraft:iron_golem ": {
+        witness: [
+            "A unit is lost. Reconfiguring protocols.",
+            "Fallen in the line of duty. Memory retained.",
+            "Iron for iron. Ash for ash.",
+            "A gap has been left in the village's record."
+        ],
+        
   greeting_friend: [
-   "I will not move from your door, friend. You are safe here. ",
-   "The village sleeps because you are near. I approve. "
+      "I will not move from your door, friend. You are safe here. ",
+      "The village sleeps because you are near. I approve. ",
+      "You are not a threat. I have decided this, and it will hold.",
+      "The village sleeps easier with you in it.",
+      "I will walk with you as far as the next light.",
+      "You have never once drawn on me. That is noted.",
+      "Go carefully. The dark is not empty tonight."
   ],
   greeting_foe: [
-   "I see the red on your hands. Step back from the soft ones. ",
-   "You are no longer welcome where I stand guard. "
+      "I see the red on your hands. Step back from the soft ones. ",
+      "You are no longer welcome where I stand guard. ",
+      "Step back. I have weighed you and you are wanting.",
+      "You have hurt this village. I do not forget such things.",
+      "I was made to protect. You are not protected.",
+      "The last one who came in peace left without it.",
+      "Move, and I will not ask why."
   ],
   proximity: [
   "The iron block density holds. ",

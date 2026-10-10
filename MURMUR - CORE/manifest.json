@@ -4,7 +4,7 @@
         "product_type": "addon"
     },
     "header": {
-        "description": "The modular heartbeat of MURMUR. High-performance engine for theme-swappable ambient dialogue, plus a persistent NPC RPG layer: quests, reputation, and talkable dialogue trees.",
+        "description": "The modular heartbeat of MURMUR. High-performance engine for theme-swappable ambient dialogue, plus a persistent NPC RPG layer: quests, reputation, and talkable dialogue trees. (ACHIEVEMENT FRIENDLY)",
         "name": "MURMUR Core",
         "uuid": "7f9a1b2c-3d4e-4f5a-6b7c-8d9e0f1a2b3c",
         "version": [

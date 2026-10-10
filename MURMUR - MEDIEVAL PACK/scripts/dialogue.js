@@ -1,4 +1,4 @@
-﻿// --- RANDOM NAME POOLS ---
+// --- RANDOM NAME POOLS ---
 export const VILLAGER_NAMES = [
     "Aldous", "Giles", "Godric", "Osric", "Wymond", "Bartholomew", "Hodge", "Pate", "Clem", "Jocelyn", "Drogo", "Rulf",
     "Lambert", "Winifred", "Gervaise", "Piers", "Anselm", "Benedict", "Cuthbert", "Eldred", "Milo", "Geoffrey", "Dunstan", "Reynold",
@@ -51,6 +51,74 @@ export const SKELETON_NAMES = [
 // --- DIALOGUE ARCHIVES ---
 export const DIALOGUE = {
     "minecraft:villager_v2": {
+        sneaking: [
+            "Hark... who creeps so softly? Villains, or the merely shy?",
+            "I saw a shadow pass the hedge just now. Some thief, no doubt.",
+            "Creep nearer and the gods mark you for a thief, friend.",
+            "Steady now. The village hears far more than it should.",
+            "A cautious soul. Wise, in these times.",
+            "If you mean to rob us, do it while the watchman sleeps."
+        ],
+        jumping: [
+            "Hop about, if it please you! The wheat does not mind.",
+            "You land like a cat, friend. Were you born aloft?",
+            "That was a mighty leap for a soul on two legs.",
+            "Dance, then! The old songs demanded dancing after harvest.",
+            "Careful, good sir. My knees are older than your father.",
+            "The roof beams shake when you do that."
+        ],
+        holding_weapon: [
+            "Steel in the village? Well, is that not something.",
+            "Sheathe it, friend. The reeve would have words with you.",
+            "I trust that blade is for wolves, not for neighbours.",
+            "My father held a spear. It never once saw harvest.",
+            "Keep it low, and we shall speak of fields, not feuds.",
+            "An honest tool, that. Though not honest company."
+        ],
+        holding_useful: [
+            "Good, you carry the harvest in. The fields are grateful.",
+            "Bring that near the stores, friend. It will not keep.",
+            "Useful hands make light work of a heavy day.",
+            "You mean to settle a while, I take it. Take a chair.",
+            "That will fetch a fair price at the market.",
+            "Aye, the village runs on such as that."
+        ],
+        jukebox: [
+            "The loremaster is singing. Oh, but it lifts the heart.",
+            "Music in the dusk. The gods are feeling generous tonight.",
+            "That tune stirs memory. I knew it in the old country.",
+            "Sing with us, friend! Your voice is not so poor.",
+            "A bard, is it? Then you are welcome here a while."
+        ],
+        wealth: [
+            "Gold in a commoner's purse? The gods have been generous.",
+            "Your coin chimes like a bell. It wants spending, friend.",
+            "You are become a rich man since last I saw you.",
+            "That emerald alone would mend the chapel roof.",
+            "Wealth guards a man as poorly as hunger does."
+        ],
+        greeting_foe: [
+            "You again, and still unwelcome in these fields.",
+            "I will not forget what your hands did, friend or foe.",
+            "The village counts its fences. You count differently.",
+            "Keep your distance from my door. There is no harvest for you here.",
+            "We remember. That is the trouble with us."
+        ],
+        soft_player: [
+            "Cloth and hope. The fields spare such armour.",
+            "You carry no iron. Nor, I think, much caution.",
+            "A pilgrim, by the look. Pilgrims are welcome, but hungry.",
+            "Bare hands and a full heart. That has served some folk well.",
+            "A farmer, perhaps? Then we are of one trade."
+        ],
+        armored_player: [
+            "Steel and a riding bird! The reeve will want your name.",
+            "You are a soldier, then. God keep you from our hearth.",
+            "Iron like that costs a village a whole harvest.",
+            "I salute you, sir. I do not trust you, but I salute you.",
+            "A knight in our barley. The day grows strange."
+        ],
+        
         proximity: [
             "Blessings of the Eight upon you, traveler.", "A strange aura shadows this one...", "Behold your burden, friend—carrying too much?", "What brings an adventurer back to our simple stead?",
             "Speak, traveler, but cause no strife.", "The clouds gather... an ill wind blows from the east.", "By the gods, something has disturbed the alignment here...", "A grim omen... as if an era draws to its close.",
@@ -186,6 +254,21 @@ export const DIALOGUE = {
         ]
     },
     "minecraft:pillager": {
+        greeting_friend: [
+            "You again. The reeve's men know your face now.",
+            "The Captain speaks well of you. That is rare, and dangerous.",
+            "You walk our roads without a toll. I have noticed.",
+            "You fought beside us at the bridge. I did not forget.",
+            "So. A friend of the horde. Do not make me regret it."
+        ],
+        greeting_foe: [
+            "You. The Captain will hear your name again.",
+            "We buried our share of you at the last crossing.",
+            "The horns know that step. So do I.",
+            "Run if it helps you. It will not help much.",
+            "You are a debt this horde intends to collect."
+        ],
+        
         proximity: [
             "There stands our quarry.", "Cut off his retreat.", "He carries relics of great value.", "Plunder it.", "Put the keep to the torch.", "Leave nothing but ash.", "They are unworthy of such wealth.",
             "They are weak. Unfit to rule.", "An easy siege.", "This fiefdom is ours by right.", "The prize is found.", "We take by steel, we keep by blood.", "The adventurer returns once more...",
@@ -202,8 +285,18 @@ export const DIALOGUE = {
         night_wounded: ["Night maneuvers compromised!", "We have lost the vanguard line!", "This darkness is absolute blindness!", "My life spills out, yet I cannot see the gash!", "The target utilizes the shadows against us!"],
         alone: ["Where are my kinsmen?", "I am tracking the quarry without aid.", "Company scattered.", "Captain? Report your position.", "No matter... my steel strikes true alone."],
         crowded: ["Cleave them asunder!", "The field is ours by numbers!", "Cut them down like dogs!", "Push the frontline!", "Encircle the perimeter!"],
-        soft_player: ["An unarmored peasant.", "Waste no steel on this dog.", "Pathetic rags.", "This fool boasts not even a scrap of iron.", "Shatter their wooden toys!"],
-        armored_player: ["The target is clad in heavy plate!", "Aim for the joints of their armor!", "What manner of knight is this?!", "Our bolts glance off his breastplate!", "They wear an enchanted shell!"],
+        soft_player: ["An unarmored peasant.", "Waste no steel on this dog.", "Pathetic rags.", "This fool boasts not even a scrap of iron.", "Shatter their wooden toys!",
+        "Cloth and hope. The fields spare such armour.",
+        "You carry no iron. Nor, I think, much caution.",
+        "A pilgrim, by the look. Pilgrims are welcome, but hungry.",
+        "Bare hands and a full heart. That has served some folk well.",
+        "A farmer, perhaps? Then we are of one trade."],
+        armored_player: ["The target is clad in heavy plate!", "Aim for the joints of their armor!", "What manner of knight is this?!", "Our bolts glance off his breastplate!", "They wear an enchanted shell!",
+        "Steel and a riding bird! The reeve will want your name.",
+        "You are a soldier, then. God keep you from our hearth.",
+        "Iron like that costs a village a whole harvest.",
+        "I salute you, sir. I do not trust you, but I salute you.",
+        "A knight in our barley. The day grows strange."],
         nether: ["The climate is hostile.", "This valley is a forge of torment.", "The Captain did not say we would march into the abyss.", "Ware the swine-knights of the wastes."],
         wounded_vs_player: ["The vanguard is too aggressive! Seek cover!", "Arrgh! He is picking us apart one by one!", "The devil feels no pain!", "He brings the very architecture down upon our heads!", "Their plate armor is impenetrable..."],
         peer_wounded: ["Cover {hurt_name}!", "{hurt_name} has been struck down!", "Let them not break our formation!", "Drag {hurt_name} behind the palisade!", "Avenge the blood of {hurt_name}!", "Shield wall!"],
@@ -232,6 +325,13 @@ export const DIALOGUE = {
         death: ["The arcane energy of {dead_name} has dispersed.", "Reweave the spell ingredients.", "A vital mage has been lost... farewell, {dead_name}."]
     },
     "minecraft:piglin": {
+        witness: [
+            "Gone... may I keep what he carried?",
+            "Born in fire, returned to the Nether's dust.",
+            "The horde remembers.",
+            "More gold for those who remain."
+        ],
+        
         proximity: ["More gold for the hoard.", "Gold keeps the life within you.", "He hoards the sacred gold...", "Trust not this wanderer.", "He conceals something shimmering.", "Watch his hands.", "Will you barter in gold?", "A poor bargain...", "The precious metal keeps us safe.", "The gold watches you.", "This realm is blindingly bright.", "Keep the crossbow cocked.", "The magma runs hot today.", "We strike down those who lack the shimmering metal.", "Offer us the golden coins.", "You reek of the upper world's decay.", "The Bastion keeps watch."],
         overworld: ["The air is absolute ice!", "The ground here is unnaturally soft and green...", "My hide feels corrupted by this air...", "The grand Bastion is lost to me!"],
         wounded: ["Protect the hoard!", "I require gold...", "He plunders our entire treasury!", "Let me gaze upon the shimmer before I pass...", "A maw full of brimstone ash...", "I am leaking silver coins...", "Bury the treasure!", "The loss of coin is sharper than any blade...", "Where are my golden nuggets?"],
@@ -264,6 +364,13 @@ export const DIALOGUE = {
         death: ["{dead_name} has collapsed to nothing.", "{dead_name} has resolved to the void.", "The echo of {dead_name} lingers within the stonework."]
     },
     "minecraft:wither_skeleton": {
+        witness: [
+            "A fragment of darkness has been released.",
+            "Returned to the primordial ash.",
+            "The soul-net has lost a node.",
+            "Fewer guardians... more silence."
+        ],
+        
         proximity: ["Slay the living.", "Shatter their bones.", "I CONFRONT THE INTRUDER.", "Ash and coal dust fill our ribs.", "This fortress belongs to the dead.", "My greatsword craves flesh.", "An ancient skull for the master's tribute.", "Our liege lord shall awaken soon.", "The rot of the crypt shall take you.", "Stone pathways of torment.", "An intruder breaches our dark keep."],
         wounded: ["MY BONE BREAKS ASUNDER.", "THE CRYPT STRUCTURE IS COLLAPSING.", "THIS BLAKENED BLADE IS TOO HEAVY...", "Marrow dropping onto the ash...", "A fatal fracture in my spine...", "The soot escapes from my ribs."],
         peer_wounded: ["MEND THE BONES.", "Our skeletal forms are splitting.", "A SPARE RIB FOR {hurt_name}!", "PROTECT THE SKELETAL CRANIUM!", "THE STONE SWORD FALTERS!"],
@@ -277,6 +384,13 @@ export const DIALOGUE = {
         death: ["RETURN TO THE ANCIENT STONE.", "THE SMOKE SCATTERS TO THE CAVERNS.", "THE FLAME IS EXTINGUISHED.", "THE HEAT FADES TO ICE.", "THE IGNITION COOLS TO ASH."]
     },
     "minecraft:iron_golem": {
+        witness: [
+            "A unit is lost. Reconfiguring protocols.",
+            "Fallen in the line of duty. Memory retained.",
+            "Iron for iron. Ash for ash.",
+            "A gap has been left in the village's record."
+        ],
+        
         proximity: [
             "The iron plate holds firm.", "Protect the innocent commoners.", "Rust never sleeps on this watch.", "Tread softly; disturb not the poppies.",
             "The children offered me a flower of peace.", "Dost thou even hoist? I could lift a horse, but I am lifting nothing today.",
@@ -380,6 +494,23 @@ export const DIALOGUE = {
         peer_wounded: ["{hurt_name} is crumbling to dust!", "Hold the frontline!"],
         death: ["{dead_name} has been reduced to common grave dust...", "Their shortbow falls silent..."],
         seen_animal: { "minecraft:wolf": ["A HOUND OF THE WILDS! SHOOT THE BEAST!", "The wolf hungers for my marrow! Flee!"], "generic": ["Loose an arrow for target practice.", "Living meat for the crows."] }
+    }
+,
+    "minecraft:pillager_captain": {
+        greeting_friend: [
+            "Well met. The Captain remembers those who kept their word.",
+            "You have cost us little. That earns you much.",
+            "Twice now you have walked out of my ambush alive. I am beginning to wonder.",
+            "The horde does not keep friends. But it keeps debts, and I pay mine.",
+            "So. A wolf that runs with the pack. Rarely seen."
+        ],
+        greeting_foe: [
+            "You dare walk into my camp alone?",
+            "I have your measure, and it is short.",
+            "The Captain does not forget. The Captain does not forgive.",
+            "Every road you take ends at a raiding party. That is my design.",
+            "I would sooner trade blows twice than speak to you once."
+        ],
     }
 };
 
